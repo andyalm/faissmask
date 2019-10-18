@@ -7,15 +7,15 @@ namespace FaissSharp
 {
     public abstract class Index : IDisposable
     {
-        private readonly IndexSafeHandle _handle;
+        internal readonly IndexSafeHandle Handle;
         public long Count
         {
-            get => _handle.NTotal();
+            get => Handle.NTotal();
         }
-        public bool IsTrained { get => _handle.IsTrained(); }
+        public bool IsTrained { get => Handle.IsTrained(); }
         protected Index(object handle)
         {
-            _handle = handle as IndexSafeHandle;
+            Handle = handle as IndexSafeHandle;
         }
         public void Add(IEnumerable<float[]> vectors)
         {
@@ -24,14 +24,14 @@ namespace FaissSharp
         }
         private void Add(long count, float[] vectors)
         {
-            _handle.Add(count, vectors);
+            Handle.Add(count, vectors);
         }
 
         public IEnumerable<SearchResult> Search(SearchRequest request)
         {
             float[] distances = new float[request.KNeighbors * request.Count];
             long[] labels = new long[request.KNeighbors * request.Count];
-            _handle.Search(request.Count, request.FlattenVectors(), request.KNeighbors, distances, labels);
+            Handle.Search(request.Count, request.FlattenVectors(), request.KNeighbors, distances, labels);
             var labelDistanceZip = labels.Zip(distances, (l, d) => new
             {
                 Label = l,
@@ -43,7 +43,6 @@ namespace FaissSharp
                     .Take((int)request.KNeighbors);
                 yield return new SearchResult
                 {
-                    Id = request.SearchVectors.ElementAt(i).Id,
                     Matchs = vectorResult.Select(ld => new SearchResultMatch
                     {
                         Label = ld.Label,
@@ -56,8 +55,8 @@ namespace FaissSharp
 
         public void Dispose()
         {
-            _handle?.Free();
-            _handle?.Dispose();
+            Handle?.Free();
+            Handle?.Dispose();
         }
     }
 }

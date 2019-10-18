@@ -14,10 +14,6 @@ namespace FaissSharp.Internal
         {
             _native.faiss_Index_add(this, count, vectors);
         }
-        public void Add(long count, float[] vectors, long[] ids)
-        {
-            _native.faiss_Index_add_with_ids(this, count, vectors, ids);
-        }
         public bool IsTrained()
         {
             return _native.faiss_Index_is_trained(this);

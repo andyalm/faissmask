@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\FaissSharp\FaissSharp.csproj" />
+    <ProjectReference Include="..\..\FaissSharp\FaissSharp.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

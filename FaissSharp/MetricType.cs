@@ -1,6 +1,6 @@
-namespace FaissSharp.Internal
+namespace FaissSharp
 {
-    internal enum MetricType
+    public enum MetricType
     {
         MetricInnerProduct = 0,
         MetricL2 = 1

@@ -4,11 +4,15 @@ namespace FaissSharp.Internal
     {
         private static readonly NativeMethods _native = NativeMethods.Get();
 
-        protected static IndexFlatSafeHandle NewIndexFlat()
+        public static IndexFlatSafeHandle New()
         {
-            return NewIndexFlat(d: 0, metric: MetricType.MetricL2);
+            return New(d: 0, metric: MetricType.MetricL2);
         }
-        protected static IndexFlatSafeHandle NewIndexFlat(long d, MetricType metric)
+        public static IndexFlatSafeHandle New(long d)
+        {
+            return New(d, metric: MetricType.MetricL2);
+        }
+        public static IndexFlatSafeHandle New(long d, MetricType metric = MetricType.MetricL2)
         {
             var index = new IndexFlatSafeHandle();
             FaissEnvironment.FaissNativeInit();

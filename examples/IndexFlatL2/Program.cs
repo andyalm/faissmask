@@ -16,7 +16,7 @@ namespace FaissSharpExample
             int k = 5;
             List<float[]> vectors = new List<float[]>();
 
-            System.Console.WriteLine("Generating some data...");
+            System.Console.WriteLine($"Generating {vectorsCount} vectors with sequential ids from 0 to {vectorsCount - 1}...");
 
             for (int i = 0; i < vectorsCount; i++)
             {
@@ -29,7 +29,6 @@ namespace FaissSharpExample
             System.Console.WriteLine("Building index");
             using (var index = new IndexFlatL2(dimension))
             {
-
                 System.Console.WriteLine($"IsTrained {index.IsTrained}");
 
                 index.Add(vectors);
@@ -44,7 +43,6 @@ namespace FaissSharpExample
                 );
                 foreach (var r in result)
                 {
-                    Console.WriteLine($"ID: {r.Id}");
                     foreach (var m in r.Matchs)
                     {
                         Console.Write($"{m.Label,5} (d={m.Distance:#.000})  ");
