@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+    <PropertyGroup>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="runtimes/linux/native/libfaiss_c.so">
+            <PackagePath>runtimes/linux/native/libfaiss_c.so</PackagePath>
+        </Content>
+        <None Include="runtimes/linux/native/libfaiss_c.so" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.0.0" />
+    </ItemGroup>
+</Project>
