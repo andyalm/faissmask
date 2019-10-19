@@ -1,3 +1,8 @@
+![Licesne](https://img.shields.io/badge/license-MIT-green)
+[![Nuget](https://img.shields.io/nuget/v/FaissSharp)](https://www.nuget.org/packages/FaissSharp)
+[![Nuget](https://img.shields.io/nuget/dt/FaissSharp)](https://www.nuget.org/packages/FaissSharp)
+![CI/CD](https://gitlab.com/josetruyol/faisssharp/badges/master/pipeline.svg
+)
 # FaissSharp
 
 FaissSharp is a package that wrap the c_api of [faiss](https://github.com/facebookresearch/faiss)
