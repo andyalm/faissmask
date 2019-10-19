@@ -6,6 +6,8 @@ Faiss is a library for efficient similarity search and clustering of dense vecto
 
 This version is based on faiss v1.6.0
 
+Test the latest changes checking out the `develop` branch
+
 ## Try it
 
 The `examples` directory contains multiple demo console projects.
