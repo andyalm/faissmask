@@ -43,9 +43,10 @@ Searching...
 * Free (to release unmanaged memory allocations)
 
 ## TODO
-* Tests
-* Sync native functions with faiss c_api
-* Nuget Package
+- [x] Nuget Package
+- [ ] Logging
+- [ ] Tests
+- [ ] Sync native functions with faiss c_api
 
 > This is an active project, but MR are welcome.
 
