@@ -17,6 +17,7 @@
         <PackageTags>faiss</PackageTags>
         <RepositoryUrl>https://gitlab.com/josetruyol/faisssharp</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageIconUrl>https://gitlab.com/josetruyol/faisssharp/blob/master/assets/logo_64x64.png</PackageIconUrl>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
     <ItemGroup>
