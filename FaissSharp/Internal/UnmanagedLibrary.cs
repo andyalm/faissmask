@@ -9,7 +9,7 @@ namespace FaissSharp.Internal
     {
         private readonly string _libraryPath;
         private readonly IntPtr _handle;
-        private readonly ILogger _logger;
+        private readonly ILogger _logger = FaissLogging.CreateLogger<UnmanagedLibrary>();
         // flags for dlopen
         const int RTLD_LAZY = 1;
         const int RTLD_GLOBAL = 8;
@@ -17,7 +17,7 @@ namespace FaissSharp.Internal
         public UnmanagedLibrary(string[] libraryPathAlternatives)
         {
             _libraryPath = FirstValidLibraryPath(libraryPathAlternatives);
-            _logger?.LogDebug($"Intentando cargar libreria nativa {_libraryPath}");
+            _logger?.LogDebug($"Trying to load native library {_libraryPath}");
             _handle = PlatformSpecificLoadLibrary(_libraryPath, out string loadLibraryErrorDetail);
             if (_handle == IntPtr.Zero)
             {
