@@ -8,6 +8,17 @@
         <LangVersion>8</LangVersion>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <PackageId>FaissSharp</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Jose Truyol</Authors>
+        <Company>Jose Truyol</Company>
+        <PackageDescription>Faiss wrapper for .NET</PackageDescription>
+        <PackageTags>faiss</PackageTags>
+        <RepositoryUrl>https://gitlab.com/josetruyol/faisssharp</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
     <ItemGroup>
         <Content Include="runtimes/linux/native/libfaiss_c.so">
             <PackagePath>runtimes/linux/native/libfaiss_c.so</PackagePath>
