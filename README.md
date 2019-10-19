@@ -49,3 +49,5 @@ Searching...
 
 > This is an active project, but MR are welcome.
 
+## License
+FaissSharp is MIT-licensed.
