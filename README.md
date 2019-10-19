@@ -1,3 +1,11 @@
+![Header](assets/header.png)
+
+
+![Licesne](https://img.shields.io/badge/license-MIT-green)
+[![Nuget](https://img.shields.io/nuget/v/FaissSharp)](https://www.nuget.org/packages/FaissSharp)
+[![Nuget](https://img.shields.io/nuget/dt/FaissSharp)](https://www.nuget.org/packages/FaissSharp)
+![CI/CD](https://gitlab.com/josetruyol/faisssharp/badges/master/pipeline.svg
+)
 # FaissSharp
 
 FaissSharp is a package that wrap the c_api of [faiss](https://github.com/facebookresearch/faiss)
@@ -5,6 +13,8 @@ FaissSharp is a package that wrap the c_api of [faiss](https://github.com/facebo
 Faiss is a library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size, up to ones that possibly do not fit in RAM. It also contains supporting code for evaluation and parameter tuning. Faiss is written in C++ with complete wrappers for Python/numpy. Some of the most useful algorithms are implemented on the GPU. It is developed by [Facebook AI Research](https://research.fb.com/category/facebook-ai-research-fair/).
 
 This version is based on faiss v1.6.0
+
+Test the latest changes checking out the `develop` branch
 
 ## Try it
 
@@ -41,9 +51,12 @@ Searching...
 * Free (to release unmanaged memory allocations)
 
 ## TODO
-* Tests
-* Sync native functions with faiss c_api
-* Nuget Package
+- [x] Nuget Package
+- [ ] Logging
+- [ ] Tests
+- [ ] Sync native functions with faiss c_api
 
 > This is an active project, but MR are welcome.
 
+## License
+FaissSharp is MIT-licensed.
