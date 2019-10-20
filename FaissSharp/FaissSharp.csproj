@@ -17,9 +17,18 @@
         <PackageTags>faiss</PackageTags>
         <RepositoryUrl>https://gitlab.com/josetruyol/faisssharp</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageIconUrl>https://gitlab.com/josetruyol/faisssharp/blob/master/assets/logo_64x64.png</PackageIconUrl>
+        <PackageIcon>icon.png</PackageIcon>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageIcon>icon.png</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\assets\icon.png" Pack="true" PackagePath=""/>
+    </ItemGroup>
+
     <ItemGroup>
         <Content Include="runtimes/linux/native/libfaiss_c.so">
             <PackagePath>runtimes/linux/native/libfaiss_c.so</PackagePath>
