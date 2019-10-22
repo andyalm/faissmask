@@ -35,15 +35,11 @@ namespace FaissSharpExample
                 System.Console.WriteLine($"Elements in index: {index.Count}");
 
                 System.Console.WriteLine("Searching...");
-                var result = index.Search(
-                    new SearchRequest(
-                        vectors.Take(5).Select(v => new SearchVector(v)),
-                        k
-                    )
-                );
-                foreach (var r in result)
+                var result = index.Search(vectors.Take(5), k).ToArray();
+                for (int i = 0; i < 5; i++)
                 {
-                    foreach (var m in r.Matchs)
+                    var partialResult = result[(i * k)..(i * k + k)];
+                    foreach (var m in partialResult)
                     {
                         Console.Write($"{m.Label,5} (d={m.Distance:#.000})  ");
                     }

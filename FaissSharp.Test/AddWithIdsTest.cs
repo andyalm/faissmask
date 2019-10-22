@@ -30,15 +30,10 @@ namespace FaissSharp.Test
                 using (var idIndex = new IndexIDMap(index))
                 {
                     idIndex.Add(vectors, Enumerable.Range(idStart, idStart + vectorsCount).Select(r => (long)r));
-                    var result = idIndex.Search(
-                        new SearchRequest(
-                            vectors.Select(v => new SearchVector(v)),
-                            k
-                        )
-                    );
-                    foreach (var searchResult in result)
+                    var result = idIndex.Search(vectors.Select(v => v), k);
+                    foreach (var m in result)
                     {
-                        Assert.All(searchResult.Matchs, (m) => Assert.InRange(m.Label, idStart, idStart + vectorsCount - 1));
+                        Assert.InRange(m.Label, idStart, idStart + vectorsCount - 1);
                     }
                 }
             }
