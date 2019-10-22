@@ -4,6 +4,7 @@ namespace FaissSharp
 {
     public class SearchResult
     {
-        public IList<SearchResultMatch> Matchs;
+        public long Label { get; set; }
+        public float Distance { get; set; }
     }
 }

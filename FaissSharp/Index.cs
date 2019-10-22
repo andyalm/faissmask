@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using FaissSharp.Extensions;
 using FaissSharp.Internal;
 
 namespace FaissSharp
@@ -27,28 +28,29 @@ namespace FaissSharp
             Handle.Add(count, vectors);
         }
 
-        public IEnumerable<SearchResult> Search(SearchRequest request)
+        public IEnumerable<SearchResult> Search(IEnumerable<float[]> request, long kneighbors)
         {
-            float[] distances = new float[request.KNeighbors * request.Count];
-            long[] labels = new long[request.KNeighbors * request.Count];
-            Handle.Search(request.Count, request.FlattenVectors(), request.KNeighbors, distances, labels);
+            int count = request.Count();
+            float[] distances = new float[kneighbors * count];
+            long[] labels = new long[kneighbors * count];
+            Handle.Search(count, request.Flatten(), kneighbors, distances, labels);
             var labelDistanceZip = labels.Zip(distances, (l, d) => new
             {
                 Label = l,
                 Distance = d
             });
-            for (int i = 0; i < request.Count; i++)
+            for (int i = 0; i < count; i++)
             {
-                var vectorResult = labelDistanceZip.Skip((int)(i * request.KNeighbors))
-                    .Take((int)request.KNeighbors);
-                yield return new SearchResult
+                var vectorResult = labelDistanceZip.Skip((int)(i * kneighbors))
+                    .Take((int)kneighbors);
+                foreach(var r in vectorResult)
                 {
-                    Matchs = vectorResult.Select(ld => new SearchResultMatch
+                    yield return new SearchResult
                     {
-                        Label = ld.Label,
-                        Distance = ld.Distance
-                    }).ToList()
-                };
+                        Label = r.Label,
+                        Distance = r.Distance
+                    };
+                }
             }
 
         }
