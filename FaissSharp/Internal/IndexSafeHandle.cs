@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 namespace FaissSharp.Internal
 {
@@ -8,9 +9,22 @@ namespace FaissSharp.Internal
         
         public static THandle Read<THandle>(string filename, Func<IntPtr,THandle> createHandle) where THandle : IndexSafeHandle
         {
-            var pointer = _native.faiss_read_index(filename);
-            var index = createHandle(pointer);
+            if(string.IsNullOrEmpty(filename))
+            {
+                throw new ArgumentNullException(nameof(filename));
+            }
+            if(!File.Exists(filename))
+            {
+                throw new FileNotFoundException($"The file {filename} does not exist", filename);
+            }
+
             FaissEnvironment.FaissNativeInit();
+            var pointer = _native.faiss_read_index(filename);
+            if(pointer == IntPtr.Zero)
+            {
+                throw new IOException($"An known error occurred trying to read the index '{filename}'");
+            }
+            var index = createHandle(pointer);
 
             return index;
         }
