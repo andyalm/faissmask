@@ -38,10 +38,11 @@ namespace FaissSharp.Internal
         {
             if (PlatformApis.IsLinux)
             {
-                if (PlatformApis.IsNetCore)
-                {
-                    return CoreCLR.dlsym(_handle, symbolName);
-                }
+                return CoreCLR.dlsym(_handle, symbolName);
+            }
+            else if(PlatformApis.IsMacOSX)
+            {
+                return CoreCLRMacOS.dlsym(_handle, symbolName);
             }
             throw new InvalidOperationException("Unsupported Platform.");
         }
@@ -66,10 +67,11 @@ namespace FaissSharp.Internal
         {
             if (PlatformApis.IsLinux)
             {
-                if (PlatformApis.IsNetCore)
-                {
-                    return LoadLibraryPosix(CoreCLR.dlopen, CoreCLR.dlerror, libraryPath, out errorMsg);
-                }
+                return LoadLibraryPosix(CoreCLR.dlopen, CoreCLR.dlerror, libraryPath, out errorMsg);
+            }
+            else if(PlatformApis.IsMacOSX)
+            {
+                return LoadLibraryPosix(CoreCLRMacOS.dlopen, CoreCLRMacOS.dlerror, libraryPath, out errorMsg);
             }
             throw new InvalidOperationException("Unsupported Platform.");
         }
@@ -95,6 +97,14 @@ namespace FaissSharp.Internal
             internal static extern IntPtr dlsym(IntPtr handle, string symbol);
         }
 
-
+        private static class CoreCLRMacOS
+        {
+            [DllImport("libcoreclr.dylib")]
+            internal static extern IntPtr dlopen(string filename, int flags);
+            [DllImport("libcoreclr.dylib")]
+            internal static extern IntPtr dlerror();
+            [DllImport("libcoreclr.dylib")]
+            internal static extern IntPtr dlsym(IntPtr handle, string symbol);
+        }
     }
 }

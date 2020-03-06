@@ -73,6 +73,10 @@ namespace FaissSharp.Internal
             {
                 return "libfaiss_c.so";
             }
+            else if(PlatformApis.IsMacOSX)
+            {
+                return "libfaiss_c.dylib";
+            }
             throw new InvalidOperationException("Unsupported Platform");
         }
         private static object GetPlatformString()
@@ -80,6 +84,10 @@ namespace FaissSharp.Internal
             if (PlatformApis.IsLinux)
             {
                 return "linux";
+            }
+            else if(PlatformApis.IsMacOSX)
+            {
+                return "osx-x64";
             }
             throw new InvalidOperationException("Unsupported Platform");
         }

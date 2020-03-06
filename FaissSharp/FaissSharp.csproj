@@ -32,8 +32,12 @@
     <ItemGroup>
         <Content Include="runtimes/linux/native/libfaiss_c.so">
             <PackagePath>runtimes/linux/native/libfaiss_c.so</PackagePath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
-        <None Include="runtimes/linux/native/libfaiss_c.so" CopyToOutputDirectory="PreserveNewest" />
+        <Content Include="runtimes/osx-x64/native/libfaiss_c.dylib">
+            <PackagePath>runtimes/linux/native/libfaiss_c.dylib</PackagePath>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>

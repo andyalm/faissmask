@@ -3,6 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+libfaiss-src/
+
 .vscode
 # User-specific files
 *.rsuser
