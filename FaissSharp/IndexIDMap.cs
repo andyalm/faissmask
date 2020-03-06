@@ -6,6 +6,15 @@ namespace FaissSharp
 {
     public class IndexIDMap : Index
     {
+        public static IndexIDMap Read(string filename)
+        {
+            var handle = IndexSafeHandle.Read(filename, ptr => new IndexIDMapSafeHandle(ptr));
+            
+            return new IndexIDMap(handle);
+        }
+        
+        internal IndexIDMap(IndexIDMapSafeHandle handle) : base(handle) {}
+        
         public IndexIDMap(IndexFlat index) : base(IndexIDMapSafeHandle.New(index.Handle as IndexFlatSafeHandle))
         {
         }

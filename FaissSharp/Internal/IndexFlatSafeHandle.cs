@@ -1,3 +1,5 @@
+using System;
+
 namespace FaissSharp.Internal
 {
     internal class IndexFlatSafeHandle : IndexSafeHandle
@@ -19,6 +21,10 @@ namespace FaissSharp.Internal
             _native.faiss_IndexFlat_new_with(ref index, d, metric);
             return index;
         }
+        
+        public IndexFlatSafeHandle() {}
+        public IndexFlatSafeHandle(IntPtr pointer) : base(pointer) {}
+        
         public override void Free()
         {
             _native.faiss_IndexFlat_free(this);

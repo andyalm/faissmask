@@ -26,7 +26,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="..\assets\icon.png" Pack="true" PackagePath=""/>
+        <None Include="..\assets\icon.png" Pack="true" PackagePath="" />
     </ItemGroup>
 
     <ItemGroup>
@@ -43,5 +43,6 @@
     <ItemGroup>
       <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
       <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.0.0" />
+      <PackageReference Include="NumSharp" Version="0.20.5" />
     </ItemGroup>
 </Project>

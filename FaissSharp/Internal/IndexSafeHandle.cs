@@ -5,11 +5,23 @@ namespace FaissSharp.Internal
     internal class IndexSafeHandle : SafeHandleZeroIsInvalid
     {
         private static readonly NativeMethods _native = NativeMethods.Get();
+        
+        public static THandle Read<THandle>(string filename, Func<IntPtr,THandle> createHandle) where THandle : IndexSafeHandle
+        {
+            var pointer = _native.faiss_read_index(filename);
+            var index = createHandle(pointer);
+            FaissEnvironment.FaissNativeInit();
+
+            return index;
+        }
         public bool IsFree { get; internal set; } = false;
 
         protected IndexSafeHandle()
         {
         }
+
+        protected IndexSafeHandle(IntPtr pointer) : base(pointer) {}
+        
         public void Add(long count, float[] vectors)
         {
             _native.faiss_Index_add(this, count, vectors);
