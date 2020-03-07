@@ -16,5 +16,12 @@
   <ItemGroup>
     <ProjectReference Include="..\FaissSharp\FaissSharp.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="../../data/*.*">
+      <Link>data/%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
 </Project>

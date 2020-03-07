@@ -13,14 +13,17 @@ namespace FaissSharp.Internal
             {
                 throw new ArgumentNullException(nameof(filename));
             }
+
+            filename = Path.GetFullPath(filename);
             if(!File.Exists(filename))
             {
                 throw new FileNotFoundException($"The file {filename} does not exist", filename);
             }
 
             FaissEnvironment.FaissNativeInit();
-            var pointer = _native.faiss_read_index(filename);
-            if(pointer == IntPtr.Zero)
+            var pointer = IntPtr.Zero;
+            var returnCode = _native.faiss_read_index_fname(filename, 0, ref pointer);
+            if(returnCode != 0 || pointer == IntPtr.Zero)
             {
                 throw new IOException($"An known error occurred trying to read the index '{filename}'");
             }
