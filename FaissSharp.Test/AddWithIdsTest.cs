@@ -50,7 +50,7 @@ namespace FaissSharp.Test
         [Fact]
         public void CanReadIndex()
         {
-            var index = IndexFlat.Read("data/faiss.index");
+            using var index = IndexFlat.Read("data/faiss.index");
             var results = index.Search(new[]
             {
                 new float[]
