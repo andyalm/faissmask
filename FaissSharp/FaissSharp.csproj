@@ -1,12 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>8</LangVersion>
   </PropertyGroup>
-
-    <PropertyGroup>
-        <LangVersion>8</LangVersion>
-    </PropertyGroup>
 
     <PropertyGroup>
         <PackageId>FaissSharp</PackageId>
@@ -30,14 +28,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Content Include="runtimes/linux/native/libfaiss_c.so">
-            <PackagePath>runtimes/linux/native/libfaiss_c.so</PackagePath>
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
-        <Content Include="runtimes/osx-x64/native/libfaiss_c.dylib">
-            <PackagePath>runtimes/linux/native/libfaiss_c.dylib</PackagePath>
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </Content>
+        <Content Include="runtimes\**" PackagePath="runtimes" Visible="false" />
     </ItemGroup>
 
     <ItemGroup>

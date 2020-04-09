@@ -1,0 +1,2540 @@
+       695:	find library=libpthread.so.0 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64:/opt/intel/mkl/lib/intel64/tls/haswell:/opt/intel/mkl/lib/intel64/tls/x86_64:/opt/intel/mkl/lib/intel64/tls:/opt/intel/mkl/lib/intel64/haswell/x86_64:/opt/intel/mkl/lib/intel64/haswell:/opt/intel/mkl/lib/intel64/x86_64:/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64/libpthread.so.0
+       695:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/libpthread.so.0
+       695:	  trying file=/opt/intel/mkl/lib/intel64/tls/x86_64/libpthread.so.0
+       695:	  trying file=/opt/intel/mkl/lib/intel64/tls/libpthread.so.0
+       695:	  trying file=/opt/intel/mkl/lib/intel64/haswell/x86_64/libpthread.so.0
+       695:	  trying file=/opt/intel/mkl/lib/intel64/haswell/libpthread.so.0
+       695:	  trying file=/opt/intel/mkl/lib/intel64/x86_64/libpthread.so.0
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libpthread.so.0
+       695:	  trying file=tls/haswell/x86_64/libpthread.so.0
+       695:	  trying file=tls/haswell/libpthread.so.0
+       695:	  trying file=tls/x86_64/libpthread.so.0
+       695:	  trying file=tls/libpthread.so.0
+       695:	  trying file=haswell/x86_64/libpthread.so.0
+       695:	  trying file=haswell/libpthread.so.0
+       695:	  trying file=x86_64/libpthread.so.0
+       695:	  trying file=libpthread.so.0
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/lib/x86_64-linux-gnu/libpthread.so.0
+       695:	
+       695:	find library=libdl.so.2 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libdl.so.2
+       695:	  trying file=tls/haswell/x86_64/libdl.so.2
+       695:	  trying file=tls/haswell/libdl.so.2
+       695:	  trying file=tls/x86_64/libdl.so.2
+       695:	  trying file=tls/libdl.so.2
+       695:	  trying file=haswell/x86_64/libdl.so.2
+       695:	  trying file=haswell/libdl.so.2
+       695:	  trying file=x86_64/libdl.so.2
+       695:	  trying file=libdl.so.2
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/lib/x86_64-linux-gnu/libdl.so.2
+       695:	
+       695:	find library=libstdc++.so.6 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libstdc++.so.6
+       695:	  trying file=tls/haswell/x86_64/libstdc++.so.6
+       695:	  trying file=tls/haswell/libstdc++.so.6
+       695:	  trying file=tls/x86_64/libstdc++.so.6
+       695:	  trying file=tls/libstdc++.so.6
+       695:	  trying file=haswell/x86_64/libstdc++.so.6
+       695:	  trying file=haswell/libstdc++.so.6
+       695:	  trying file=x86_64/libstdc++.so.6
+       695:	  trying file=libstdc++.so.6
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+       695:	
+       695:	find library=libm.so.6 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libm.so.6
+       695:	  trying file=tls/haswell/x86_64/libm.so.6
+       695:	  trying file=tls/haswell/libm.so.6
+       695:	  trying file=tls/x86_64/libm.so.6
+       695:	  trying file=tls/libm.so.6
+       695:	  trying file=haswell/x86_64/libm.so.6
+       695:	  trying file=haswell/libm.so.6
+       695:	  trying file=x86_64/libm.so.6
+       695:	  trying file=libm.so.6
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/lib/x86_64-linux-gnu/libm.so.6
+       695:	
+       695:	find library=libgcc_s.so.1 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libgcc_s.so.1
+       695:	  trying file=tls/haswell/x86_64/libgcc_s.so.1
+       695:	  trying file=tls/haswell/libgcc_s.so.1
+       695:	  trying file=tls/x86_64/libgcc_s.so.1
+       695:	  trying file=tls/libgcc_s.so.1
+       695:	  trying file=haswell/x86_64/libgcc_s.so.1
+       695:	  trying file=haswell/libgcc_s.so.1
+       695:	  trying file=x86_64/libgcc_s.so.1
+       695:	  trying file=libgcc_s.so.1
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/lib/x86_64-linux-gnu/libgcc_s.so.1
+       695:	
+       695:	find library=libc.so.6 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libc.so.6
+       695:	  trying file=tls/haswell/x86_64/libc.so.6
+       695:	  trying file=tls/haswell/libc.so.6
+       695:	  trying file=tls/x86_64/libc.so.6
+       695:	  trying file=tls/libc.so.6
+       695:	  trying file=haswell/x86_64/libc.so.6
+       695:	  trying file=haswell/libc.so.6
+       695:	  trying file=x86_64/libc.so.6
+       695:	  trying file=libc.so.6
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/lib/x86_64-linux-gnu/libc.so.6
+       695:	
+       695:	
+       695:	calling init: /lib/x86_64-linux-gnu/libpthread.so.0
+       695:	
+       695:	
+       695:	calling init: /lib/x86_64-linux-gnu/libc.so.6
+       695:	
+       695:	
+       695:	calling init: /lib/x86_64-linux-gnu/libgcc_s.so.1
+       695:	
+       695:	
+       695:	calling init: /lib/x86_64-linux-gnu/libm.so.6
+       695:	
+       695:	
+       695:	calling init: /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+       695:	
+       695:	
+       695:	calling init: /lib/x86_64-linux-gnu/libdl.so.2
+       695:	
+       695:	
+       695:	calling init: /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so
+       695:	
+       695:	
+       695:	calling init: /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so
+       695:	
+       695:	
+       695:	calling init: /opt/intel/mkl/lib/intel64/libmkl_core.so
+       695:	
+       695:	find library=libittnotify.so [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libittnotify.so
+       695:	  trying file=tls/haswell/x86_64/libittnotify.so
+       695:	  trying file=tls/haswell/libittnotify.so
+       695:	  trying file=tls/x86_64/libittnotify.so
+       695:	  trying file=tls/libittnotify.so
+       695:	  trying file=haswell/x86_64/libittnotify.so
+       695:	  trying file=haswell/libittnotify.so
+       695:	  trying file=x86_64/libittnotify.so
+       695:	  trying file=libittnotify.so
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu/tls/haswell/x86_64:/lib/x86_64-linux-gnu/tls/haswell:/lib/x86_64-linux-gnu/tls/x86_64:/lib/x86_64-linux-gnu/tls:/lib/x86_64-linux-gnu/haswell/x86_64:/lib/x86_64-linux-gnu/haswell:/lib/x86_64-linux-gnu/x86_64:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64:/usr/lib/x86_64-linux-gnu/tls/haswell:/usr/lib/x86_64-linux-gnu/tls/x86_64:/usr/lib/x86_64-linux-gnu/tls:/usr/lib/x86_64-linux-gnu/haswell/x86_64:/usr/lib/x86_64-linux-gnu/haswell:/usr/lib/x86_64-linux-gnu/x86_64:/usr/lib/x86_64-linux-gnu:/lib/tls/haswell/x86_64:/lib/tls/haswell:/lib/tls/x86_64:/lib/tls:/lib/haswell/x86_64:/lib/haswell:/lib/x86_64:/lib:/usr/lib/tls/haswell/x86_64:/usr/lib/tls/haswell:/usr/lib/tls/x86_64:/usr/lib/tls:/usr/lib/haswell/x86_64:/usr/lib/haswell:/usr/lib/x86_64:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       695:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       695:	  trying file=/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       695:	  trying file=/lib/x86_64-linux-gnu/tls/libittnotify.so
+       695:	  trying file=/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       695:	  trying file=/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       695:	  trying file=/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       695:	  trying file=/lib/x86_64-linux-gnu/libittnotify.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/tls/libittnotify.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libittnotify.so
+       695:	  trying file=/lib/tls/haswell/x86_64/libittnotify.so
+       695:	  trying file=/lib/tls/haswell/libittnotify.so
+       695:	  trying file=/lib/tls/x86_64/libittnotify.so
+       695:	  trying file=/lib/tls/libittnotify.so
+       695:	  trying file=/lib/haswell/x86_64/libittnotify.so
+       695:	  trying file=/lib/haswell/libittnotify.so
+       695:	  trying file=/lib/x86_64/libittnotify.so
+       695:	  trying file=/lib/libittnotify.so
+       695:	  trying file=/usr/lib/tls/haswell/x86_64/libittnotify.so
+       695:	  trying file=/usr/lib/tls/haswell/libittnotify.so
+       695:	  trying file=/usr/lib/tls/x86_64/libittnotify.so
+       695:	  trying file=/usr/lib/tls/libittnotify.so
+       695:	  trying file=/usr/lib/haswell/x86_64/libittnotify.so
+       695:	  trying file=/usr/lib/haswell/libittnotify.so
+       695:	  trying file=/usr/lib/x86_64/libittnotify.so
+       695:	  trying file=/usr/lib/libittnotify.so
+       695:	
+       695:	
+       695:	calling init: /opt/intel/mkl/lib/intel64/libmkl_avx2.so
+       695:	
+       695:	
+       695:	calling init: /opt/intel/mkl/lib/intel64/libmkl_def.so
+       695:	
+       695:	
+       695:	calling init: /usr/lib/x86_64-linux-gnu/libgomp.so.1
+       695:	
+       695:	
+       695:	initialize program: dotnet
+       695:	
+       695:	
+       695:	transferring control: dotnet
+       695:	
+       695:	
+       695:	calling init: /usr/share/dotnet/host/fxr/3.1.2/libhostfxr.so
+       695:	
+       695:	
+       695:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libhostpolicy.so
+       695:	
+       695:	find library=librt.so.1 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/librt.so.1
+       695:	  trying file=tls/haswell/x86_64/librt.so.1
+       695:	  trying file=tls/haswell/librt.so.1
+       695:	  trying file=tls/x86_64/librt.so.1
+       695:	  trying file=tls/librt.so.1
+       695:	  trying file=haswell/x86_64/librt.so.1
+       695:	  trying file=haswell/librt.so.1
+       695:	  trying file=x86_64/librt.so.1
+       695:	  trying file=librt.so.1
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/lib/x86_64-linux-gnu/librt.so.1
+       695:	
+       695:	
+       695:	calling init: /lib/x86_64-linux-gnu/librt.so.1
+       695:	
+       695:	
+       695:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libcoreclr.so
+       695:	
+       695:	find library=liblttng-ust.so.0 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/liblttng-ust.so.0
+       695:	  trying file=tls/haswell/x86_64/liblttng-ust.so.0
+       695:	  trying file=tls/haswell/liblttng-ust.so.0
+       695:	  trying file=tls/x86_64/liblttng-ust.so.0
+       695:	  trying file=tls/liblttng-ust.so.0
+       695:	  trying file=haswell/x86_64/liblttng-ust.so.0
+       695:	  trying file=haswell/liblttng-ust.so.0
+       695:	  trying file=x86_64/liblttng-ust.so.0
+       695:	  trying file=liblttng-ust.so.0
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/liblttng-ust.so.0
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/liblttng-ust.so.0
+       695:	  trying file=/lib/liblttng-ust.so.0
+       695:	  trying file=/usr/lib/liblttng-ust.so.0
+       695:	
+       695:	find library=liblttng-ust-tracepoint.so.0 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/liblttng-ust-tracepoint.so.0
+       695:	  trying file=tls/haswell/x86_64/liblttng-ust-tracepoint.so.0
+       695:	  trying file=tls/haswell/liblttng-ust-tracepoint.so.0
+       695:	  trying file=tls/x86_64/liblttng-ust-tracepoint.so.0
+       695:	  trying file=tls/liblttng-ust-tracepoint.so.0
+       695:	  trying file=haswell/x86_64/liblttng-ust-tracepoint.so.0
+       695:	  trying file=haswell/liblttng-ust-tracepoint.so.0
+       695:	  trying file=x86_64/liblttng-ust-tracepoint.so.0
+       695:	  trying file=liblttng-ust-tracepoint.so.0
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       695:	  trying file=/lib/liblttng-ust-tracepoint.so.0
+       695:	  trying file=/usr/lib/liblttng-ust-tracepoint.so.0
+       695:	
+       695:	find library=liblttng-ust-tracepoint.so.0 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/liblttng-ust-tracepoint.so.0
+       695:	  trying file=tls/haswell/x86_64/liblttng-ust-tracepoint.so.0
+       695:	  trying file=tls/haswell/liblttng-ust-tracepoint.so.0
+       695:	  trying file=tls/x86_64/liblttng-ust-tracepoint.so.0
+       695:	  trying file=tls/liblttng-ust-tracepoint.so.0
+       695:	  trying file=haswell/x86_64/liblttng-ust-tracepoint.so.0
+       695:	  trying file=haswell/liblttng-ust-tracepoint.so.0
+       695:	  trying file=x86_64/liblttng-ust-tracepoint.so.0
+       695:	  trying file=liblttng-ust-tracepoint.so.0
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       695:	  trying file=/lib/liblttng-ust-tracepoint.so.0
+       695:	  trying file=/usr/lib/liblttng-ust-tracepoint.so.0
+       695:	
+       695:	find library=libnuma.so [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so
+       695:	  trying file=tls/haswell/x86_64/libnuma.so
+       695:	  trying file=tls/haswell/libnuma.so
+       695:	  trying file=tls/x86_64/libnuma.so
+       695:	  trying file=tls/libnuma.so
+       695:	  trying file=haswell/x86_64/libnuma.so
+       695:	  trying file=haswell/libnuma.so
+       695:	  trying file=x86_64/libnuma.so
+       695:	  trying file=libnuma.so
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libnuma.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so
+       695:	  trying file=/lib/libnuma.so
+       695:	  trying file=/usr/lib/libnuma.so
+       695:	
+       695:	find library=libnuma.so.1 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so.1
+       695:	  trying file=tls/haswell/x86_64/libnuma.so.1
+       695:	  trying file=tls/haswell/libnuma.so.1
+       695:	  trying file=tls/x86_64/libnuma.so.1
+       695:	  trying file=tls/libnuma.so.1
+       695:	  trying file=haswell/x86_64/libnuma.so.1
+       695:	  trying file=haswell/libnuma.so.1
+       695:	  trying file=x86_64/libnuma.so.1
+       695:	  trying file=libnuma.so.1
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libnuma.so.1
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so.1
+       695:	  trying file=/lib/libnuma.so.1
+       695:	  trying file=/usr/lib/libnuma.so.1
+       695:	
+       695:	
+       695:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libclrjit.so
+       695:	
+       695:	find library=libnuma.so [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so
+       695:	  trying file=tls/haswell/x86_64/libnuma.so
+       695:	  trying file=tls/haswell/libnuma.so
+       695:	  trying file=tls/x86_64/libnuma.so
+       695:	  trying file=tls/libnuma.so
+       695:	  trying file=haswell/x86_64/libnuma.so
+       695:	  trying file=haswell/libnuma.so
+       695:	  trying file=x86_64/libnuma.so
+       695:	  trying file=libnuma.so
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libnuma.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so
+       695:	  trying file=/lib/libnuma.so
+       695:	  trying file=/usr/lib/libnuma.so
+       695:	
+       695:	find library=libnuma.so.1 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so.1
+       695:	  trying file=tls/haswell/x86_64/libnuma.so.1
+       695:	  trying file=tls/haswell/libnuma.so.1
+       695:	  trying file=tls/x86_64/libnuma.so.1
+       695:	  trying file=tls/libnuma.so.1
+       695:	  trying file=haswell/x86_64/libnuma.so.1
+       695:	  trying file=haswell/libnuma.so.1
+       695:	  trying file=x86_64/libnuma.so.1
+       695:	  trying file=libnuma.so.1
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libnuma.so.1
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so.1
+       695:	  trying file=/lib/libnuma.so.1
+       695:	  trying file=/usr/lib/libnuma.so.1
+       695:	
+       695:	
+       695:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Native.so
+       695:	
+       695:	
+       695:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so
+       695:	
+       695:	find library=libicuuc.so.50 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.50
+       695:	  trying file=tls/haswell/x86_64/libicuuc.so.50
+       695:	  trying file=tls/haswell/libicuuc.so.50
+       695:	  trying file=tls/x86_64/libicuuc.so.50
+       695:	  trying file=tls/libicuuc.so.50
+       695:	  trying file=haswell/x86_64/libicuuc.so.50
+       695:	  trying file=haswell/libicuuc.so.50
+       695:	  trying file=x86_64/libicuuc.so.50
+       695:	  trying file=libicuuc.so.50
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.50
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.50
+       695:	  trying file=/lib/libicuuc.so.50
+       695:	  trying file=/usr/lib/libicuuc.so.50
+       695:	
+       695:	find library=libicuuc.so.70 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.70
+       695:	  trying file=tls/haswell/x86_64/libicuuc.so.70
+       695:	  trying file=tls/haswell/libicuuc.so.70
+       695:	  trying file=tls/x86_64/libicuuc.so.70
+       695:	  trying file=tls/libicuuc.so.70
+       695:	  trying file=haswell/x86_64/libicuuc.so.70
+       695:	  trying file=haswell/libicuuc.so.70
+       695:	  trying file=x86_64/libicuuc.so.70
+       695:	  trying file=libicuuc.so.70
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.70
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.70
+       695:	  trying file=/lib/libicuuc.so.70
+       695:	  trying file=/usr/lib/libicuuc.so.70
+       695:	
+       695:	find library=libicuuc.so.69 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.69
+       695:	  trying file=tls/haswell/x86_64/libicuuc.so.69
+       695:	  trying file=tls/haswell/libicuuc.so.69
+       695:	  trying file=tls/x86_64/libicuuc.so.69
+       695:	  trying file=tls/libicuuc.so.69
+       695:	  trying file=haswell/x86_64/libicuuc.so.69
+       695:	  trying file=haswell/libicuuc.so.69
+       695:	  trying file=x86_64/libicuuc.so.69
+       695:	  trying file=libicuuc.so.69
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.69
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.69
+       695:	  trying file=/lib/libicuuc.so.69
+       695:	  trying file=/usr/lib/libicuuc.so.69
+       695:	
+       695:	find library=libicuuc.so.68 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.68
+       695:	  trying file=tls/haswell/x86_64/libicuuc.so.68
+       695:	  trying file=tls/haswell/libicuuc.so.68
+       695:	  trying file=tls/x86_64/libicuuc.so.68
+       695:	  trying file=tls/libicuuc.so.68
+       695:	  trying file=haswell/x86_64/libicuuc.so.68
+       695:	  trying file=haswell/libicuuc.so.68
+       695:	  trying file=x86_64/libicuuc.so.68
+       695:	  trying file=libicuuc.so.68
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.68
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.68
+       695:	  trying file=/lib/libicuuc.so.68
+       695:	  trying file=/usr/lib/libicuuc.so.68
+       695:	
+       695:	find library=libicuuc.so.67 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.67
+       695:	  trying file=tls/haswell/x86_64/libicuuc.so.67
+       695:	  trying file=tls/haswell/libicuuc.so.67
+       695:	  trying file=tls/x86_64/libicuuc.so.67
+       695:	  trying file=tls/libicuuc.so.67
+       695:	  trying file=haswell/x86_64/libicuuc.so.67
+       695:	  trying file=haswell/libicuuc.so.67
+       695:	  trying file=x86_64/libicuuc.so.67
+       695:	  trying file=libicuuc.so.67
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.67
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.67
+       695:	  trying file=/lib/libicuuc.so.67
+       695:	  trying file=/usr/lib/libicuuc.so.67
+       695:	
+       695:	find library=libicuuc.so.66 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.66
+       695:	  trying file=tls/haswell/x86_64/libicuuc.so.66
+       695:	  trying file=tls/haswell/libicuuc.so.66
+       695:	  trying file=tls/x86_64/libicuuc.so.66
+       695:	  trying file=tls/libicuuc.so.66
+       695:	  trying file=haswell/x86_64/libicuuc.so.66
+       695:	  trying file=haswell/libicuuc.so.66
+       695:	  trying file=x86_64/libicuuc.so.66
+       695:	  trying file=libicuuc.so.66
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.66
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.66
+       695:	  trying file=/lib/libicuuc.so.66
+       695:	  trying file=/usr/lib/libicuuc.so.66
+       695:	
+       695:	find library=libicuuc.so.65 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.65
+       695:	  trying file=tls/haswell/x86_64/libicuuc.so.65
+       695:	  trying file=tls/haswell/libicuuc.so.65
+       695:	  trying file=tls/x86_64/libicuuc.so.65
+       695:	  trying file=tls/libicuuc.so.65
+       695:	  trying file=haswell/x86_64/libicuuc.so.65
+       695:	  trying file=haswell/libicuuc.so.65
+       695:	  trying file=x86_64/libicuuc.so.65
+       695:	  trying file=libicuuc.so.65
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.65
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.65
+       695:	  trying file=/lib/libicuuc.so.65
+       695:	  trying file=/usr/lib/libicuuc.so.65
+       695:	
+       695:	find library=libicuuc.so.64 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.64
+       695:	  trying file=tls/haswell/x86_64/libicuuc.so.64
+       695:	  trying file=tls/haswell/libicuuc.so.64
+       695:	  trying file=tls/x86_64/libicuuc.so.64
+       695:	  trying file=tls/libicuuc.so.64
+       695:	  trying file=haswell/x86_64/libicuuc.so.64
+       695:	  trying file=haswell/libicuuc.so.64
+       695:	  trying file=x86_64/libicuuc.so.64
+       695:	  trying file=libicuuc.so.64
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.64
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.64
+       695:	  trying file=/lib/libicuuc.so.64
+       695:	  trying file=/usr/lib/libicuuc.so.64
+       695:	
+       695:	find library=libicuuc.so.63 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.63
+       695:	  trying file=tls/haswell/x86_64/libicuuc.so.63
+       695:	  trying file=tls/haswell/libicuuc.so.63
+       695:	  trying file=tls/x86_64/libicuuc.so.63
+       695:	  trying file=tls/libicuuc.so.63
+       695:	  trying file=haswell/x86_64/libicuuc.so.63
+       695:	  trying file=haswell/libicuuc.so.63
+       695:	  trying file=x86_64/libicuuc.so.63
+       695:	  trying file=libicuuc.so.63
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.63
+       695:	
+       695:	find library=libicudata.so.63 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicudata.so.63
+       695:	  trying file=tls/haswell/x86_64/libicudata.so.63
+       695:	  trying file=tls/haswell/libicudata.so.63
+       695:	  trying file=tls/x86_64/libicudata.so.63
+       695:	  trying file=tls/libicudata.so.63
+       695:	  trying file=haswell/x86_64/libicudata.so.63
+       695:	  trying file=haswell/libicudata.so.63
+       695:	  trying file=x86_64/libicudata.so.63
+       695:	  trying file=libicudata.so.63
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicudata.so.63
+       695:	
+       695:	
+       695:	calling init: /usr/lib/x86_64-linux-gnu/libicudata.so.63
+       695:	
+       695:	
+       695:	calling init: /usr/lib/x86_64-linux-gnu/libicuuc.so.63
+       695:	
+       695:	/usr/lib/x86_64-linux-gnu/libicuuc.so.63: error: symbol lookup error: undefined symbol: u_strlen (fatal)
+       695:	find library=libicui18n.so.63 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libicui18n.so.63
+       695:	  trying file=tls/haswell/x86_64/libicui18n.so.63
+       695:	  trying file=tls/haswell/libicui18n.so.63
+       695:	  trying file=tls/x86_64/libicui18n.so.63
+       695:	  trying file=tls/libicui18n.so.63
+       695:	  trying file=haswell/x86_64/libicui18n.so.63
+       695:	  trying file=haswell/libicui18n.so.63
+       695:	  trying file=x86_64/libicui18n.so.63
+       695:	  trying file=libicui18n.so.63
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libicui18n.so.63
+       695:	
+       695:	
+       695:	calling init: /usr/lib/x86_64-linux-gnu/libicui18n.so.63
+       695:	
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_CompareStringW (fatal)
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_GetDefaultLocaleNameW (fatal)
+       695:	
+       695:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Security.Cryptography.Native.OpenSsl.so
+       695:	
+       695:	find library=libssl.so.1.1 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libssl.so.1.1
+       695:	  trying file=tls/haswell/x86_64/libssl.so.1.1
+       695:	  trying file=tls/haswell/libssl.so.1.1
+       695:	  trying file=tls/x86_64/libssl.so.1.1
+       695:	  trying file=tls/libssl.so.1.1
+       695:	  trying file=haswell/x86_64/libssl.so.1.1
+       695:	  trying file=haswell/libssl.so.1.1
+       695:	  trying file=x86_64/libssl.so.1.1
+       695:	  trying file=libssl.so.1.1
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libssl.so.1.1
+       695:	
+       695:	find library=libcrypto.so.1.1 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libcrypto.so.1.1
+       695:	  trying file=tls/haswell/x86_64/libcrypto.so.1.1
+       695:	  trying file=tls/haswell/libcrypto.so.1.1
+       695:	  trying file=tls/x86_64/libcrypto.so.1.1
+       695:	  trying file=tls/libcrypto.so.1.1
+       695:	  trying file=haswell/x86_64/libcrypto.so.1.1
+       695:	  trying file=haswell/libcrypto.so.1.1
+       695:	  trying file=x86_64/libcrypto.so.1.1
+       695:	  trying file=libcrypto.so.1.1
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+       695:	
+       695:	
+       695:	calling init: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+       695:	
+       695:	
+       695:	calling init: /usr/lib/x86_64-linux-gnu/libssl.so.1.1
+       695:	
+       695:	/usr/lib/x86_64-linux-gnu/libssl.so.1.1: error: symbol lookup error: undefined symbol: SSL_state (fatal)
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_GetLocaleNameW (fatal)
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_GetLocaleInfoStringW (fatal)
+       695:	find library=libc.so [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libc.so
+       695:	  trying file=tls/haswell/x86_64/libc.so
+       695:	  trying file=tls/haswell/libc.so
+       695:	  trying file=tls/x86_64/libc.so
+       695:	  trying file=tls/libc.so
+       695:	  trying file=haswell/x86_64/libc.so
+       695:	  trying file=haswell/libc.so
+       695:	  trying file=x86_64/libc.so
+       695:	  trying file=libc.so
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/libc.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/libc.so
+       695:	find library=liblibc.so [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/liblibc.so
+       695:	  trying file=tls/haswell/x86_64/liblibc.so
+       695:	  trying file=tls/haswell/liblibc.so
+       695:	  trying file=tls/x86_64/liblibc.so
+       695:	  trying file=tls/liblibc.so
+       695:	  trying file=haswell/x86_64/liblibc.so
+       695:	  trying file=haswell/liblibc.so
+       695:	  trying file=x86_64/liblibc.so
+       695:	  trying file=liblibc.so
+       695:	 search cache=/etc/ld.so.cache
+       695:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       695:	  trying file=/lib/x86_64-linux-gnu/liblibc.so
+       695:	  trying file=/usr/lib/x86_64-linux-gnu/liblibc.so
+       695:	  trying file=/lib/liblibc.so
+       695:	  trying file=/usr/lib/liblibc.so
+       695:	
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_GetTimeZoneDisplayNameW (fatal)
+       695:	find library=libz.so.1 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libz.so.1
+       695:	  trying file=tls/haswell/x86_64/libz.so.1
+       695:	  trying file=tls/haswell/libz.so.1
+       695:	  trying file=tls/x86_64/libz.so.1
+       695:	  trying file=tls/libz.so.1
+       695:	  trying file=haswell/x86_64/libz.so.1
+       695:	  trying file=haswell/libz.so.1
+       695:	  trying file=x86_64/libz.so.1
+       695:	  trying file=libz.so.1
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/lib/x86_64-linux-gnu/libz.so.1
+       695:	
+       695:	
+       695:	calling init: /lib/x86_64-linux-gnu/libz.so.1
+       695:	
+       695:	
+       695:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.IO.Compression.Native.so
+       695:	
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_StartsWithW (fatal)
+       712:	find library=libpthread.so.0 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64:/opt/intel/mkl/lib/intel64/tls/haswell:/opt/intel/mkl/lib/intel64/tls/x86_64:/opt/intel/mkl/lib/intel64/tls:/opt/intel/mkl/lib/intel64/haswell/x86_64:/opt/intel/mkl/lib/intel64/haswell:/opt/intel/mkl/lib/intel64/x86_64:/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64/libpthread.so.0
+       712:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/libpthread.so.0
+       712:	  trying file=/opt/intel/mkl/lib/intel64/tls/x86_64/libpthread.so.0
+       712:	  trying file=/opt/intel/mkl/lib/intel64/tls/libpthread.so.0
+       712:	  trying file=/opt/intel/mkl/lib/intel64/haswell/x86_64/libpthread.so.0
+       712:	  trying file=/opt/intel/mkl/lib/intel64/haswell/libpthread.so.0
+       712:	  trying file=/opt/intel/mkl/lib/intel64/x86_64/libpthread.so.0
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libpthread.so.0
+       712:	  trying file=tls/haswell/x86_64/libpthread.so.0
+       712:	  trying file=tls/haswell/libpthread.so.0
+       712:	  trying file=tls/x86_64/libpthread.so.0
+       712:	  trying file=tls/libpthread.so.0
+       712:	  trying file=haswell/x86_64/libpthread.so.0
+       712:	  trying file=haswell/libpthread.so.0
+       712:	  trying file=x86_64/libpthread.so.0
+       712:	  trying file=libpthread.so.0
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/lib/x86_64-linux-gnu/libpthread.so.0
+       712:	
+       712:	find library=libdl.so.2 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libdl.so.2
+       712:	  trying file=tls/haswell/x86_64/libdl.so.2
+       712:	  trying file=tls/haswell/libdl.so.2
+       712:	  trying file=tls/x86_64/libdl.so.2
+       712:	  trying file=tls/libdl.so.2
+       712:	  trying file=haswell/x86_64/libdl.so.2
+       712:	  trying file=haswell/libdl.so.2
+       712:	  trying file=x86_64/libdl.so.2
+       712:	  trying file=libdl.so.2
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/lib/x86_64-linux-gnu/libdl.so.2
+       712:	
+       712:	find library=libstdc++.so.6 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libstdc++.so.6
+       712:	  trying file=tls/haswell/x86_64/libstdc++.so.6
+       712:	  trying file=tls/haswell/libstdc++.so.6
+       712:	  trying file=tls/x86_64/libstdc++.so.6
+       712:	  trying file=tls/libstdc++.so.6
+       712:	  trying file=haswell/x86_64/libstdc++.so.6
+       712:	  trying file=haswell/libstdc++.so.6
+       712:	  trying file=x86_64/libstdc++.so.6
+       712:	  trying file=libstdc++.so.6
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+       712:	
+       712:	find library=libm.so.6 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libm.so.6
+       712:	  trying file=tls/haswell/x86_64/libm.so.6
+       712:	  trying file=tls/haswell/libm.so.6
+       712:	  trying file=tls/x86_64/libm.so.6
+       712:	  trying file=tls/libm.so.6
+       712:	  trying file=haswell/x86_64/libm.so.6
+       712:	  trying file=haswell/libm.so.6
+       712:	  trying file=x86_64/libm.so.6
+       712:	  trying file=libm.so.6
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/lib/x86_64-linux-gnu/libm.so.6
+       712:	
+       712:	find library=libgcc_s.so.1 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libgcc_s.so.1
+       712:	  trying file=tls/haswell/x86_64/libgcc_s.so.1
+       712:	  trying file=tls/haswell/libgcc_s.so.1
+       712:	  trying file=tls/x86_64/libgcc_s.so.1
+       712:	  trying file=tls/libgcc_s.so.1
+       712:	  trying file=haswell/x86_64/libgcc_s.so.1
+       712:	  trying file=haswell/libgcc_s.so.1
+       712:	  trying file=x86_64/libgcc_s.so.1
+       712:	  trying file=libgcc_s.so.1
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/lib/x86_64-linux-gnu/libgcc_s.so.1
+       712:	
+       712:	find library=libc.so.6 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libc.so.6
+       712:	  trying file=tls/haswell/x86_64/libc.so.6
+       712:	  trying file=tls/haswell/libc.so.6
+       712:	  trying file=tls/x86_64/libc.so.6
+       712:	  trying file=tls/libc.so.6
+       712:	  trying file=haswell/x86_64/libc.so.6
+       712:	  trying file=haswell/libc.so.6
+       712:	  trying file=x86_64/libc.so.6
+       712:	  trying file=libc.so.6
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/lib/x86_64-linux-gnu/libc.so.6
+       712:	
+       712:	
+       712:	calling init: /lib/x86_64-linux-gnu/libpthread.so.0
+       712:	
+       712:	
+       712:	calling init: /lib/x86_64-linux-gnu/libc.so.6
+       712:	
+       712:	
+       712:	calling init: /lib/x86_64-linux-gnu/libgcc_s.so.1
+       712:	
+       712:	
+       712:	calling init: /lib/x86_64-linux-gnu/libm.so.6
+       712:	
+       712:	
+       712:	calling init: /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+       712:	
+       712:	
+       712:	calling init: /lib/x86_64-linux-gnu/libdl.so.2
+       712:	
+       712:	
+       712:	calling init: /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so
+       712:	
+       712:	
+       712:	calling init: /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so
+       712:	
+       712:	
+       712:	calling init: /opt/intel/mkl/lib/intel64/libmkl_core.so
+       712:	
+       712:	find library=libittnotify.so [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libittnotify.so
+       712:	  trying file=tls/haswell/x86_64/libittnotify.so
+       712:	  trying file=tls/haswell/libittnotify.so
+       712:	  trying file=tls/x86_64/libittnotify.so
+       712:	  trying file=tls/libittnotify.so
+       712:	  trying file=haswell/x86_64/libittnotify.so
+       712:	  trying file=haswell/libittnotify.so
+       712:	  trying file=x86_64/libittnotify.so
+       712:	  trying file=libittnotify.so
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu/tls/haswell/x86_64:/lib/x86_64-linux-gnu/tls/haswell:/lib/x86_64-linux-gnu/tls/x86_64:/lib/x86_64-linux-gnu/tls:/lib/x86_64-linux-gnu/haswell/x86_64:/lib/x86_64-linux-gnu/haswell:/lib/x86_64-linux-gnu/x86_64:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64:/usr/lib/x86_64-linux-gnu/tls/haswell:/usr/lib/x86_64-linux-gnu/tls/x86_64:/usr/lib/x86_64-linux-gnu/tls:/usr/lib/x86_64-linux-gnu/haswell/x86_64:/usr/lib/x86_64-linux-gnu/haswell:/usr/lib/x86_64-linux-gnu/x86_64:/usr/lib/x86_64-linux-gnu:/lib/tls/haswell/x86_64:/lib/tls/haswell:/lib/tls/x86_64:/lib/tls:/lib/haswell/x86_64:/lib/haswell:/lib/x86_64:/lib:/usr/lib/tls/haswell/x86_64:/usr/lib/tls/haswell:/usr/lib/tls/x86_64:/usr/lib/tls:/usr/lib/haswell/x86_64:/usr/lib/haswell:/usr/lib/x86_64:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       712:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       712:	  trying file=/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       712:	  trying file=/lib/x86_64-linux-gnu/tls/libittnotify.so
+       712:	  trying file=/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       712:	  trying file=/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       712:	  trying file=/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       712:	  trying file=/lib/x86_64-linux-gnu/libittnotify.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/tls/libittnotify.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libittnotify.so
+       712:	  trying file=/lib/tls/haswell/x86_64/libittnotify.so
+       712:	  trying file=/lib/tls/haswell/libittnotify.so
+       712:	  trying file=/lib/tls/x86_64/libittnotify.so
+       712:	  trying file=/lib/tls/libittnotify.so
+       712:	  trying file=/lib/haswell/x86_64/libittnotify.so
+       712:	  trying file=/lib/haswell/libittnotify.so
+       712:	  trying file=/lib/x86_64/libittnotify.so
+       712:	  trying file=/lib/libittnotify.so
+       712:	  trying file=/usr/lib/tls/haswell/x86_64/libittnotify.so
+       712:	  trying file=/usr/lib/tls/haswell/libittnotify.so
+       712:	  trying file=/usr/lib/tls/x86_64/libittnotify.so
+       712:	  trying file=/usr/lib/tls/libittnotify.so
+       712:	  trying file=/usr/lib/haswell/x86_64/libittnotify.so
+       712:	  trying file=/usr/lib/haswell/libittnotify.so
+       712:	  trying file=/usr/lib/x86_64/libittnotify.so
+       712:	  trying file=/usr/lib/libittnotify.so
+       712:	
+       712:	
+       712:	calling init: /opt/intel/mkl/lib/intel64/libmkl_avx2.so
+       712:	
+       712:	
+       712:	calling init: /opt/intel/mkl/lib/intel64/libmkl_def.so
+       712:	
+       712:	
+       712:	calling init: /usr/lib/x86_64-linux-gnu/libgomp.so.1
+       712:	
+       712:	
+       712:	initialize program: dotnet
+       712:	
+       712:	
+       712:	transferring control: dotnet
+       712:	
+       712:	
+       712:	calling init: /usr/share/dotnet/host/fxr/3.1.2/libhostfxr.so
+       712:	
+       712:	
+       712:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libhostpolicy.so
+       712:	
+       712:	find library=librt.so.1 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/librt.so.1
+       712:	  trying file=tls/haswell/x86_64/librt.so.1
+       712:	  trying file=tls/haswell/librt.so.1
+       712:	  trying file=tls/x86_64/librt.so.1
+       712:	  trying file=tls/librt.so.1
+       712:	  trying file=haswell/x86_64/librt.so.1
+       712:	  trying file=haswell/librt.so.1
+       712:	  trying file=x86_64/librt.so.1
+       712:	  trying file=librt.so.1
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/lib/x86_64-linux-gnu/librt.so.1
+       712:	
+       712:	
+       712:	calling init: /lib/x86_64-linux-gnu/librt.so.1
+       712:	
+       712:	
+       712:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libcoreclr.so
+       712:	
+       712:	find library=liblttng-ust.so.0 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/liblttng-ust.so.0
+       712:	  trying file=tls/haswell/x86_64/liblttng-ust.so.0
+       712:	  trying file=tls/haswell/liblttng-ust.so.0
+       712:	  trying file=tls/x86_64/liblttng-ust.so.0
+       712:	  trying file=tls/liblttng-ust.so.0
+       712:	  trying file=haswell/x86_64/liblttng-ust.so.0
+       712:	  trying file=haswell/liblttng-ust.so.0
+       712:	  trying file=x86_64/liblttng-ust.so.0
+       712:	  trying file=liblttng-ust.so.0
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/liblttng-ust.so.0
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/liblttng-ust.so.0
+       712:	  trying file=/lib/liblttng-ust.so.0
+       712:	  trying file=/usr/lib/liblttng-ust.so.0
+       712:	
+       712:	find library=liblttng-ust-tracepoint.so.0 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/liblttng-ust-tracepoint.so.0
+       712:	  trying file=tls/haswell/x86_64/liblttng-ust-tracepoint.so.0
+       712:	  trying file=tls/haswell/liblttng-ust-tracepoint.so.0
+       712:	  trying file=tls/x86_64/liblttng-ust-tracepoint.so.0
+       712:	  trying file=tls/liblttng-ust-tracepoint.so.0
+       712:	  trying file=haswell/x86_64/liblttng-ust-tracepoint.so.0
+       712:	  trying file=haswell/liblttng-ust-tracepoint.so.0
+       712:	  trying file=x86_64/liblttng-ust-tracepoint.so.0
+       712:	  trying file=liblttng-ust-tracepoint.so.0
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       712:	  trying file=/lib/liblttng-ust-tracepoint.so.0
+       712:	  trying file=/usr/lib/liblttng-ust-tracepoint.so.0
+       712:	
+       712:	find library=liblttng-ust-tracepoint.so.0 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/liblttng-ust-tracepoint.so.0
+       712:	  trying file=tls/haswell/x86_64/liblttng-ust-tracepoint.so.0
+       712:	  trying file=tls/haswell/liblttng-ust-tracepoint.so.0
+       712:	  trying file=tls/x86_64/liblttng-ust-tracepoint.so.0
+       712:	  trying file=tls/liblttng-ust-tracepoint.so.0
+       712:	  trying file=haswell/x86_64/liblttng-ust-tracepoint.so.0
+       712:	  trying file=haswell/liblttng-ust-tracepoint.so.0
+       712:	  trying file=x86_64/liblttng-ust-tracepoint.so.0
+       712:	  trying file=liblttng-ust-tracepoint.so.0
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       712:	  trying file=/lib/liblttng-ust-tracepoint.so.0
+       712:	  trying file=/usr/lib/liblttng-ust-tracepoint.so.0
+       712:	
+       712:	find library=libnuma.so [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so
+       712:	  trying file=tls/haswell/x86_64/libnuma.so
+       712:	  trying file=tls/haswell/libnuma.so
+       712:	  trying file=tls/x86_64/libnuma.so
+       712:	  trying file=tls/libnuma.so
+       712:	  trying file=haswell/x86_64/libnuma.so
+       712:	  trying file=haswell/libnuma.so
+       712:	  trying file=x86_64/libnuma.so
+       712:	  trying file=libnuma.so
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libnuma.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so
+       712:	  trying file=/lib/libnuma.so
+       712:	  trying file=/usr/lib/libnuma.so
+       712:	
+       712:	find library=libnuma.so.1 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so.1
+       712:	  trying file=tls/haswell/x86_64/libnuma.so.1
+       712:	  trying file=tls/haswell/libnuma.so.1
+       712:	  trying file=tls/x86_64/libnuma.so.1
+       712:	  trying file=tls/libnuma.so.1
+       712:	  trying file=haswell/x86_64/libnuma.so.1
+       712:	  trying file=haswell/libnuma.so.1
+       712:	  trying file=x86_64/libnuma.so.1
+       712:	  trying file=libnuma.so.1
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libnuma.so.1
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so.1
+       712:	  trying file=/lib/libnuma.so.1
+       712:	  trying file=/usr/lib/libnuma.so.1
+       712:	
+       712:	
+       712:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libclrjit.so
+       712:	
+       712:	find library=libnuma.so [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so
+       712:	  trying file=tls/haswell/x86_64/libnuma.so
+       712:	  trying file=tls/haswell/libnuma.so
+       712:	  trying file=tls/x86_64/libnuma.so
+       712:	  trying file=tls/libnuma.so
+       712:	  trying file=haswell/x86_64/libnuma.so
+       712:	  trying file=haswell/libnuma.so
+       712:	  trying file=x86_64/libnuma.so
+       712:	  trying file=libnuma.so
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libnuma.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so
+       712:	  trying file=/lib/libnuma.so
+       712:	  trying file=/usr/lib/libnuma.so
+       712:	
+       712:	find library=libnuma.so.1 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so.1
+       712:	  trying file=tls/haswell/x86_64/libnuma.so.1
+       712:	  trying file=tls/haswell/libnuma.so.1
+       712:	  trying file=tls/x86_64/libnuma.so.1
+       712:	  trying file=tls/libnuma.so.1
+       712:	  trying file=haswell/x86_64/libnuma.so.1
+       712:	  trying file=haswell/libnuma.so.1
+       712:	  trying file=x86_64/libnuma.so.1
+       712:	  trying file=libnuma.so.1
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libnuma.so.1
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so.1
+       712:	  trying file=/lib/libnuma.so.1
+       712:	  trying file=/usr/lib/libnuma.so.1
+       712:	
+       712:	
+       712:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Native.so
+       712:	
+       712:	
+       712:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so
+       712:	
+       712:	find library=libicuuc.so.50 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.50
+       712:	  trying file=tls/haswell/x86_64/libicuuc.so.50
+       712:	  trying file=tls/haswell/libicuuc.so.50
+       712:	  trying file=tls/x86_64/libicuuc.so.50
+       712:	  trying file=tls/libicuuc.so.50
+       712:	  trying file=haswell/x86_64/libicuuc.so.50
+       712:	  trying file=haswell/libicuuc.so.50
+       712:	  trying file=x86_64/libicuuc.so.50
+       712:	  trying file=libicuuc.so.50
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.50
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.50
+       712:	  trying file=/lib/libicuuc.so.50
+       712:	  trying file=/usr/lib/libicuuc.so.50
+       712:	
+       712:	find library=libicuuc.so.70 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.70
+       712:	  trying file=tls/haswell/x86_64/libicuuc.so.70
+       712:	  trying file=tls/haswell/libicuuc.so.70
+       712:	  trying file=tls/x86_64/libicuuc.so.70
+       712:	  trying file=tls/libicuuc.so.70
+       712:	  trying file=haswell/x86_64/libicuuc.so.70
+       712:	  trying file=haswell/libicuuc.so.70
+       712:	  trying file=x86_64/libicuuc.so.70
+       712:	  trying file=libicuuc.so.70
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.70
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.70
+       712:	  trying file=/lib/libicuuc.so.70
+       712:	  trying file=/usr/lib/libicuuc.so.70
+       712:	
+       712:	find library=libicuuc.so.69 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.69
+       712:	  trying file=tls/haswell/x86_64/libicuuc.so.69
+       712:	  trying file=tls/haswell/libicuuc.so.69
+       712:	  trying file=tls/x86_64/libicuuc.so.69
+       712:	  trying file=tls/libicuuc.so.69
+       712:	  trying file=haswell/x86_64/libicuuc.so.69
+       712:	  trying file=haswell/libicuuc.so.69
+       712:	  trying file=x86_64/libicuuc.so.69
+       712:	  trying file=libicuuc.so.69
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.69
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.69
+       712:	  trying file=/lib/libicuuc.so.69
+       712:	  trying file=/usr/lib/libicuuc.so.69
+       712:	
+       712:	find library=libicuuc.so.68 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.68
+       712:	  trying file=tls/haswell/x86_64/libicuuc.so.68
+       712:	  trying file=tls/haswell/libicuuc.so.68
+       712:	  trying file=tls/x86_64/libicuuc.so.68
+       712:	  trying file=tls/libicuuc.so.68
+       712:	  trying file=haswell/x86_64/libicuuc.so.68
+       712:	  trying file=haswell/libicuuc.so.68
+       712:	  trying file=x86_64/libicuuc.so.68
+       712:	  trying file=libicuuc.so.68
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.68
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.68
+       712:	  trying file=/lib/libicuuc.so.68
+       712:	  trying file=/usr/lib/libicuuc.so.68
+       712:	
+       712:	find library=libicuuc.so.67 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.67
+       712:	  trying file=tls/haswell/x86_64/libicuuc.so.67
+       712:	  trying file=tls/haswell/libicuuc.so.67
+       712:	  trying file=tls/x86_64/libicuuc.so.67
+       712:	  trying file=tls/libicuuc.so.67
+       712:	  trying file=haswell/x86_64/libicuuc.so.67
+       712:	  trying file=haswell/libicuuc.so.67
+       712:	  trying file=x86_64/libicuuc.so.67
+       712:	  trying file=libicuuc.so.67
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.67
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.67
+       712:	  trying file=/lib/libicuuc.so.67
+       712:	  trying file=/usr/lib/libicuuc.so.67
+       712:	
+       712:	find library=libicuuc.so.66 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.66
+       712:	  trying file=tls/haswell/x86_64/libicuuc.so.66
+       712:	  trying file=tls/haswell/libicuuc.so.66
+       712:	  trying file=tls/x86_64/libicuuc.so.66
+       712:	  trying file=tls/libicuuc.so.66
+       712:	  trying file=haswell/x86_64/libicuuc.so.66
+       712:	  trying file=haswell/libicuuc.so.66
+       712:	  trying file=x86_64/libicuuc.so.66
+       712:	  trying file=libicuuc.so.66
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.66
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.66
+       712:	  trying file=/lib/libicuuc.so.66
+       712:	  trying file=/usr/lib/libicuuc.so.66
+       712:	
+       712:	find library=libicuuc.so.65 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.65
+       712:	  trying file=tls/haswell/x86_64/libicuuc.so.65
+       712:	  trying file=tls/haswell/libicuuc.so.65
+       712:	  trying file=tls/x86_64/libicuuc.so.65
+       712:	  trying file=tls/libicuuc.so.65
+       712:	  trying file=haswell/x86_64/libicuuc.so.65
+       712:	  trying file=haswell/libicuuc.so.65
+       712:	  trying file=x86_64/libicuuc.so.65
+       712:	  trying file=libicuuc.so.65
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.65
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.65
+       712:	  trying file=/lib/libicuuc.so.65
+       712:	  trying file=/usr/lib/libicuuc.so.65
+       712:	
+       712:	find library=libicuuc.so.64 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.64
+       712:	  trying file=tls/haswell/x86_64/libicuuc.so.64
+       712:	  trying file=tls/haswell/libicuuc.so.64
+       712:	  trying file=tls/x86_64/libicuuc.so.64
+       712:	  trying file=tls/libicuuc.so.64
+       712:	  trying file=haswell/x86_64/libicuuc.so.64
+       712:	  trying file=haswell/libicuuc.so.64
+       712:	  trying file=x86_64/libicuuc.so.64
+       712:	  trying file=libicuuc.so.64
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.64
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.64
+       712:	  trying file=/lib/libicuuc.so.64
+       712:	  trying file=/usr/lib/libicuuc.so.64
+       712:	
+       712:	find library=libicuuc.so.63 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.63
+       712:	  trying file=tls/haswell/x86_64/libicuuc.so.63
+       712:	  trying file=tls/haswell/libicuuc.so.63
+       712:	  trying file=tls/x86_64/libicuuc.so.63
+       712:	  trying file=tls/libicuuc.so.63
+       712:	  trying file=haswell/x86_64/libicuuc.so.63
+       712:	  trying file=haswell/libicuuc.so.63
+       712:	  trying file=x86_64/libicuuc.so.63
+       712:	  trying file=libicuuc.so.63
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.63
+       712:	
+       712:	find library=libicudata.so.63 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicudata.so.63
+       712:	  trying file=tls/haswell/x86_64/libicudata.so.63
+       712:	  trying file=tls/haswell/libicudata.so.63
+       712:	  trying file=tls/x86_64/libicudata.so.63
+       712:	  trying file=tls/libicudata.so.63
+       712:	  trying file=haswell/x86_64/libicudata.so.63
+       712:	  trying file=haswell/libicudata.so.63
+       712:	  trying file=x86_64/libicudata.so.63
+       712:	  trying file=libicudata.so.63
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicudata.so.63
+       712:	
+       712:	
+       712:	calling init: /usr/lib/x86_64-linux-gnu/libicudata.so.63
+       712:	
+       712:	
+       712:	calling init: /usr/lib/x86_64-linux-gnu/libicuuc.so.63
+       712:	
+       712:	/usr/lib/x86_64-linux-gnu/libicuuc.so.63: error: symbol lookup error: undefined symbol: u_strlen (fatal)
+       712:	find library=libicui18n.so.63 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libicui18n.so.63
+       712:	  trying file=tls/haswell/x86_64/libicui18n.so.63
+       712:	  trying file=tls/haswell/libicui18n.so.63
+       712:	  trying file=tls/x86_64/libicui18n.so.63
+       712:	  trying file=tls/libicui18n.so.63
+       712:	  trying file=haswell/x86_64/libicui18n.so.63
+       712:	  trying file=haswell/libicui18n.so.63
+       712:	  trying file=x86_64/libicui18n.so.63
+       712:	  trying file=libicui18n.so.63
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libicui18n.so.63
+       712:	
+       712:	
+       712:	calling init: /usr/lib/x86_64-linux-gnu/libicui18n.so.63
+       712:	
+       712:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_GetDefaultLocaleNameW (fatal)
+       712:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_GetTimeZoneDisplayNameW (fatal)
+       712:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_IndexOfOrdinalIgnoreCaseW (fatal)
+       712:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_CompareStringW (fatal)
+       725:	find library=libc.so.6 [0]; searching
+       725:	 search path=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64:/opt/intel/mkl/lib/intel64/tls/haswell:/opt/intel/mkl/lib/intel64/tls/x86_64:/opt/intel/mkl/lib/intel64/tls:/opt/intel/mkl/lib/intel64/haswell/x86_64:/opt/intel/mkl/lib/intel64/haswell:/opt/intel/mkl/lib/intel64/x86_64:/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       725:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64/libc.so.6
+       725:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/libc.so.6
+       725:	  trying file=/opt/intel/mkl/lib/intel64/tls/x86_64/libc.so.6
+       725:	  trying file=/opt/intel/mkl/lib/intel64/tls/libc.so.6
+       725:	  trying file=/opt/intel/mkl/lib/intel64/haswell/x86_64/libc.so.6
+       725:	  trying file=/opt/intel/mkl/lib/intel64/haswell/libc.so.6
+       725:	  trying file=/opt/intel/mkl/lib/intel64/x86_64/libc.so.6
+       725:	  trying file=/opt/intel/mkl/lib/intel64/libc.so.6
+       725:	  trying file=tls/haswell/x86_64/libc.so.6
+       725:	  trying file=tls/haswell/libc.so.6
+       725:	  trying file=tls/x86_64/libc.so.6
+       725:	  trying file=tls/libc.so.6
+       725:	  trying file=haswell/x86_64/libc.so.6
+       725:	  trying file=haswell/libc.so.6
+       725:	  trying file=x86_64/libc.so.6
+       725:	  trying file=libc.so.6
+       725:	 search cache=/etc/ld.so.cache
+       725:	  trying file=/lib/x86_64-linux-gnu/libc.so.6
+       725:	
+       725:	find library=libdl.so.2 [0]; searching
+       725:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       725:	  trying file=/opt/intel/mkl/lib/intel64/libdl.so.2
+       725:	  trying file=tls/haswell/x86_64/libdl.so.2
+       725:	  trying file=tls/haswell/libdl.so.2
+       725:	  trying file=tls/x86_64/libdl.so.2
+       725:	  trying file=tls/libdl.so.2
+       725:	  trying file=haswell/x86_64/libdl.so.2
+       725:	  trying file=haswell/libdl.so.2
+       725:	  trying file=x86_64/libdl.so.2
+       725:	  trying file=libdl.so.2
+       725:	 search cache=/etc/ld.so.cache
+       725:	  trying file=/lib/x86_64-linux-gnu/libdl.so.2
+       725:	
+       725:	find library=libpthread.so.0 [0]; searching
+       725:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       725:	  trying file=/opt/intel/mkl/lib/intel64/libpthread.so.0
+       725:	  trying file=tls/haswell/x86_64/libpthread.so.0
+       725:	  trying file=tls/haswell/libpthread.so.0
+       725:	  trying file=tls/x86_64/libpthread.so.0
+       725:	  trying file=tls/libpthread.so.0
+       725:	  trying file=haswell/x86_64/libpthread.so.0
+       725:	  trying file=haswell/libpthread.so.0
+       725:	  trying file=x86_64/libpthread.so.0
+       725:	  trying file=libpthread.so.0
+       725:	 search cache=/etc/ld.so.cache
+       725:	  trying file=/lib/x86_64-linux-gnu/libpthread.so.0
+       725:	
+       725:	
+       725:	calling init: /lib/x86_64-linux-gnu/libpthread.so.0
+       725:	
+       725:	
+       725:	calling init: /lib/x86_64-linux-gnu/libc.so.6
+       725:	
+       725:	
+       725:	calling init: /lib/x86_64-linux-gnu/libdl.so.2
+       725:	
+       725:	
+       725:	calling init: /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so
+       725:	
+       725:	
+       725:	calling init: /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so
+       725:	
+       725:	
+       725:	calling init: /opt/intel/mkl/lib/intel64/libmkl_core.so
+       725:	
+       725:	find library=libittnotify.so [0]; searching
+       725:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       725:	  trying file=/opt/intel/mkl/lib/intel64/libittnotify.so
+       725:	  trying file=tls/haswell/x86_64/libittnotify.so
+       725:	  trying file=tls/haswell/libittnotify.so
+       725:	  trying file=tls/x86_64/libittnotify.so
+       725:	  trying file=tls/libittnotify.so
+       725:	  trying file=haswell/x86_64/libittnotify.so
+       725:	  trying file=haswell/libittnotify.so
+       725:	  trying file=x86_64/libittnotify.so
+       725:	  trying file=libittnotify.so
+       725:	 search cache=/etc/ld.so.cache
+       725:	 search path=/lib/x86_64-linux-gnu/tls/haswell/x86_64:/lib/x86_64-linux-gnu/tls/haswell:/lib/x86_64-linux-gnu/tls/x86_64:/lib/x86_64-linux-gnu/tls:/lib/x86_64-linux-gnu/haswell/x86_64:/lib/x86_64-linux-gnu/haswell:/lib/x86_64-linux-gnu/x86_64:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64:/usr/lib/x86_64-linux-gnu/tls/haswell:/usr/lib/x86_64-linux-gnu/tls/x86_64:/usr/lib/x86_64-linux-gnu/tls:/usr/lib/x86_64-linux-gnu/haswell/x86_64:/usr/lib/x86_64-linux-gnu/haswell:/usr/lib/x86_64-linux-gnu/x86_64:/usr/lib/x86_64-linux-gnu:/lib/tls/haswell/x86_64:/lib/tls/haswell:/lib/tls/x86_64:/lib/tls:/lib/haswell/x86_64:/lib/haswell       712:	
+       712:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Security.Cryptography.Native.OpenSsl.so
+       712:	
+       712:	find library=libssl.so.1.1 [0]; searching
+:/lib/x86_64:/lib       712:	 search path=/opt/intel/mkl/lib/intel64:/usr/lib/tls/haswell/x86_64:/usr/lib/tls/haswell:tls/haswell/x86_64:tls/haswell:/usr/lib/tls/x86_64:/usr/lib/tls:tls/x86_64:tls:/usr/lib/haswell/x86_64:/usr/lib/haswell:haswell/x86_64:haswell:/usr/lib/x86_64:/usr/lib:x86_64:		(system search path)
+       725:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libssl.so.1.1
+       725:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       725:	  trying file=/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       712:	  trying file=tls/haswell/x86_64/libssl.so.1.1
+       725:	  trying file=/lib/x86_64-linux-gnu/tls/libittnotify.so
+       725:	  trying file=/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       712:	  trying file=tls/haswell/libssl.so.1.1
+       712:	  trying file=tls/x86_64/libssl.so.1.1
+       725:	  trying file=/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       725:	  trying file=/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       712:	  trying file=tls/libssl.so.1.1
+       712:	  trying file=haswell/x86_64/libssl.so.1.1
+       725:	  trying file=/lib/x86_64-linux-gnu/libittnotify.so
+       725:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       712:	  trying file=haswell/libssl.so.1.1
+       712:	  trying file=x86_64/libssl.so.1.1
+       725:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       725:	  trying file=/usr/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       712:	  trying file=libssl.so.1.1
+       725:	  trying file=/usr/lib/x86_64-linux-gnu/tls/libittnotify.so
+       725:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       712:	 search cache=/etc/ld.so.cache
+       725:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       725:	  trying file=/usr/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libssl.so.1.1
+       712:	
+       725:	  trying file=/usr/lib/x86_64-linux-gnu/libittnotify.so
+       725:	  trying file=/lib/tls/haswell/x86_64/libittnotify.so
+       712:	find library=libcrypto.so.1.1 [0]; searching
+       712:	 search path=       725:	  trying file=/lib/tls/haswell/libittnotify.so
+       725:	  trying file=/lib/tls/x86_64/libittnotify.so
+/opt/intel/mkl/lib/intel64:tls/haswell/x86_64       725:	  trying file=/lib/tls/libittnotify.so
+       725:	  trying file=/lib/haswell/x86_64/libittnotify.so
+:tls/haswell:tls/x86_64       725:	  trying file=/lib/haswell/libittnotify.so
+       725:	  trying file=/lib/x86_64/libittnotify.so
+:tls:haswell/x86_64       725:	  trying file=/lib/libittnotify.so
+       725:	  trying file=/usr/lib/tls/haswell/x86_64/libittnotify.so
+:haswell:x86_64       725:	  trying file=/usr/lib/tls/haswell/libittnotify.so
+       725:	  trying file=/usr/lib/tls/x86_64/libittnotify.so
+:		(LD_LIBRARY_PATH)
+       725:	  trying file=/usr/lib/tls/libittnotify.so
+       725:	  trying file=/usr/lib/haswell/x86_64/libittnotify.so
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libcrypto.so.1.1
+       712:	  trying file=tls/haswell/x86_64/libcrypto.so.1.1
+       725:	  trying file=/usr/lib/haswell/libittnotify.so
+       725:	  trying file=/usr/lib/x86_64/libittnotify.so
+       712:	  trying file=tls/haswell/libcrypto.so.1.1
+       712:	  trying file=tls/x86_64/libcrypto.so.1.1
+       725:	  trying file=/usr/lib/libittnotify.so
+       725:	
+       712:	  trying file=tls/libcrypto.so.1.1
+       712:	  trying file=haswell/x86_64/libcrypto.so.1.1
+       725:	
+       725:	calling init: /opt/intel/mkl/lib/intel64/libmkl_avx2.so
+       725:	
+       712:	  trying file=haswell/libcrypto.so.1.1
+       712:	  trying file=x86_64/libcrypto.so.1.1
+       725:	
+       725:	calling init: /opt/intel/mkl/lib/intel64/libmkl_def.so
+       725:	
+       712:	  trying file=libcrypto.so.1.1
+       725:	
+       725:	calling init: /usr/lib/x86_64-linux-gnu/libgomp.so.1
+       725:	
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+       725:	
+       725:	initialize program: uname
+       725:	
+       725:	
+       725:	transferring control: uname
+       725:	
+       712:	
+       712:	
+       712:	calling init: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+       712:	
+       712:	
+       712:	calling init: /usr/lib/x86_64-linux-gnu/libssl.so.1.1
+       712:	
+       712:	/usr/lib/x86_64-linux-gnu/libssl.so.1.1: error: symbol lookup error: undefined symbol: SSL_state (fatal)
+       712:	find library=libc.so [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libc.so
+       712:	  trying file=tls/haswell/x86_64/libc.so
+       712:	  trying file=tls/haswell/libc.so
+       712:	  trying file=tls/x86_64/libc.so
+       712:	  trying file=tls/libc.so
+       712:	  trying file=haswell/x86_64/libc.so
+       712:	  trying file=haswell/libc.so
+       712:	  trying file=x86_64/libc.so
+       712:	  trying file=libc.so
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/libc.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/libc.so
+       712:	find library=liblibc.so [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/liblibc.so
+       712:	  trying file=tls/haswell/x86_64/liblibc.so
+       712:	  trying file=tls/haswell/liblibc.so
+       712:	  trying file=tls/x86_64/liblibc.so
+       712:	  trying file=tls/liblibc.so
+       712:	  trying file=haswell/x86_64/liblibc.so
+       712:	  trying file=haswell/liblibc.so
+       712:	  trying file=x86_64/liblibc.so
+       712:	  trying file=liblibc.so
+       712:	 search cache=/etc/ld.so.cache
+       712:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       712:	  trying file=/lib/x86_64-linux-gnu/liblibc.so
+       712:	  trying file=/usr/lib/x86_64-linux-gnu/liblibc.so
+       712:	  trying file=/lib/liblibc.so
+       712:	  trying file=/usr/lib/liblibc.so
+       712:	
+       712:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_GetLocaleNameW (fatal)
+       712:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_GetLocaleInfoStringW (fatal)
+       712:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_IndexOfOrdinalIgnoreCaseW (fatal)
+       712:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_StartsWithW (fatal)
+       712:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_IndexOfW (fatal)
+       732:	find library=libc.so.6 [0]; searching
+       732:	 search path=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64:/opt/intel/mkl/lib/intel64/tls/haswell:/opt/intel/mkl/lib/intel64/tls/x86_64:/opt/intel/mkl/lib/intel64/tls:/opt/intel/mkl/lib/intel64/haswell/x86_64:/opt/intel/mkl/lib/intel64/haswell:/opt/intel/mkl/lib/intel64/x86_64:/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       732:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64/libc.so.6
+       732:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/libc.so.6
+       732:	  trying file=/opt/intel/mkl/lib/intel64/tls/x86_64/libc.so.6
+       732:	  trying file=/opt/intel/mkl/lib/intel64/tls/libc.so.6
+       732:	  trying file=/opt/intel/mkl/lib/intel64/haswell/x86_64/libc.so.6
+       732:	  trying file=/opt/intel/mkl/lib/intel64/haswell/libc.so.6
+       732:	  trying file=/opt/intel/mkl/lib/intel64/x86_64/libc.so.6
+       732:	  trying file=/opt/intel/mkl/lib/intel64/libc.so.6
+       732:	  trying file=tls/haswell/x86_64/libc.so.6
+       732:	  trying file=tls/haswell/libc.so.6
+       732:	  trying file=tls/x86_64/libc.so.6
+       732:	  trying file=tls/libc.so.6
+       732:	  trying file=haswell/x86_64/libc.so.6
+       732:	  trying file=haswell/libc.so.6
+       732:	  trying file=x86_64/libc.so.6
+       732:	  trying file=libc.so.6
+       732:	 search cache=/etc/ld.so.cache
+       732:	  trying file=/lib/x86_64-linux-gnu/libc.so.6
+       732:	
+       732:	find library=libdl.so.2 [0]; searching
+       732:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       732:	  trying file=/opt/intel/mkl/lib/intel64/libdl.so.2
+       732:	  trying file=tls/haswell/x86_64/libdl.so.2
+       732:	  trying file=tls/haswell/libdl.so.2
+       732:	  trying file=tls/x86_64/libdl.so.2
+       732:	  trying file=tls/libdl.so.2
+       732:	  trying file=haswell/x86_64/libdl.so.2
+       732:	  trying file=haswell/libdl.so.2
+       732:	  trying file=x86_64/libdl.so.2
+       732:	  trying file=libdl.so.2
+       732:	 search cache=/etc/ld.so.cache
+       732:	  trying file=/lib/x86_64-linux-gnu/libdl.so.2
+       732:	
+       732:	find library=libpthread.so.0 [0]; searching
+       732:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       732:	  trying file=/opt/intel/mkl/lib/intel64/libpthread.so.0
+       732:	  trying file=tls/haswell/x86_64/libpthread.so.0
+       732:	  trying file=tls/haswell/libpthread.so.0
+       732:	  trying file=tls/x86_64/libpthread.so.0
+       732:	  trying file=tls/libpthread.so.0
+       732:	  trying file=haswell/x86_64/libpthread.so.0
+       732:	  trying file=haswell/libpthread.so.0
+       732:	  trying file=x86_64/libpthread.so.0
+       732:	  trying file=libpthread.so.0
+       732:	 search cache=/etc/ld.so.cache
+       732:	  trying file=/lib/x86_64-linux-gnu/libpthread.so.0
+       732:	
+       732:	
+       732:	calling init: /lib/x86_64-linux-gnu/libpthread.so.0
+       732:	
+       732:	
+       732:	calling init: /lib/x86_64-linux-gnu/libc.so.6
+       732:	
+       732:	
+       732:	calling init: /lib/x86_64-linux-gnu/libdl.so.2
+       732:	
+       732:	
+       732:	calling init: /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so
+       732:	
+       732:	
+       732:	calling init: /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so
+       732:	
+       732:	
+       732:	calling init: /opt/intel/mkl/lib/intel64/libmkl_core.so
+       732:	
+       732:	find library=libittnotify.so [0]; searching
+       732:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       732:	  trying file=/opt/intel/mkl/lib/intel64/libittnotify.so
+       732:	  trying file=tls/haswell/x86_64/libittnotify.so
+       732:	  trying file=tls/haswell/libittnotify.so
+       732:	  trying file=tls/x86_64/libittnotify.so
+       732:	  trying file=tls/libittnotify.so
+       732:	  trying file=haswell/x86_64/libittnotify.so
+       732:	  trying file=haswell/libittnotify.so
+       732:	  trying file=x86_64/libittnotify.so
+       732:	  trying file=libittnotify.so
+       732:	 search cache=/etc/ld.so.cache
+       732:	 search path=/lib/x86_64-linux-gnu/tls/haswell/x86_64:/lib/x86_64-linux-gnu/tls/haswell:/lib/x86_64-linux-gnu/tls/x86_64:/lib/x86_64-linux-gnu/tls:/lib/x86_64-linux-gnu/haswell/x86_64:/lib/x86_64-linux-gnu/haswell:/lib/x86_64-linux-gnu/x86_64:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64:/usr/lib/x86_64-linux-gnu/tls/haswell:/usr/lib/x86_64-linux-gnu/tls/x86_64:/usr/lib/x86_64-linux-gnu/tls:/usr/lib/x86_64-linux-gnu/haswell/x86_64:/usr/lib/x86_64-linux-gnu/haswell:/usr/lib/x86_64-linux-gnu/x86_64:/usr/lib/x86_64-linux-gnu:/lib/tls/haswell/x86_64:/lib/tls/haswell:/lib/tls/x86_64:/lib/tls:/lib/haswell/x86_64:/lib/haswell:/lib/x86_64:/lib:/usr/lib/tls/haswell/x86_64:/usr/lib/tls/haswell:/usr/lib/tls/x86_64:/usr/lib/tls:/usr/lib/haswell/x86_64:/usr/lib/haswell:/usr/lib/x86_64:/usr/lib		(system search path)
+       732:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       732:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       732:	  trying file=/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       732:	  trying file=/lib/x86_64-linux-gnu/tls/libittnotify.so
+       732:	  trying file=/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       732:	  trying file=/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       732:	  trying file=/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       732:	  trying file=/lib/x86_64-linux-gnu/libittnotify.so
+       732:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       732:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       732:	  trying file=/usr/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       732:	  trying file=/usr/lib/x86_64-linux-gnu/tls/libittnotify.so
+       732:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       732:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       732:	  trying file=/usr/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       732:	  trying file=/usr/lib/x86_64-linux-gnu/libittnotify.so
+       732:	  trying file=/lib/tls/haswell/x86_64/libittnotify.so
+       732:	  trying file=/lib/tls/haswell/libittnotify.so
+       732:	  trying file=/lib/tls/x86_64/libittnotify.so
+       732:	  trying file=/lib/tls/libittnotify.so
+       732:	  trying file=/lib/haswell/x86_64/libittnotify.so
+       732:	  trying file=/lib/haswell/libittnotify.so
+       732:	  trying file=/lib/x86_64/libittnotify.so
+       732:	  trying file=/lib/libittnotify.so
+       732:	  trying file=/usr/lib/tls/haswell/x86_64/libittnotify.so
+       732:	  trying file=/usr/lib/tls/haswell/libittnotify.so
+       732:	  trying file=/usr/lib/tls/x86_64/libittnotify.so
+       732:	  trying file=/usr/lib/tls/libittnotify.so
+       732:	  trying file=/usr/lib/haswell/x86_64/libittnotify.so
+       732:	  trying file=/usr/lib/haswell/libittnotify.so
+       732:	  trying file=/usr/lib/x86_64/libittnotify.so
+       732:	  trying file=/usr/lib/libittnotify.so
+       732:	
+       732:	
+       732:	calling init: /opt/intel/mkl/lib/intel64/libmkl_avx2.so
+       732:	
+       732:	
+       732:	calling init: /opt/intel/mkl/lib/intel64/libmkl_def.so
+       732:	
+       732:	
+       732:	calling init: /usr/lib/x86_64-linux-gnu/libgomp.so.1
+       732:	
+       732:	
+       732:	initialize program: uname
+       732:	
+       732:	
+       732:	transferring control: uname
+       732:	
+       712:	find library=libz.so.1 [0]; searching
+       712:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       712:	  trying file=/opt/intel/mkl/lib/intel64/libz.so.1
+       712:	  trying file=tls/haswell/x86_64/libz.so.1
+       712:	  trying file=tls/haswell/libz.so.1
+       712:	  trying file=tls/x86_64/libz.so.1
+       712:	  trying file=tls/libz.so.1
+       712:	  trying file=haswell/x86_64/libz.so.1
+       712:	  trying file=haswell/libz.so.1
+       712:	  trying file=x86_64/libz.so.1
+       712:	  trying file=libz.so.1
+       712:	 search cache=/etc/ld.so.cache
+       712:	  trying file=/lib/x86_64-linux-gnu/libz.so.1
+       712:	
+       712:	
+       712:	calling init: /lib/x86_64-linux-gnu/libz.so.1
+       712:	
+       712:	
+       712:	calling init: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.IO.Compression.Native.so
+       712:	
+       695:	find library=libnss_files.so.2 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libnss_files.so.2
+       695:	  trying file=tls/haswell/x86_64/libnss_files.so.2
+       695:	  trying file=tls/haswell/libnss_files.so.2
+       695:	  trying file=tls/x86_64/libnss_files.so.2
+       695:	  trying file=tls/libnss_files.so.2
+       695:	  trying file=haswell/x86_64/libnss_files.so.2
+       695:	  trying file=haswell/libnss_files.so.2
+       695:	  trying file=x86_64/libnss_files.so.2
+       695:	  trying file=libnss_files.so.2
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/lib/x86_64-linux-gnu/libnss_files.so.2
+       695:	
+       695:	
+       695:	calling init: /lib/x86_64-linux-gnu/libnss_files.so.2
+       695:	
+       695:	find library=libnss_dns.so.2 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libnss_dns.so.2
+       695:	  trying file=tls/haswell/x86_64/libnss_dns.so.2
+       695:	  trying file=tls/haswell/libnss_dns.so.2
+       695:	  trying file=tls/x86_64/libnss_dns.so.2
+       695:	  trying file=tls/libnss_dns.so.2
+       695:	  trying file=haswell/x86_64/libnss_dns.so.2
+       695:	  trying file=haswell/libnss_dns.so.2
+       695:	  trying file=x86_64/libnss_dns.so.2
+       695:	  trying file=libnss_dns.so.2
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/lib/x86_64-linux-gnu/libnss_dns.so.2
+       695:	
+       695:	find library=libresolv.so.2 [0]; searching
+       695:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       695:	  trying file=/opt/intel/mkl/lib/intel64/libresolv.so.2
+       695:	  trying file=tls/haswell/x86_64/libresolv.so.2
+       695:	  trying file=tls/haswell/libresolv.so.2
+       695:	  trying file=tls/x86_64/libresolv.so.2
+       695:	  trying file=tls/libresolv.so.2
+       695:	  trying file=haswell/x86_64/libresolv.so.2
+       695:	  trying file=haswell/libresolv.so.2
+       695:	  trying file=x86_64/libresolv.so.2
+       695:	  trying file=libresolv.so.2
+       695:	 search cache=/etc/ld.so.cache
+       695:	  trying file=/lib/x86_64-linux-gnu/libresolv.so.2
+       695:	
+       695:	
+       695:	calling init: /lib/x86_64-linux-gnu/libresolv.so.2
+       695:	
+       695:	
+       695:	calling init: /lib/x86_64-linux-gnu/libnss_dns.so.2
+       695:	
+       712:	
+       712:	calling fini: /usr/share/dotnet/host/fxr/3.1.2/libhostfxr.so [0]
+       712:	
+       712:	
+       712:	calling fini: dotnet [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/lib/x86_64-linux-gnu/libgomp.so.1 [0]
+       712:	
+       712:	
+       712:	calling fini: /opt/intel/mkl/lib/intel64/libmkl_def.so [0]
+       712:	
+       712:	
+       712:	calling fini: /opt/intel/mkl/lib/intel64/libmkl_avx2.so [0]
+       712:	
+       712:	
+       712:	calling fini: /opt/intel/mkl/lib/intel64/libmkl_core.so [0]
+       712:	
+       712:	
+       712:	calling fini: /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so [0]
+       712:	
+       712:	
+       712:	calling fini: /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libhostpolicy.so [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libcoreclr.so [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libclrjit.so [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Native.so [0]
+       712:	
+       712:	
+       712:	calling fini: /lib/x86_64-linux-gnu/librt.so.1 [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/lib/x86_64-linux-gnu/libicui18n.so.63 [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/lib/x86_64-linux-gnu/libicuuc.so.63 [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/lib/x86_64-linux-gnu/libicudata.so.63 [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/lib/x86_64-linux-gnu/libstdc++.so.6 [0]
+       712:	
+       712:	
+       712:	calling fini: /lib/x86_64-linux-gnu/libgcc_s.so.1 [0]
+       712:	
+       712:	
+       712:	calling fini: /lib/x86_64-linux-gnu/libm.so.6 [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Security.Cryptography.Native.OpenSsl.so [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/lib/x86_64-linux-gnu/libssl.so.1.1 [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1 [0]
+       712:	
+       712:	
+       712:	calling fini: /lib/x86_64-linux-gnu/libdl.so.2 [0]
+       712:	
+       712:	
+       712:	calling fini: /lib/x86_64-linux-gnu/libpthread.so.0 [0]
+       712:	
+       712:	
+       712:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.IO.Compression.Native.so [0]
+       712:	
+       712:	
+       712:	calling fini: /lib/x86_64-linux-gnu/libz.so.1 [0]
+       712:	
+       740:	find library=libc.so.6 [0]; searching
+       740:	 search path=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64:/opt/intel/mkl/lib/intel64/tls/haswell:/opt/intel/mkl/lib/intel64/tls/x86_64:/opt/intel/mkl/lib/intel64/tls:/opt/intel/mkl/lib/intel64/haswell/x86_64:/opt/intel/mkl/lib/intel64/haswell:/opt/intel/mkl/lib/intel64/x86_64:/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       740:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64/libc.so.6
+       740:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/libc.so.6
+       740:	  trying file=/opt/intel/mkl/lib/intel64/tls/x86_64/libc.so.6
+       740:	  trying file=/opt/intel/mkl/lib/intel64/tls/libc.so.6
+       740:	  trying file=/opt/intel/mkl/lib/intel64/haswell/x86_64/libc.so.6
+       740:	  trying file=/opt/intel/mkl/lib/intel64/haswell/libc.so.6
+       740:	  trying file=/opt/intel/mkl/lib/intel64/x86_64/libc.so.6
+       740:	  trying file=/opt/intel/mkl/lib/intel64/libc.so.6
+       740:	  trying file=tls/haswell/x86_64/libc.so.6
+       740:	  trying file=tls/haswell/libc.so.6
+       740:	  trying file=tls/x86_64/libc.so.6
+       740:	  trying file=tls/libc.so.6
+       740:	  trying file=haswell/x86_64/libc.so.6
+       740:	  trying file=haswell/libc.so.6
+       740:	  trying file=x86_64/libc.so.6
+       740:	  trying file=libc.so.6
+       740:	 search cache=/etc/ld.so.cache
+       740:	  trying file=/lib/x86_64-linux-gnu/libc.so.6
+       740:	
+       740:	find library=libdl.so.2 [0]; searching
+       740:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       740:	  trying file=/opt/intel/mkl/lib/intel64/libdl.so.2
+       740:	  trying file=tls/haswell/x86_64/libdl.so.2
+       740:	  trying file=tls/haswell/libdl.so.2
+       740:	  trying file=tls/x86_64/libdl.so.2
+       740:	  trying file=tls/libdl.so.2
+       740:	  trying file=haswell/x86_64/libdl.so.2
+       740:	  trying file=haswell/libdl.so.2
+       740:	  trying file=x86_64/libdl.so.2
+       740:	  trying file=libdl.so.2
+       740:	 search cache=/etc/ld.so.cache
+       740:	  trying file=/lib/x86_64-linux-gnu/libdl.so.2
+       740:	
+       740:	find library=libpthread.so.0 [0]; searching
+       740:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       740:	  trying file=/opt/intel/mkl/lib/intel64/libpthread.so.0
+       740:	  trying file=tls/haswell/x86_64/libpthread.so.0
+       740:	  trying file=tls/haswell/libpthread.so.0
+       740:	  trying file=tls/x86_64/libpthread.so.0
+       740:	  trying file=tls/libpthread.so.0
+       740:	  trying file=haswell/x86_64/libpthread.so.0
+       740:	  trying file=haswell/libpthread.so.0
+       740:	  trying file=x86_64/libpthread.so.0
+       740:	  trying file=libpthread.so.0
+       740:	 search cache=/etc/ld.so.cache
+       740:	  trying file=/lib/x86_64-linux-gnu/libpthread.so.0
+       740:	
+       740:	
+       740:	calling init: /lib/x86_64-linux-gnu/libpthread.so.0
+       740:	
+       740:	
+       740:	calling init: /lib/x86_64-linux-gnu/libc.so.6
+       740:	
+       740:	
+       740:	calling init: /lib/x86_64-linux-gnu/libdl.so.2
+       740:	
+       740:	
+       740:	calling init: /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so
+       740:	
+       740:	
+       740:	calling init: /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so
+       740:	
+       740:	
+       740:	calling init: /opt/intel/mkl/lib/intel64/libmkl_core.so
+       740:	
+       740:	find library=libittnotify.so [0]; searching
+       740:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       740:	  trying file=/opt/intel/mkl/lib/intel64/libittnotify.so
+       740:	  trying file=tls/haswell/x86_64/libittnotify.so
+       740:	  trying file=tls/haswell/libittnotify.so
+       740:	  trying file=tls/x86_64/libittnotify.so
+       740:	  trying file=tls/libittnotify.so
+       740:	  trying file=haswell/x86_64/libittnotify.so
+       740:	  trying file=haswell/libittnotify.so
+       740:	  trying file=x86_64/libittnotify.so
+       740:	  trying file=libittnotify.so
+       740:	 search cache=/etc/ld.so.cache
+       740:	 search path=/lib/x86_64-linux-gnu/tls/haswell/x86_64:/lib/x86_64-linux-gnu/tls/haswell:/lib/x86_64-linux-gnu/tls/x86_64:/lib/x86_64-linux-gnu/tls:/lib/x86_64-linux-gnu/haswell/x86_64:/lib/x86_64-linux-gnu/haswell:/lib/x86_64-linux-gnu/x86_64:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64:/usr/lib/x86_64-linux-gnu/tls/haswell:/usr/lib/x86_64-linux-gnu/tls/x86_64:/usr/lib/x86_64-linux-gnu/tls:/usr/lib/x86_64-linux-gnu/haswell/x86_64:/usr/lib/x86_64-linux-gnu/haswell:/usr/lib/x86_64-linux-gnu/x86_64:/usr/lib/x86_64-linux-gnu:/lib/tls/haswell/x86_64:/lib/tls/haswell:/lib/tls/x86_64:/lib/tls:/lib/haswell/x86_64:/lib/haswell:/lib/x86_64:/lib:/usr/lib/tls/haswell/x86_64:/usr/lib/tls/haswell:/usr/lib/tls/x86_64:/usr/lib/tls:/usr/lib/haswell/x86_64:/usr/lib/haswell:/usr/lib/x86_64:/usr/lib		(system search path)
+       740:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       740:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       740:	  trying file=/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       740:	  trying file=/lib/x86_64-linux-gnu/tls/libittnotify.so
+       740:	  trying file=/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       740:	  trying file=/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       740:	  trying file=/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       740:	  trying file=/lib/x86_64-linux-gnu/libittnotify.so
+       740:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       740:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       740:	  trying file=/usr/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       740:	  trying file=/usr/lib/x86_64-linux-gnu/tls/libittnotify.so
+       740:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       740:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       740:	  trying file=/usr/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       740:	  trying file=/usr/lib/x86_64-linux-gnu/libittnotify.so
+       740:	  trying file=/lib/tls/haswell/x86_64/libittnotify.so
+       740:	  trying file=/lib/tls/haswell/libittnotify.so
+       740:	  trying file=/lib/tls/x86_64/libittnotify.so
+       740:	  trying file=/lib/tls/libittnotify.so
+       740:	  trying file=/lib/haswell/x86_64/libittnotify.so
+       740:	  trying file=/lib/haswell/libittnotify.so
+       740:	  trying file=/lib/x86_64/libittnotify.so
+       740:	  trying file=/lib/libittnotify.so
+       740:	  trying file=/usr/lib/tls/haswell/x86_64/libittnotify.so
+       740:	  trying file=/usr/lib/tls/haswell/libittnotify.so
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_ToAsciiW (fatal)
+       740:	  trying file=/usr/lib/tls/x86_64/libittnotify.so
+       740:	  trying file=/usr/lib/tls/libittnotify.so
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_ToAsciiW (fatal)
+       740:	  trying file=/usr/lib/haswell/x86_64/libittnotify.so
+       740:	  trying file=/usr/lib/haswell/libittnotify.so
+       740:	  trying file=/usr/lib/x86_64/libittnotify.so
+       740:	  trying file=/usr/lib/libittnotify.so
+       740:	
+       740:	
+       740:	calling init: /opt/intel/mkl/lib/intel64/libmkl_avx2.so
+       740:	
+       740:	
+       740:	calling init: /opt/intel/mkl/lib/intel64/libmkl_def.so
+       740:	
+       740:	
+       740:	calling init: /usr/lib/x86_64-linux-gnu/libgomp.so.1
+       740:	
+       740:	
+       740:	initialize program: uname
+       740:	
+       740:	
+       740:	transferring control: uname
+       740:	
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_ToAsciiW (fatal)
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_IndexOfOrdinalIgnoreCaseW (fatal)
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_IndexOfOrdinalIgnoreCaseW (fatal)
+       695:	/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_IndexOfW (fatal)
+       743:	find library=libpthread.so.0 [0]; searching
+       743:	 search path=/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/tls/haswell/x86_64:/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/tls/haswell:/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/tls/x86_64:/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/tls:/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/haswell/x86_64:/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/haswell:/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/x86_64:/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps		(RPATH from file /src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/FaissSharp.Test)
+       743:	  trying file=/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/tls/haswell/x86_64/libpthread.so.0
+       743:	  trying file=/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/tls/haswell/libpthread.so.0
+       743:	  trying file=/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/tls/x86_64/libpthread.so.0
+       743:	  trying file=/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/tls/libpthread.so.0
+       743:	  trying file=/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/haswell/x86_64/libpthread.so.0
+       743:	  trying file=/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/haswell/libpthread.so.0
+       743:	  trying file=/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/x86_64/libpthread.so.0
+       743:	  trying file=/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/netcoredeps/libpthread.so.0
+       743:	 search path=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64:/opt/intel/mkl/lib/intel64/tls/haswell:/opt/intel/mkl/lib/intel64/tls/x86_64:/opt/intel/mkl/lib/intel64/tls:/opt/intel/mkl/lib/intel64/haswell/x86_64:/opt/intel/mkl/lib/intel64/haswell:/opt/intel/mkl/lib/intel64/x86_64:/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/x86_64/libpthread.so.0
+       743:	  trying file=/opt/intel/mkl/lib/intel64/tls/haswell/libpthread.so.0
+       743:	  trying file=/opt/intel/mkl/lib/intel64/tls/x86_64/libpthread.so.0
+       743:	  trying file=/opt/intel/mkl/lib/intel64/tls/libpthread.so.0
+       743:	  trying file=/opt/intel/mkl/lib/intel64/haswell/x86_64/libpthread.so.0
+       743:	  trying file=/opt/intel/mkl/lib/intel64/haswell/libpthread.so.0
+       743:	  trying file=/opt/intel/mkl/lib/intel64/x86_64/libpthread.so.0
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libpthread.so.0
+       743:	  trying file=tls/haswell/x86_64/libpthread.so.0
+       743:	  trying file=tls/haswell/libpthread.so.0
+       743:	  trying file=tls/x86_64/libpthread.so.0
+       743:	  trying file=tls/libpthread.so.0
+       743:	  trying file=haswell/x86_64/libpthread.so.0
+       743:	  trying file=haswell/libpthread.so.0
+       743:	  trying file=x86_64/libpthread.so.0
+       743:	  trying file=libpthread.so.0
+       743:	 search cache=/etc/ld.so.cache
+       743:	  trying file=/lib/x86_64-linux-gnu/libpthread.so.0
+       743:	
+       743:	find library=libdl.so.2 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libdl.so.2
+       743:	  trying file=tls/haswell/x86_64/libdl.so.2
+       743:	  trying file=tls/haswell/libdl.so.2
+       743:	  trying file=tls/x86_64/libdl.so.2
+       743:	  trying file=tls/libdl.so.2
+       743:	  trying file=haswell/x86_64/libdl.so.2
+       743:	  trying file=haswell/libdl.so.2
+       743:	  trying file=x86_64/libdl.so.2
+       743:	  trying file=libdl.so.2
+       743:	 search cache=/etc/ld.so.cache
+       743:	  trying file=/lib/x86_64-linux-gnu/libdl.so.2
+       743:	
+       743:	find library=libstdc++.so.6 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libstdc++.so.6
+       743:	  trying file=tls/haswell/x86_64/libstdc++.so.6
+       743:	  trying file=tls/haswell/libstdc++.so.6
+       743:	  trying file=tls/x86_64/libstdc++.so.6
+       743:	  trying file=tls/libstdc++.so.6
+       743:	  trying file=haswell/x86_64/libstdc++.so.6
+       743:	  trying file=haswell/libstdc++.so.6
+       743:	  trying file=x86_64/libstdc++.so.6
+       743:	  trying file=libstdc++.so.6
+       743:	 search cache=/etc/ld.so.cache
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+       743:	
+       743:	find library=libm.so.6 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libm.so.6
+       743:	  trying file=tls/haswell/x86_64/libm.so.6
+       743:	  trying file=tls/haswell/libm.so.6
+       743:	  trying file=tls/x86_64/libm.so.6
+       743:	  trying file=tls/libm.so.6
+       743:	  trying file=haswell/x86_64/libm.so.6
+       743:	  trying file=haswell/libm.so.6
+       743:	  trying file=x86_64/libm.so.6
+       743:	  trying file=libm.so.6
+       743:	 search cache=/etc/ld.so.cache
+       743:	  trying file=/lib/x86_64-linux-gnu/libm.so.6
+       743:	
+       743:	find library=libgcc_s.so.1 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libgcc_s.so.1
+       743:	  trying file=tls/haswell/x86_64/libgcc_s.so.1
+       743:	  trying file=tls/haswell/libgcc_s.so.1
+       743:	  trying file=tls/x86_64/libgcc_s.so.1
+       743:	  trying file=tls/libgcc_s.so.1
+       743:	  trying file=haswell/x86_64/libgcc_s.so.1
+       743:	  trying file=haswell/libgcc_s.so.1
+       743:	  trying file=x86_64/libgcc_s.so.1
+       743:	  trying file=libgcc_s.so.1
+       743:	 search cache=/etc/ld.so.cache
+       743:	  trying file=/lib/x86_64-linux-gnu/libgcc_s.so.1
+       743:	
+       743:	find library=libc.so.6 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libc.so.6
+       743:	  trying file=tls/haswell/x86_64/libc.so.6
+       743:	  trying file=tls/haswell/libc.so.6
+       743:	  trying file=tls/x86_64/libc.so.6
+       743:	  trying file=tls/libc.so.6
+       743:	  trying file=haswell/x86_64/libc.so.6
+       743:	  trying file=haswell/libc.so.6
+       743:	  trying file=x86_64/libc.so.6
+       743:	  trying file=libc.so.6
+       743:	 search cache=/etc/ld.so.cache
+       743:	  trying file=/lib/x86_64-linux-gnu/libc.so.6
+       743:	
+       743:	
+       743:	calling init: /lib/x86_64-linux-gnu/libpthread.so.0
+       743:	
+       743:	
+       743:	calling init: /lib/x86_64-linux-gnu/libc.so.6
+       743:	
+       743:	
+       743:	calling init: /lib/x86_64-linux-gnu/libgcc_s.so.1
+       743:	
+       743:	
+       743:	calling init: /lib/x86_64-linux-gnu/libm.so.6
+       743:	
+       743:	
+       743:	calling init: /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+       743:	
+       743:	
+       743:	calling init: /lib/x86_64-linux-gnu/libdl.so.2
+       743:	
+       743:	
+       743:	calling init: /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so
+       743:	
+       743:	
+       743:	calling init: /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so
+       743:	
+       743:	
+       743:	calling init: /opt/intel/mkl/lib/intel64/libmkl_core.so
+       743:	
+       743:	find library=libittnotify.so [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libittnotify.so
+       743:	  trying file=tls/haswell/x86_64/libittnotify.so
+       743:	  trying file=tls/haswell/libittnotify.so
+       743:	  trying file=tls/x86_64/libittnotify.so
+       743:	  trying file=tls/libittnotify.so
+       743:	  trying file=haswell/x86_64/libittnotify.so
+       743:	  trying file=haswell/libittnotify.so
+       743:	  trying file=x86_64/libittnotify.so
+       743:	  trying file=libittnotify.so
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu/tls/haswell/x86_64:/lib/x86_64-linux-gnu/tls/haswell:/lib/x86_64-linux-gnu/tls/x86_64:/lib/x86_64-linux-gnu/tls:/lib/x86_64-linux-gnu/haswell/x86_64:/lib/x86_64-linux-gnu/haswell:/lib/x86_64-linux-gnu/x86_64:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64:/usr/lib/x86_64-linux-gnu/tls/haswell:/usr/lib/x86_64-linux-gnu/tls/x86_64:/usr/lib/x86_64-linux-gnu/tls:/usr/lib/x86_64-linux-gnu/haswell/x86_64:/usr/lib/x86_64-linux-gnu/haswell:/usr/lib/x86_64-linux-gnu/x86_64:/usr/lib/x86_64-linux-gnu:/lib/tls/haswell/x86_64:/lib/tls/haswell:/lib/tls/x86_64:/lib/tls:/lib/haswell/x86_64:/lib/haswell:/lib/x86_64:/lib:/usr/lib/tls/haswell/x86_64:/usr/lib/tls/haswell:/usr/lib/tls/x86_64:/usr/lib/tls:/usr/lib/haswell/x86_64:/usr/lib/haswell:/usr/lib/x86_64:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       743:	  trying file=/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       743:	  trying file=/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       743:	  trying file=/lib/x86_64-linux-gnu/tls/libittnotify.so
+       743:	  trying file=/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       743:	  trying file=/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       743:	  trying file=/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       743:	  trying file=/lib/x86_64-linux-gnu/libittnotify.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/x86_64/libittnotify.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/tls/haswell/libittnotify.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/tls/x86_64/libittnotify.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/tls/libittnotify.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/x86_64/libittnotify.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/haswell/libittnotify.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/x86_64/libittnotify.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libittnotify.so
+       743:	  trying file=/lib/tls/haswell/x86_64/libittnotify.so
+       743:	  trying file=/lib/tls/haswell/libittnotify.so
+       743:	  trying file=/lib/tls/x86_64/libittnotify.so
+       743:	  trying file=/lib/tls/libittnotify.so
+       743:	  trying file=/lib/haswell/x86_64/libittnotify.so
+       743:	  trying file=/lib/haswell/libittnotify.so
+       743:	  trying file=/lib/x86_64/libittnotify.so
+       743:	  trying file=/lib/libittnotify.so
+       743:	  trying file=/usr/lib/tls/haswell/x86_64/libittnotify.so
+       743:	  trying file=/usr/lib/tls/haswell/libittnotify.so
+       743:	  trying file=/usr/lib/tls/x86_64/libittnotify.so
+       743:	  trying file=/usr/lib/tls/libittnotify.so
+       743:	  trying file=/usr/lib/haswell/x86_64/libittnotify.so
+       743:	  trying file=/usr/lib/haswell/libittnotify.so
+       743:	  trying file=/usr/lib/x86_64/libittnotify.so
+       743:	  trying file=/usr/lib/libittnotify.so
+       743:	
+       743:	
+       743:	calling init: /opt/intel/mkl/lib/intel64/libmkl_avx2.so
+       743:	
+       743:	
+       743:	calling init: /opt/intel/mkl/lib/intel64/libmkl_def.so
+       743:	
+       743:	
+       743:	calling init: /usr/lib/x86_64-linux-gnu/libgomp.so.1
+       743:	
+       743:	
+       743:	initialize program: /src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/FaissSharp.Test
+       743:	
+       743:	
+       743:	transferring control: /src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/FaissSharp.Test
+       743:	
+       743:	
+       743:	calling init: /src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/libhostfxr.so
+       743:	
+       743:	
+       743:	calling init: /src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/libhostpolicy.so
+       743:	
+       743:	find library=librt.so.1 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/librt.so.1
+       743:	  trying file=tls/haswell/x86_64/librt.so.1
+       743:	  trying file=tls/haswell/librt.so.1
+       743:	  trying file=tls/x86_64/librt.so.1
+       743:	  trying file=tls/librt.so.1
+       743:	  trying file=haswell/x86_64/librt.so.1
+       743:	  trying file=haswell/librt.so.1
+       743:	  trying file=x86_64/librt.so.1
+       743:	  trying file=librt.so.1
+       743:	 search cache=/etc/ld.so.cache
+       743:	  trying file=/lib/x86_64-linux-gnu/librt.so.1
+       743:	
+       743:	
+       743:	calling init: /lib/x86_64-linux-gnu/librt.so.1
+       743:	
+       743:	
+       743:	calling init: /src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/libcoreclr.so
+       743:	
+       743:	find library=liblttng-ust.so.0 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/liblttng-ust.so.0
+       743:	  trying file=tls/haswell/x86_64/liblttng-ust.so.0
+       743:	  trying file=tls/haswell/liblttng-ust.so.0
+       743:	  trying file=tls/x86_64/liblttng-ust.so.0
+       743:	  trying file=tls/liblttng-ust.so.0
+       743:	  trying file=haswell/x86_64/liblttng-ust.so.0
+       743:	  trying file=haswell/liblttng-ust.so.0
+       743:	  trying file=x86_64/liblttng-ust.so.0
+       743:	  trying file=liblttng-ust.so.0
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/liblttng-ust.so.0
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/liblttng-ust.so.0
+       743:	  trying file=/lib/liblttng-ust.so.0
+       743:	  trying file=/usr/lib/liblttng-ust.so.0
+       743:	
+       743:	find library=liblttng-ust-tracepoint.so.0 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/liblttng-ust-tracepoint.so.0
+       743:	  trying file=tls/haswell/x86_64/liblttng-ust-tracepoint.so.0
+       743:	  trying file=tls/haswell/liblttng-ust-tracepoint.so.0
+       743:	  trying file=tls/x86_64/liblttng-ust-tracepoint.so.0
+       743:	  trying file=tls/liblttng-ust-tracepoint.so.0
+       743:	  trying file=haswell/x86_64/liblttng-ust-tracepoint.so.0
+       743:	  trying file=haswell/liblttng-ust-tracepoint.so.0
+       743:	  trying file=x86_64/liblttng-ust-tracepoint.so.0
+       743:	  trying file=liblttng-ust-tracepoint.so.0
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       743:	  trying file=/lib/liblttng-ust-tracepoint.so.0
+       743:	  trying file=/usr/lib/liblttng-ust-tracepoint.so.0
+       743:	
+       743:	find library=liblttng-ust-tracepoint.so.0 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/liblttng-ust-tracepoint.so.0
+       743:	  trying file=tls/haswell/x86_64/liblttng-ust-tracepoint.so.0
+       743:	  trying file=tls/haswell/liblttng-ust-tracepoint.so.0
+       743:	  trying file=tls/x86_64/liblttng-ust-tracepoint.so.0
+       743:	  trying file=tls/liblttng-ust-tracepoint.so.0
+       743:	  trying file=haswell/x86_64/liblttng-ust-tracepoint.so.0
+       743:	  trying file=haswell/liblttng-ust-tracepoint.so.0
+       743:	  trying file=x86_64/liblttng-ust-tracepoint.so.0
+       743:	  trying file=liblttng-ust-tracepoint.so.0
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/liblttng-ust-tracepoint.so.0
+       743:	  trying file=/lib/liblttng-ust-tracepoint.so.0
+       743:	  trying file=/usr/lib/liblttng-ust-tracepoint.so.0
+       743:	
+       743:	find library=libnuma.so [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so
+       743:	  trying file=tls/haswell/x86_64/libnuma.so
+       743:	  trying file=tls/haswell/libnuma.so
+       743:	  trying file=tls/x86_64/libnuma.so
+       743:	  trying file=tls/libnuma.so
+       743:	  trying file=haswell/x86_64/libnuma.so
+       743:	  trying file=haswell/libnuma.so
+       743:	  trying file=x86_64/libnuma.so
+       743:	  trying file=libnuma.so
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libnuma.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so
+       743:	  trying file=/lib/libnuma.so
+       743:	  trying file=/usr/lib/libnuma.so
+       743:	
+       743:	find library=libnuma.so.1 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so.1
+       743:	  trying file=tls/haswell/x86_64/libnuma.so.1
+       743:	  trying file=tls/haswell/libnuma.so.1
+       743:	  trying file=tls/x86_64/libnuma.so.1
+       743:	  trying file=tls/libnuma.so.1
+       743:	  trying file=haswell/x86_64/libnuma.so.1
+       743:	  trying file=haswell/libnuma.so.1
+       743:	  trying file=x86_64/libnuma.so.1
+       743:	  trying file=libnuma.so.1
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libnuma.so.1
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so.1
+       743:	  trying file=/lib/libnuma.so.1
+       743:	  trying file=/usr/lib/libnuma.so.1
+       743:	
+       743:	
+       743:	calling init: /src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/libclrjit.so
+       743:	
+       743:	find library=libnuma.so [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so
+       743:	  trying file=tls/haswell/x86_64/libnuma.so
+       743:	  trying file=tls/haswell/libnuma.so
+       743:	  trying file=tls/x86_64/libnuma.so
+       743:	  trying file=tls/libnuma.so
+       743:	  trying file=haswell/x86_64/libnuma.so
+       743:	  trying file=haswell/libnuma.so
+       743:	  trying file=x86_64/libnuma.so
+       743:	  trying file=libnuma.so
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libnuma.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so
+       743:	  trying file=/lib/libnuma.so
+       743:	  trying file=/usr/lib/libnuma.so
+       743:	
+       743:	find library=libnuma.so.1 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libnuma.so.1
+       743:	  trying file=tls/haswell/x86_64/libnuma.so.1
+       743:	  trying file=tls/haswell/libnuma.so.1
+       743:	  trying file=tls/x86_64/libnuma.so.1
+       743:	  trying file=tls/libnuma.so.1
+       743:	  trying file=haswell/x86_64/libnuma.so.1
+       743:	  trying file=haswell/libnuma.so.1
+       743:	  trying file=x86_64/libnuma.so.1
+       743:	  trying file=libnuma.so.1
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libnuma.so.1
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libnuma.so.1
+       743:	  trying file=/lib/libnuma.so.1
+       743:	  trying file=/usr/lib/libnuma.so.1
+       743:	
+       743:	
+       743:	calling init: /src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/System.Native.so
+       743:	
+       743:	find library=faiss_c.so [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/faiss_c.so
+       743:	  trying file=tls/haswell/x86_64/faiss_c.so
+       743:	  trying file=tls/haswell/faiss_c.so
+       743:	  trying file=tls/x86_64/faiss_c.so
+       743:	  trying file=tls/faiss_c.so
+       743:	  trying file=haswell/x86_64/faiss_c.so
+       743:	  trying file=haswell/faiss_c.so
+       743:	  trying file=x86_64/faiss_c.so
+       743:	  trying file=faiss_c.so
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/faiss_c.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/faiss_c.so
+       743:	  trying file=/lib/faiss_c.so
+       743:	  trying file=/usr/lib/faiss_c.so
+       743:	
+       743:	find library=libfaiss_c.so [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libfaiss_c.so
+       743:	  trying file=tls/haswell/x86_64/libfaiss_c.so
+       743:	  trying file=tls/haswell/libfaiss_c.so
+       743:	  trying file=tls/x86_64/libfaiss_c.so
+       743:	  trying file=tls/libfaiss_c.so
+       743:	  trying file=haswell/x86_64/libfaiss_c.so
+       743:	  trying file=haswell/libfaiss_c.so
+       743:	  trying file=x86_64/libfaiss_c.so
+       743:	  trying file=libfaiss_c.so
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libfaiss_c.so
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libfaiss_c.so
+       743:	  trying file=/lib/libfaiss_c.so
+       743:	  trying file=/usr/lib/libfaiss_c.so
+       743:	
+       743:	find library=faiss_c [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/faiss_c
+       743:	  trying file=tls/haswell/x86_64/faiss_c
+       743:	  trying file=tls/haswell/faiss_c
+       743:	  trying file=tls/x86_64/faiss_c
+       743:	  trying file=tls/faiss_c
+       743:	  trying file=haswell/x86_64/faiss_c
+       743:	  trying file=haswell/faiss_c
+       743:	  trying file=x86_64/faiss_c
+       743:	  trying file=faiss_c
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/faiss_c
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/faiss_c
+       743:	  trying file=/lib/faiss_c
+       743:	  trying file=/usr/lib/faiss_c
+       743:	
+       743:	find library=libfaiss_c [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libfaiss_c
+       743:	  trying file=tls/haswell/x86_64/libfaiss_c
+       743:	  trying file=tls/haswell/libfaiss_c
+       743:	  trying file=tls/x86_64/libfaiss_c
+       743:	  trying file=tls/libfaiss_c
+       743:	  trying file=haswell/x86_64/libfaiss_c
+       743:	  trying file=haswell/libfaiss_c
+       743:	  trying file=x86_64/libfaiss_c
+       743:	  trying file=libfaiss_c
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libfaiss_c
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libfaiss_c
+       743:	  trying file=/lib/libfaiss_c
+       743:	  trying file=/usr/lib/libfaiss_c
+       743:	
+       743:	
+       743:	calling init: /src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/System.Globalization.Native.so
+       743:	
+       743:	find library=libicuuc.so.50 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.50
+       743:	  trying file=tls/haswell/x86_64/libicuuc.so.50
+       743:	  trying file=tls/haswell/libicuuc.so.50
+       743:	  trying file=tls/x86_64/libicuuc.so.50
+       743:	  trying file=tls/libicuuc.so.50
+       743:	  trying file=haswell/x86_64/libicuuc.so.50
+       743:	  trying file=haswell/libicuuc.so.50
+       743:	  trying file=x86_64/libicuuc.so.50
+       743:	  trying file=libicuuc.so.50
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.50
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.50
+       743:	  trying file=/lib/libicuuc.so.50
+       743:	  trying file=/usr/lib/libicuuc.so.50
+       743:	
+       743:	find library=libicuuc.so.70 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.70
+       743:	  trying file=tls/haswell/x86_64/libicuuc.so.70
+       743:	  trying file=tls/haswell/libicuuc.so.70
+       743:	  trying file=tls/x86_64/libicuuc.so.70
+       743:	  trying file=tls/libicuuc.so.70
+       743:	  trying file=haswell/x86_64/libicuuc.so.70
+       743:	  trying file=haswell/libicuuc.so.70
+       743:	  trying file=x86_64/libicuuc.so.70
+       743:	  trying file=libicuuc.so.70
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.70
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.70
+       743:	  trying file=/lib/libicuuc.so.70
+       743:	  trying file=/usr/lib/libicuuc.so.70
+       743:	
+       743:	find library=libicuuc.so.69 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.69
+       743:	  trying file=tls/haswell/x86_64/libicuuc.so.69
+       743:	  trying file=tls/haswell/libicuuc.so.69
+       743:	  trying file=tls/x86_64/libicuuc.so.69
+       743:	  trying file=tls/libicuuc.so.69
+       743:	  trying file=haswell/x86_64/libicuuc.so.69
+       743:	  trying file=haswell/libicuuc.so.69
+       743:	  trying file=x86_64/libicuuc.so.69
+       743:	  trying file=libicuuc.so.69
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.69
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.69
+       743:	  trying file=/lib/libicuuc.so.69
+       743:	  trying file=/usr/lib/libicuuc.so.69
+       743:	
+       743:	find library=libicuuc.so.68 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.68
+       743:	  trying file=tls/haswell/x86_64/libicuuc.so.68
+       743:	  trying file=tls/haswell/libicuuc.so.68
+       743:	  trying file=tls/x86_64/libicuuc.so.68
+       743:	  trying file=tls/libicuuc.so.68
+       743:	  trying file=haswell/x86_64/libicuuc.so.68
+       743:	  trying file=haswell/libicuuc.so.68
+       743:	  trying file=x86_64/libicuuc.so.68
+       743:	  trying file=libicuuc.so.68
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.68
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.68
+       743:	  trying file=/lib/libicuuc.so.68
+       743:	  trying file=/usr/lib/libicuuc.so.68
+       743:	
+       743:	find library=libicuuc.so.67 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.67
+       743:	  trying file=tls/haswell/x86_64/libicuuc.so.67
+       743:	  trying file=tls/haswell/libicuuc.so.67
+       743:	  trying file=tls/x86_64/libicuuc.so.67
+       743:	  trying file=tls/libicuuc.so.67
+       743:	  trying file=haswell/x86_64/libicuuc.so.67
+       743:	  trying file=haswell/libicuuc.so.67
+       743:	  trying file=x86_64/libicuuc.so.67
+       743:	  trying file=libicuuc.so.67
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.67
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.67
+       743:	  trying file=/lib/libicuuc.so.67
+       743:	  trying file=/usr/lib/libicuuc.so.67
+       743:	
+       743:	find library=libicuuc.so.66 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.66
+       743:	  trying file=tls/haswell/x86_64/libicuuc.so.66
+       743:	  trying file=tls/haswell/libicuuc.so.66
+       743:	  trying file=tls/x86_64/libicuuc.so.66
+       743:	  trying file=tls/libicuuc.so.66
+       743:	  trying file=haswell/x86_64/libicuuc.so.66
+       743:	  trying file=haswell/libicuuc.so.66
+       743:	  trying file=x86_64/libicuuc.so.66
+       743:	  trying file=libicuuc.so.66
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.66
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.66
+       743:	  trying file=/lib/libicuuc.so.66
+       743:	  trying file=/usr/lib/libicuuc.so.66
+       743:	
+       743:	find library=libicuuc.so.65 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.65
+       743:	  trying file=tls/haswell/x86_64/libicuuc.so.65
+       743:	  trying file=tls/haswell/libicuuc.so.65
+       743:	  trying file=tls/x86_64/libicuuc.so.65
+       743:	  trying file=tls/libicuuc.so.65
+       743:	  trying file=haswell/x86_64/libicuuc.so.65
+       743:	  trying file=haswell/libicuuc.so.65
+       743:	  trying file=x86_64/libicuuc.so.65
+       743:	  trying file=libicuuc.so.65
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.65
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.65
+       743:	  trying file=/lib/libicuuc.so.65
+       743:	  trying file=/usr/lib/libicuuc.so.65
+       743:	
+       743:	find library=libicuuc.so.64 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.64
+       743:	  trying file=tls/haswell/x86_64/libicuuc.so.64
+       743:	  trying file=tls/haswell/libicuuc.so.64
+       743:	  trying file=tls/x86_64/libicuuc.so.64
+       743:	  trying file=tls/libicuuc.so.64
+       743:	  trying file=haswell/x86_64/libicuuc.so.64
+       743:	  trying file=haswell/libicuuc.so.64
+       743:	  trying file=x86_64/libicuuc.so.64
+       743:	  trying file=libicuuc.so.64
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/libicuuc.so.64
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.64
+       743:	  trying file=/lib/libicuuc.so.64
+       743:	  trying file=/usr/lib/libicuuc.so.64
+       743:	
+       743:	find library=libicuuc.so.63 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicuuc.so.63
+       743:	  trying file=tls/haswell/x86_64/libicuuc.so.63
+       743:	  trying file=tls/haswell/libicuuc.so.63
+       743:	  trying file=tls/x86_64/libicuuc.so.63
+       743:	  trying file=tls/libicuuc.so.63
+       743:	  trying file=haswell/x86_64/libicuuc.so.63
+       743:	  trying file=haswell/libicuuc.so.63
+       743:	  trying file=x86_64/libicuuc.so.63
+       743:	  trying file=libicuuc.so.63
+       743:	 search cache=/etc/ld.so.cache
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicuuc.so.63
+       743:	
+       743:	find library=libicudata.so.63 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicudata.so.63
+       743:	  trying file=tls/haswell/x86_64/libicudata.so.63
+       743:	  trying file=tls/haswell/libicudata.so.63
+       743:	  trying file=tls/x86_64/libicudata.so.63
+       743:	  trying file=tls/libicudata.so.63
+       743:	  trying file=haswell/x86_64/libicudata.so.63
+       743:	  trying file=haswell/libicudata.so.63
+       743:	  trying file=x86_64/libicudata.so.63
+       743:	  trying file=libicudata.so.63
+       743:	 search cache=/etc/ld.so.cache
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicudata.so.63
+       743:	
+       743:	
+       743:	calling init: /usr/lib/x86_64-linux-gnu/libicudata.so.63
+       743:	
+       743:	
+       743:	calling init: /usr/lib/x86_64-linux-gnu/libicuuc.so.63
+       743:	
+       743:	/usr/lib/x86_64-linux-gnu/libicuuc.so.63: error: symbol lookup error: undefined symbol: u_strlen (fatal)
+       743:	find library=libicui18n.so.63 [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/libicui18n.so.63
+       743:	  trying file=tls/haswell/x86_64/libicui18n.so.63
+       743:	  trying file=tls/haswell/libicui18n.so.63
+       743:	  trying file=tls/x86_64/libicui18n.so.63
+       743:	  trying file=tls/libicui18n.so.63
+       743:	  trying file=haswell/x86_64/libicui18n.so.63
+       743:	  trying file=haswell/libicui18n.so.63
+       743:	  trying file=x86_64/libicui18n.so.63
+       743:	  trying file=libicui18n.so.63
+       743:	 search cache=/etc/ld.so.cache
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/libicui18n.so.63
+       743:	
+       743:	
+       743:	calling init: /usr/lib/x86_64-linux-gnu/libicui18n.so.63
+       743:	
+       743:	/src/faisssharp/FaissSharp.Test/bin/Debug/netcoreapp3.1/linux-x64/System.Globalization.Native.so: error: symbol lookup error: undefined symbol: GlobalizationNative_GetDefaultLocaleNameW (fatal)
+Unhandled exception.        743:	find library=Microsoft.DiaSymReader.Native.amd64.dll [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=tls/haswell/x86_64/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=tls/haswell/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=tls/x86_64/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=tls/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=haswell/x86_64/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=haswell/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=x86_64/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=Microsoft.DiaSymReader.Native.amd64.dll
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=/lib/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=/usr/lib/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	
+       743:	find library=Microsoft.DiaSymReader.Native.amd64.dll [0]; searching
+       743:	 search path=/opt/intel/mkl/lib/intel64:tls/haswell/x86_64:tls/haswell:tls/x86_64:tls:haswell/x86_64:haswell:x86_64:		(LD_LIBRARY_PATH)
+       743:	  trying file=/opt/intel/mkl/lib/intel64/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=tls/haswell/x86_64/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=tls/haswell/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=tls/x86_64/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=tls/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=haswell/x86_64/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=haswell/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=x86_64/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=Microsoft.DiaSymReader.Native.amd64.dll
+       743:	 search cache=/etc/ld.so.cache
+       743:	 search path=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/lib:/usr/lib		(system search path)
+       743:	  trying file=/lib/x86_64-linux-gnu/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=/usr/lib/x86_64-linux-gnu/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=/lib/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	  trying file=/usr/lib/Microsoft.DiaSymReader.Native.amd64.dll
+       743:	
+System.DllNotFoundException: Unable to load shared library 'faiss_c' or one of its dependencies. In order to help diagnose loading problems, consider setting the LD_DEBUG environment variable: libfaiss_c: cannot open shared object file: No such file or directory
+   at FaissSharp.Internal.NativeMethods.faiss_IndexFlatL2_new_with(IndexFlatL2SafeHandle& index, Int64 d)
+   at FaissSharp.Internal.IndexFlatL2SafeHandle.New(Int64 dimension) in /src/faisssharp/FaissSharp/Internal/IndexFlatL2SafeHandle.cs:line 12
+   at FaissSharp.IndexFlatL2..ctor(Int64 dimension) in /src/faisssharp/FaissSharp/IndexFlatL2.cs:line 12
+   at FaissSharp.Test.Program.Main(String[] args) in /src/faisssharp/FaissSharp.Test/Program.cs:line 28
+       695:	
+       695:	calling fini: /usr/share/dotnet/host/fxr/3.1.2/libhostfxr.so [0]
+       695:	
+       695:	
+       695:	calling fini: dotnet [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/lib/x86_64-linux-gnu/libgomp.so.1 [0]
+       695:	
+       695:	
+       695:	calling fini: /opt/intel/mkl/lib/intel64/libmkl_def.so [0]
+       695:	
+       695:	
+       695:	calling fini: /opt/intel/mkl/lib/intel64/libmkl_avx2.so [0]
+       695:	
+       695:	
+       695:	calling fini: /opt/intel/mkl/lib/intel64/libmkl_core.so [0]
+       695:	
+       695:	
+       695:	calling fini: /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so [0]
+       695:	
+       695:	
+       695:	calling fini: /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libhostpolicy.so [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libcoreclr.so [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/libclrjit.so [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Native.so [0]
+       695:	
+       695:	
+       695:	calling fini: /lib/x86_64-linux-gnu/librt.so.1 [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Globalization.Native.so [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/lib/x86_64-linux-gnu/libicui18n.so.63 [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/lib/x86_64-linux-gnu/libicuuc.so.63 [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/lib/x86_64-linux-gnu/libicudata.so.63 [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/lib/x86_64-linux-gnu/libstdc++.so.6 [0]
+       695:	
+       695:	
+       695:	calling fini: /lib/x86_64-linux-gnu/libgcc_s.so.1 [0]
+       695:	
+       695:	
+       695:	calling fini: /lib/x86_64-linux-gnu/libm.so.6 [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.Security.Cryptography.Native.OpenSsl.so [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/lib/x86_64-linux-gnu/libssl.so.1.1 [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1 [0]
+       695:	
+       695:	
+       695:	calling fini: /lib/x86_64-linux-gnu/libdl.so.2 [0]
+       695:	
+       695:	
+       695:	calling fini: /lib/x86_64-linux-gnu/libpthread.so.0 [0]
+       695:	
+       695:	
+       695:	calling fini: /usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.2/System.IO.Compression.Native.so [0]
+       695:	
+       695:	
+       695:	calling fini: /lib/x86_64-linux-gnu/libz.so.1 [0]
+       695:	
+       695:	
+       695:	calling fini: /lib/x86_64-linux-gnu/libnss_files.so.2 [0]
+       695:	
+       695:	
+       695:	calling fini: /lib/x86_64-linux-gnu/libnss_dns.so.2 [0]
+       695:	
+       695:	
+       695:	calling fini: /lib/x86_64-linux-gnu/libresolv.so.2 [0]
+       695:	
