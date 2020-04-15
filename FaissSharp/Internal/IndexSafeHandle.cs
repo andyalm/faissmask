@@ -1,15 +1,44 @@
 using System;
+using System.IO;
 
 namespace FaissSharp.Internal
 {
     internal class IndexSafeHandle : SafeHandleZeroIsInvalid
     {
         private static readonly NativeMethods _native = NativeMethods.Get();
+        
+        public static THandle Read<THandle>(string filename, Func<IntPtr,THandle> createHandle) where THandle : IndexSafeHandle
+        {
+            if(string.IsNullOrEmpty(filename))
+            {
+                throw new ArgumentNullException(nameof(filename));
+            }
+
+            filename = Path.GetFullPath(filename);
+            if(!File.Exists(filename))
+            {
+                throw new FileNotFoundException($"The file {filename} does not exist", filename);
+            }
+
+            FaissEnvironment.FaissNativeInit();
+            var pointer = IntPtr.Zero;
+            var returnCode = _native.faiss_read_index_fname(filename, 0, ref pointer);
+            if(returnCode != 0 || pointer == IntPtr.Zero)
+            {
+                throw new IOException($"An known error occurred trying to read the index '{filename}'");
+            }
+            var index = createHandle(pointer);
+
+            return index;
+        }
         public bool IsFree { get; internal set; } = false;
 
         protected IndexSafeHandle()
         {
         }
+
+        protected IndexSafeHandle(IntPtr pointer) : base(pointer) {}
+        
         public void Add(long count, float[] vectors)
         {
             _native.faiss_Index_add(this, count, vectors);

@@ -18,6 +18,7 @@ namespace FaissSharp.Internal
         public readonly Delegates.faiss_IndexFlatL2_new_delegate faiss_IndexFlatL2_new;
         public readonly Delegates.faiss_IndexFlatL2_new_with_delegate faiss_IndexFlatL2_new_with;
         public readonly Delegates.faiss_IndexIDMap_new_delegate faiss_IndexIDMap_new;
+        public readonly Delegates.faiss_read_index_fname_delegate faiss_read_index_fname;
 
         #endregion
 
@@ -35,6 +36,7 @@ namespace FaissSharp.Internal
             this.faiss_IndexFlatL2_new = GetMethodDelegate<Delegates.faiss_IndexFlatL2_new_delegate>(library);
             this.faiss_IndexFlatL2_new_with = GetMethodDelegate<Delegates.faiss_IndexFlatL2_new_with_delegate>(library);
             this.faiss_IndexIDMap_new = GetMethodDelegate<Delegates.faiss_IndexIDMap_new_delegate>(library);
+            this.faiss_read_index_fname = GetMethodDelegate<Delegates.faiss_read_index_fname_delegate>(library);
         }
         public class Delegates
         {
@@ -50,8 +52,7 @@ namespace FaissSharp.Internal
             public delegate int faiss_IndexFlatL2_new_delegate(ref IndexFlatL2SafeHandle index);
             public delegate int faiss_IndexFlatL2_new_with_delegate(ref IndexFlatL2SafeHandle index, long d);
             public delegate int faiss_IndexIDMap_new_delegate(ref IndexIDMapSafeHandle mapIndex, IndexFlatSafeHandle index);
-
-
+            public delegate int faiss_read_index_fname_delegate(string fname, int io_flags, ref IntPtr p_out);
         }
     }
 }

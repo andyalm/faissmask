@@ -2,12 +2,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace FaissSharp.Test
 {
     public class Test
     {
         private static readonly System.Random _rand = new System.Random();
+        private readonly ITestOutputHelper _output;
+
+        public Test(ITestOutputHelper output)
+        {
+            _output = output;
+        }
+
         [Fact]
         public void AddWithIdsTest()
         {
@@ -37,6 +45,22 @@ namespace FaissSharp.Test
                     }
                 }
             }
+        }
+
+        [Fact]
+        public void CanReadIndex()
+        {
+            using var index = IndexFlat.Read("data/faiss.index");
+            var results = index.Search(new[]
+            {
+                new float[]
+                {
+                    20, 48
+                },
+            }, 5);
+            Assert.NotNull(results);
+            _output.WriteLine($"Number of results: {results.Count()}");
+            Assert.True(results.Any());
         }
         private static float DRand()
         {
