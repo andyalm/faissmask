@@ -18,7 +18,8 @@
         <RepositoryUrl>https://gitlab.com/josetruyol/faisssharp</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>icon.png</PackageIcon>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <!-- temporarily disable generating the package as long as this is being pulled in as a submodule -->
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <PropertyGroup>
