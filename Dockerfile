@@ -1,5 +1,7 @@
 FROM debian:buster as build
 
+ENV FAISS_VERSION="v1.6.1"
+
 RUN apt-get -y update && \
     apt-get -y install wget gnupg2 libgomp1
 
@@ -9,7 +11,7 @@ RUN cd /tmp && \
     apt-key add GPG-PUB-KEY-INTEL-SW-PRODUCTS-2019.PUB && \
     rm GPG-PUB-KEY-INTEL-SW-PRODUCTS-2019.PUB && \
     cd / && \
-    wget https://apt.repos.intel.com/setup/intelproducts.list -O /etc/apt/sources.list.d/intelproducts.list && \
+    echo deb  https://apt.repos.intel.com/mkl all main > /etc/apt/sources.list.d/intel-mkl.list && \
     apt-get -y update && \
     apt-get -y install intel-mkl-2019.3-062
 ENV LD_LIBRARY_PATH /opt/intel/mkl/lib/intel64:$LD_LIBRARY_PATH
@@ -24,8 +26,10 @@ RUN apt-get -y install build-essential swig3.0
 # install python dev env
 RUN apt-get -y install python-dev python3-numpy
 
+# CXXFLAGS taken from makefile.inc, but removing the -g debug flag
+ENV CXXFLAGS "-fPIC -m64 -Wno-sign-compare -O3 -Wall -Wextra"
 RUN apt-get -y install git && \
-    git clone https://github.com/facebookresearch/faiss.git /faiss && \
+    git clone -b ${FAISS_VERSION} https://github.com/facebookresearch/faiss.git /faiss && \
     cd /faiss && \
     ./configure --without-cuda && \
     make -j $(nproc) && \
