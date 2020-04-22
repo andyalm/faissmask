@@ -25,7 +25,7 @@ namespace FaissSharp.Internal
             var returnCode = _native.faiss_read_index_fname(filename, 0, ref pointer);
             if(returnCode != 0 || pointer == IntPtr.Zero)
             {
-                throw new IOException($"An known error occurred trying to read the index '{filename}'");
+                throw new IOException($"An unknown error occurred trying to read the index '{filename}' (return code {returnCode})");
             }
             var index = createHandle(pointer);
 
