@@ -63,8 +63,11 @@ namespace FaissSharp.Internal
         }
         public virtual void Free()
         {
-            _native.faiss_Index_free(this);
-            IsFree = true;
+            if (!IsInvalid)
+            {
+                _native.faiss_Index_free(this);
+                IsFree = true;
+            }
         }
         public void Search(long count, float[] vectors, long k, float[] distances, long[] labels)
         {
