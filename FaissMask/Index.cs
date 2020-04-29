@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using FaissSharp.Extensions;
-using FaissSharp.Internal;
+using FaissMask.Extensions;
+using FaissMask.Internal;
 
-namespace FaissSharp
+namespace FaissMask
 {
     public abstract class Index : IDisposable
     {

@@ -1,4 +1,4 @@
-namespace FaissSharp
+namespace FaissMask
 {
     public class SearchVector
     {

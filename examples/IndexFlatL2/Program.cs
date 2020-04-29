@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using FaissSharp;
+using FaissMask;
 
-namespace FaissSharpExample
+namespace FaissMaskExample
 {
     class Program
     {

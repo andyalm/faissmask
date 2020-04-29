@@ -1,12 +1,11 @@
 using System;
 using System.IO;
 
-namespace FaissSharp.Internal
+namespace FaissMask.Internal
 {
     internal class IndexSafeHandle : SafeHandleZeroIsInvalid
     {
-        private static readonly NativeMethods _native = NativeMethods.Get();
-        
+       
         public static THandle Read<THandle>(string filename, Func<IntPtr,THandle> createHandle) where THandle : IndexSafeHandle
         {
             if(string.IsNullOrEmpty(filename))
@@ -20,12 +19,11 @@ namespace FaissSharp.Internal
                 throw new FileNotFoundException($"The file {filename} does not exist", filename);
             }
 
-            FaissEnvironment.FaissNativeInit();
             var pointer = IntPtr.Zero;
-            var returnCode = _native.faiss_read_index_fname(filename, 0, ref pointer);
+            var returnCode = NativeMethods.faiss_read_index_fname(filename, 0, ref pointer);
             if(returnCode != 0 || pointer == IntPtr.Zero)
             {
-                var lastError = _native.faiss_get_last_error();
+                var lastError = NativeMethods.faiss_get_last_error();
 
                 if (string.IsNullOrEmpty(lastError))
                 {
@@ -50,28 +48,28 @@ namespace FaissSharp.Internal
         
         public void Add(long count, float[] vectors)
         {
-            _native.faiss_Index_add(this, count, vectors);
+            NativeMethods.faiss_Index_add(this, count, vectors);
         }
         public bool IsTrained()
         {
-            return _native.faiss_Index_is_trained(this);
+            return NativeMethods.faiss_Index_is_trained(this);
         }
         public long NTotal()
         {
-            long total = _native.faiss_Index_ntotal(this);
+            long total = NativeMethods.faiss_Index_ntotal(this);
             return total;
         }
         public virtual void Free()
         {
             if (!IsInvalid)
             {
-                _native.faiss_Index_free(this);
+                NativeMethods.faiss_Index_free(this);
                 IsFree = true;
             }
         }
         public void Search(long count, float[] vectors, long k, float[] distances, long[] labels)
         {
-            _native.faiss_Index_search(this, count, vectors, k, distances, labels);
+            NativeMethods.faiss_Index_search(this, count, vectors, k, distances, labels);
         }
 
         protected override bool ReleaseHandle()

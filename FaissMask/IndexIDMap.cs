@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using FaissSharp.Internal;
+using FaissMask.Internal;
 
-namespace FaissSharp
+namespace FaissMask
 {
     public class IndexIDMap : Index
     {

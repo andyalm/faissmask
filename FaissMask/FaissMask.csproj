@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>FaissMask</PackageId>
+        <Version>0.1.2</Version>
+        <Authors>Jose Truyol; Andy Alm</Authors>
+        <PackageDescription>.NET wrapper for Faiss</PackageDescription>
+        <PackageTags>faiss</PackageTags>
+        <RepositoryUrl>https://gitlab.com/andyalm/faissmask</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageIcon>icon.png</PackageIcon>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageIcon>icon.png</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\assets\icon.png" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="runtimes\**" PackagePath="runtimes" Visible="false" />
+    </ItemGroup>
+</Project>
