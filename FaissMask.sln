@@ -24,6 +24,7 @@ ProjectSection(SolutionItems) = preProject
 	build-faiss-linux.sh = build-faiss-linux.sh
 	.dockerignore = .dockerignore
 	docker-compose.yml = docker-compose.yml
+	.gitignore = .gitignore
 EndProjectSection
 EndProject
 Global

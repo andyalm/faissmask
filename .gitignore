@@ -12,7 +12,6 @@ libfaiss-src/
 *.user
 *.userosscache
 *.sln.docstates
-data/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
