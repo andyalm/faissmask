@@ -51,12 +51,9 @@ namespace FaissMask.Test
         public void CanReadIndex()
         {
             using var index = IndexFlat.Read("data/faiss.index");
-            var results = index.Search(new[]
+            var results = index.Search(new float[]
             {
-                new float[]
-                {
-                    20, 48
-                },
+                20, 48
             }, 5);
             Assert.NotNull(results);
             _output.WriteLine($"Number of results: {results.Count()}");

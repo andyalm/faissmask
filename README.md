@@ -1,11 +1,10 @@
-![Header](assets/header.png)
+![Header](assets/icon.png)
 
 
 ![Licesne](https://img.shields.io/badge/license-MIT-green)
-[![Nuget](https://img.shields.io/nuget/v/FaissSharp)](https://www.nuget.org/packages/FaissSharp)
-[![Nuget](https://img.shields.io/nuget/dt/FaissSharp)](https://www.nuget.org/packages/FaissSharp)
-![CI/CD](https://gitlab.com/josetruyol/faisssharp/badges/master/pipeline.svg
-)
+[![Nuget](https://img.shields.io/nuget/v/FaissMask)](https://www.nuget.org/packages/FaissMask)
+[![Nuget](https://img.shields.io/nuget/dt/FaissMask)](https://www.nuget.org/packages/FaissMask)
+
 # FaissMask
 
 FaissMask is a package that wrap the c_api of [faiss](https://github.com/facebookresearch/faiss). It is a fork of [FaissSharp](https://gitlab.com/josetruyol/faisssharp) that was developed during the COVID-19 epidemic (which inspired its name).
@@ -48,12 +47,6 @@ Searching...
 * Search
 * Free (to release unmanaged memory allocations)
 * ReadIndex
-
-## TODO
-- [x] Nuget Package
-- [ ] Logging
-- [ ] Tests
-- [ ] Sync native functions with faiss c_api
 
 > This is an active project, but MR are welcome.
 

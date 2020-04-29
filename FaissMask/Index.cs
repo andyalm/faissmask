@@ -18,6 +18,12 @@ namespace FaissMask
         {
             Handle = handle as IndexSafeHandle;
         }
+        
+        public void Add(float[] vector)
+        {
+            Add(1, vector);
+        }
+        
         public void Add(IEnumerable<float[]> vectors)
         {
             var count = vectors.Count();
@@ -28,12 +34,24 @@ namespace FaissMask
             Handle.Add(count, vectors);
         }
 
-        public IEnumerable<SearchResult> Search(IEnumerable<float[]> request, long kneighbors)
+        public IEnumerable<SearchResult> Search(float[] vector, long kneigbors)
         {
-            int count = request.Count();
+            return Search(1, vector, kneigbors);
+        }
+
+        public IEnumerable<SearchResult> Search(IEnumerable<float[]> vectors, long kneighbors)
+        {
+            int count = vectors.Count();
+            var vectorsFlattened = vectors.Flatten();
+
+            return Search(count, vectorsFlattened, kneighbors);
+        }
+
+        private IEnumerable<SearchResult> Search(long count, float[] vectorsFlattened, long kneighbors)
+        {
             float[] distances = new float[kneighbors * count];
             long[] labels = new long[kneighbors * count];
-            Handle.Search(count, request.Flatten(), kneighbors, distances, labels);
+            Handle.Search(count, vectorsFlattened, kneighbors, distances, labels);
             var labelDistanceZip = labels.Zip(distances, (l, d) => new
             {
                 Label = l,
@@ -52,7 +70,6 @@ namespace FaissMask
                     };
                 }
             }
-
         }
 
         public void Dispose()

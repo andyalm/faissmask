@@ -27,9 +27,11 @@
   <ItemGroup>
     <Content Include="..\FaissMask\runtimes\osx-x64\native\*.*">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Visible>false</Visible>
     </Content>
     <Content Include="..\FaissMask\runtimes\linux-x64\native\*.*">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Visible>false</Visible>
     </Content>
   </ItemGroup>
 
