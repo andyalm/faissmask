@@ -7,15 +7,19 @@
   </PropertyGroup>
 
     <PropertyGroup>
-        <PackageId>FaissMask</PackageId>
-        <Version>0.1.0</Version>
-        <Authors>Jose Truyol; Andy Alm</Authors>
-        <PackageDescription>.NET wrapper for Faiss</PackageDescription>
-        <PackageTags>faiss</PackageTags>
-        <RepositoryUrl>https://github.com/andyalm/faissmask</RepositoryUrl>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageIcon>icon.png</PackageIcon>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+      <PackageId>FaissMask</PackageId>
+      <Version>0.1.1</Version>
+      <Authors>Andy Alm; Jose Truyol</Authors>
+      <PackageDescription>.NET wrapper for Faiss</PackageDescription>
+      <PackageTags>faiss</PackageTags>
+      <RepositoryUrl>https://github.com/andyalm/faissmask.git</RepositoryUrl>
+      <PackageProjectUrl>https://github.com/andyalm/faissmask</PackageProjectUrl>
+      <RepositoryType>git</RepositoryType>
+      <RepositoryBranch>$(CI_COMMIT_REF_NAME)</RepositoryBranch>
+      <RepositoryCommit>$(CI_COMMIT_SHA)</RepositoryCommit>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
+      <PackageIcon>icon.png</PackageIcon>
+      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <PropertyGroup>
