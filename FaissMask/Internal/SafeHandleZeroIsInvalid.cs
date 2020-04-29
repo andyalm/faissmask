@@ -1,6 +1,6 @@
 using System;
 
-namespace FaissSharp.Internal
+namespace FaissMask.Internal
 {
     public abstract class SafeHandleZeroIsInvalid : System.Runtime.InteropServices.SafeHandle
     {

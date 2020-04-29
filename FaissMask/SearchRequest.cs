@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace FaissSharp
+namespace FaissMask
 {
     public class SearchRequest
     {

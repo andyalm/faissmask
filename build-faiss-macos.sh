@@ -11,5 +11,5 @@ cd c_api
 sed -i '' 's/--whole-archive/-all_load/g' Makefile
 sed -i '' 's/--no-whole-archive/-noall_load/g' Makefile
 make
-cp libfaiss_c.dylib ../../FaissSharp/runtimes/osx-x64/native/
+cp libfaiss_c.dylib ../../FaissMask/runtimes/osx-x64/native/
 cd ../..

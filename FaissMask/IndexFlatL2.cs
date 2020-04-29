@@ -1,7 +1,7 @@
 using System;
-using FaissSharp.Internal;
+using FaissMask.Internal;
 
-namespace FaissSharp
+namespace FaissMask
 {
     public class IndexFlatL2 : IndexFlat
     {

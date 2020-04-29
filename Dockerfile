@@ -39,13 +39,12 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1
 EXPOSE 80
 
 ADD . /src
-WORKDIR /src/FaissSharp.Test
+WORKDIR /src/FaissMask.Test
 
 COPY --from=build /opt/intel/mkl/lib/intel64 /opt/intel/mkl/lib/intel64
-COPY --from=build /faiss/c_api/libfaiss_c.so /src/FaissSharp/runtimes/linux/native/
+COPY --from=build /faiss/c_api/libfaiss_c.so /src/FaissMask/runtimes/linux/native/
 ENV LD_LIBRARY_PATH="/opt/intel/mkl/lib/intel64:$LD_LIBRARY_PATH"
 RUN apt-get -y update && \
     apt-get -y install libgomp1
 
 CMD ["dotnet", "test"]
-#CMD ["ldd", "/src/FaissSharp/runtimes/linux/native/libfaiss_c.so"]

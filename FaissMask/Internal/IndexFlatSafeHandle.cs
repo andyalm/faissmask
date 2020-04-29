@@ -1,6 +1,6 @@
 using System;
 
-namespace FaissSharp.Internal
+namespace FaissMask.Internal
 {
     internal class IndexFlatSafeHandle : IndexSafeHandle
     {
@@ -15,7 +15,6 @@ namespace FaissSharp.Internal
         public static IndexFlatSafeHandle New(long d, MetricType metric = MetricType.MetricL2)
         {
             var index = new IndexFlatSafeHandle();
-            FaissEnvironment.FaissNativeInit();
             NativeMethods.faiss_IndexFlat_new_with(ref index, d, metric);
             return index;
         }

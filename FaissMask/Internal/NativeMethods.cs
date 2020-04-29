@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace FaissSharp.Internal
+namespace FaissMask.Internal
 {
     internal static class NativeMethods
     {

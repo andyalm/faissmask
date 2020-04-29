@@ -1,6 +1,6 @@
-using FaissSharp.Internal;
+using FaissMask.Internal;
 
-namespace FaissSharp
+namespace FaissMask
 {
     public class IndexFlat : Index
     {

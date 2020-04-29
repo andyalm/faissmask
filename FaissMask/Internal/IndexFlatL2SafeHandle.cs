@@ -1,4 +1,4 @@
-namespace FaissSharp.Internal
+namespace FaissMask.Internal
 {
     internal class IndexFlatL2SafeHandle : IndexFlatSafeHandle
     {

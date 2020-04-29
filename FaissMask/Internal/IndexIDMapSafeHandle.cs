@@ -1,6 +1,6 @@
 using System;
 
-namespace FaissSharp.Internal
+namespace FaissMask.Internal
 {
     internal class IndexIDMapSafeHandle : IndexSafeHandle
     {

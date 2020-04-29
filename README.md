@@ -6,15 +6,13 @@
 [![Nuget](https://img.shields.io/nuget/dt/FaissSharp)](https://www.nuget.org/packages/FaissSharp)
 ![CI/CD](https://gitlab.com/josetruyol/faisssharp/badges/master/pipeline.svg
 )
-# FaissSharp
+# FaissMask
 
-FaissSharp is a package that wrap the c_api of [faiss](https://github.com/facebookresearch/faiss)
+FaissMask is a package that wrap the c_api of [faiss](https://github.com/facebookresearch/faiss). It is a fork of [FaissSharp](https://gitlab.com/josetruyol/faisssharp) that was developed during the COVID-19 epidemic (which inspired its name).
 
 Faiss is a library for efficient similarity search and clustering of dense vectors. It contains algorithms that search in sets of vectors of any size, up to ones that possibly do not fit in RAM. It also contains supporting code for evaluation and parameter tuning. Faiss is written in C++ with complete wrappers for Python/numpy. Some of the most useful algorithms are implemented on the GPU. It is developed by [Facebook AI Research](https://research.fb.com/category/facebook-ai-research-fair/).
 
-This version is based on faiss v1.6.0 and only tested with net core 3.0 stable release
-
-Test the latest changes checking out the `develop` branch
+This version is based on faiss v1.6.0 and only tested with net core 3.1 stable release
 
 ## Try it
 
@@ -49,6 +47,7 @@ Searching...
 * Count (`ntotal`)
 * Search
 * Free (to release unmanaged memory allocations)
+* ReadIndex
 
 ## TODO
 - [x] Nuget Package
@@ -59,4 +58,4 @@ Searching...
 > This is an active project, but MR are welcome.
 
 ## License
-FaissSharp is MIT-licensed.
+FaissMask is MIT-licensed.

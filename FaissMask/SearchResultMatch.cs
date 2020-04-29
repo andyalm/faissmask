@@ -1,8 +1,6 @@
-using System.Collections.Generic;
-
-namespace FaissSharp
+namespace FaissMask
 {
-    public class SearchResult
+    public class SearchResultMatch
     {
         public long Label { get; set; }
         public float Distance { get; set; }

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace FaissSharp.Extensions
+namespace FaissMask.Extensions
 {
     public static class CollectionOfArrayExtensions
     {

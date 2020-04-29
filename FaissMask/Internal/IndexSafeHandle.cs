@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace FaissSharp.Internal
+namespace FaissMask.Internal
 {
     internal class IndexSafeHandle : SafeHandleZeroIsInvalid
     {
@@ -17,8 +17,7 @@ namespace FaissSharp.Internal
             {
                 throw new FileNotFoundException($"The file {filename} does not exist", filename);
             }
-
-            FaissEnvironment.FaissNativeInit();
+            
             var pointer = IntPtr.Zero;
             var returnCode = NativeMethods.faiss_read_index_fname(filename, 0, ref pointer);
             if(returnCode != 0 || pointer == IntPtr.Zero)
