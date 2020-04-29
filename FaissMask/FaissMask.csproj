@@ -8,11 +8,11 @@
 
     <PropertyGroup>
         <PackageId>FaissMask</PackageId>
-        <Version>0.1.2</Version>
+        <Version>0.1.0</Version>
         <Authors>Jose Truyol; Andy Alm</Authors>
         <PackageDescription>.NET wrapper for Faiss</PackageDescription>
         <PackageTags>faiss</PackageTags>
-        <RepositoryUrl>https://gitlab.com/andyalm/faissmask</RepositoryUrl>
+        <RepositoryUrl>https://github.com/andyalm/faissmask</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageIcon>icon.png</PackageIcon>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

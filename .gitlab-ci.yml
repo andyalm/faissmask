@@ -2,6 +2,7 @@ image: mcr.microsoft.com/dotnet/core/sdk:3.1
 
 stages:
 - build
+- publish
 
 variables: 
   Configuration: Release
@@ -17,3 +18,13 @@ build:
     name: packages
     paths:
       - FaissMask/bin/$Configuration/*.nupkg
+
+publish to nuget.org:
+  stage: publish
+  only:
+  - master
+  script:
+  - dotnet nuget push $(ls FaissMask/bin/$Configuration/*.nupkg) -k $NUGET_API_KEY -s   
+  environment:
+    name: nuget.org
+    url: https://nuget.org/packages/FaissMask/
