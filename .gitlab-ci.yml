@@ -1,0 +1,19 @@
+image: mcr.microsoft.com/dotnet/core/sdk:3.1
+
+stages:
+- build
+
+variables: 
+  Configuration: Release
+  
+build:
+  stage: build
+  script:
+  - echo "$PWD/FaissMask/runtimes/linux-x64/native" > /etc/ld.so.conf.d/faissmask.conf
+  - ldconfig
+  - dotnet build
+  - dotnet test FaissMask.Test
+  artifacts:
+    name: packages
+    paths:
+      - FaissMask/bin/$Configuration/*.nupkg

@@ -7,6 +7,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaissMask", "FaissMask\Fais
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaissMask.Test", "FaissMask.Test\FaissMask.Test.csproj", "{9C184C2C-8271-410C-B794-90101A8AA777}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FEBB7FA4-6ACB-4971-ABC5-CDE1C8A8C1BE}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ci", "ci", "{8C084CC9-14FA-4DE6-945B-1C1A245BF44F}"
+ProjectSection(SolutionItems) = preProject
+	.gitlab-ci.yml = .gitlab-ci.yml
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "devenv", "devenv", "{56AE66F3-DC77-40D0-9452-C8E4FDA638EA}"
+ProjectSection(SolutionItems) = preProject
+	Dockerfile = Dockerfile
+	build-faiss-macos.sh = build-faiss-macos.sh
+	build-faiss-linux.sh = build-faiss-linux.sh
+	.dockerignore = .dockerignore
+	docker-compose.yml = docker-compose.yml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

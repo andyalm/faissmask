@@ -1,6 +1,6 @@
 FROM debian:buster as build
 
-ENV FAISS_VERSION="v1.6.1"
+ARG FAISS_VERSION=v1.6.1
 
 RUN apt-get -y update && \
     apt-get -y install wget gnupg2 libgomp1
@@ -43,12 +43,14 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1
 EXPOSE 80
 
 ADD . /src
-WORKDIR /src/FaissMask.Test
+WORKDIR /src
 
-COPY --from=build /opt/intel/mkl/lib/intel64 /opt/intel/mkl/lib/intel64
-COPY --from=build /faiss/c_api/libfaiss_c.so /src/FaissMask/runtimes/linux/native/
-ENV LD_LIBRARY_PATH="/opt/intel/mkl/lib/intel64:$LD_LIBRARY_PATH"
-RUN apt-get -y update && \
-    apt-get -y install libgomp1
+COPY --from=build /usr/lib/x86_64-linux-gnu/libgomp.so.1 /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_def.so /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_avx2.so /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_core.so /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /faiss/c_api/libfaiss_c.so /src/FaissMask/runtimes/linux-x64/native/
 
-CMD ["dotnet", "test"]
+CMD ["dotnet", "test", "FaissMask.Test"]
