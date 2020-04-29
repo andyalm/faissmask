@@ -3,8 +3,6 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <IsPackable>false</IsPackable>
-    <!-- Native binaries are not properly resolved when using ProjectReferences, so we have to reference FaissMask as a package instead -->
-    <RestoreSources>../FaissMask/bin/$(Configuration);https://api.nuget.org/v3/index.json</RestoreSources>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,13 +13,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="FaissMask" Version="0.1.2" />
+    <ProjectReference Include="..\FaissMask\FaissMask.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="data/*.*">
       <Link>data/%(Filename)%(Extension)</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  
+  <!-- native dependencies aren't automatically copied/loaded when referencing with a ProjectReference -->
+  <ItemGroup>
+    <Content Include="..\FaissMask\runtimes\osx-x64\native\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\FaissMask\runtimes\linux-x64\native\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
