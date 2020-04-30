@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 [![Nuget](https://img.shields.io/nuget/v/FaissMask)](https://www.nuget.org/packages/FaissMask)
 [![Nuget](https://img.shields.io/nuget/dt/FaissMask)](https://www.nuget.org/packages/FaissMask)
-![CI/CD](https://gitlab.com/andyalm/faissmask/badges/master/pipeline.svg)
+[![CI/CD](https://gitlab.com/andyalm/faissmask/badges/master/pipeline.svg)](https://gitlab.com/andyalm/faissmask)
 # FaissMask
 
 FaissMask is a package that wrap the c_api of [faiss](https://github.com/facebookresearch/faiss). It is a fork of [FaissSharp](https://gitlab.com/josetruyol/faisssharp) that was developed during the COVID-19 epidemic (which inspired its name).
