@@ -53,4 +53,6 @@ COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so /src/FaissMask
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /faiss/c_api/libfaiss_c.so /src/FaissMask/runtimes/linux-x64/native/
 
+ENV LD_LIBRARY_PATH=/src/FaissMask/runtimes/linux-x64/native/
+
 CMD ["dotnet", "test", "FaissMask.Test"]
