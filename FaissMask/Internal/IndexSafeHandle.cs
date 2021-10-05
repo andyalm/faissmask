@@ -78,5 +78,30 @@ namespace FaissMask.Internal
                 Free();
             return true;
         }
+
+        public float[] ReconstructVector(long key, int dimensions)
+        {
+            var vector = new float[dimensions];
+            NativeMethods.faiss_Index_reconstruct(this, key, vector);
+            return vector;
+        }
+
+        public float[][] ReconstructVectors(long startKey, long amount, int dimensions)
+        {
+            // TODO: There's probably a better way to marshall this 2D-array
+            // Create one big float[] of the necessary size
+            var reconstructedVectors = new float[dimensions * amount];
+            NativeMethods.faiss_Index_reconstruct_n(this, startKey, amount, reconstructedVectors);
+            // Then chop into smaller arrays of size equal to the number of dimensions
+            var choppedVectors = new float[amount][];
+            for (var i = 0; i < amount; i++)
+            {
+                var chop = new float[dimensions];
+                Array.Copy(reconstructedVectors, i * dimensions, chop, 0, dimensions);
+                choppedVectors[i] = chop;
+            }
+
+            return choppedVectors;
+        }
     }
 }
