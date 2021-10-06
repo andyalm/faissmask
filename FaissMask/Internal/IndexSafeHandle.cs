@@ -45,7 +45,9 @@ namespace FaissMask.Internal
         }
 
         protected IndexSafeHandle(IntPtr pointer) : base(pointer) {}
-        
+
+        public int Dimensions => NativeMethods.faiss_Index_d(this);
+
         public void Add(long count, float[] vectors)
         {
             NativeMethods.faiss_Index_add(this, count, vectors);
@@ -79,17 +81,19 @@ namespace FaissMask.Internal
             return true;
         }
 
-        public float[] ReconstructVector(long key, int dimensions)
+        public float[] ReconstructVector(long key)
         {
+            var dimensions = NativeMethods.faiss_Index_d(this);
             var vector = new float[dimensions];
             NativeMethods.faiss_Index_reconstruct(this, key, vector);
             return vector;
         }
 
-        public float[][] ReconstructVectors(long startKey, long amount, int dimensions)
+        public float[][] ReconstructVectors(long startKey, long amount)
         {
             // TODO: There's probably a better way to marshall this 2D-array
             // Create one big float[] of the necessary size
+            var dimensions = NativeMethods.faiss_Index_d(this);
             var reconstructedVectors = new float[dimensions * amount];
             NativeMethods.faiss_Index_reconstruct_n(this, startKey, amount, reconstructedVectors);
             // Then chop into smaller arrays of size equal to the number of dimensions

@@ -58,6 +58,8 @@ namespace FaissMask.Test
             Assert.NotNull(results);
             _output.WriteLine($"Number of results: {results.Count()}");
             Assert.True(results.Any());
+            _output.WriteLine($"Number of dimensions: {index.Dimensions}");
+            Assert.Equal(2048, index.Dimensions);
         }
         private static float DRand()
         {

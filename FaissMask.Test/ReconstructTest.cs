@@ -35,10 +35,10 @@ namespace FaissMask.Test
             using var index = new IndexFlatL2(dimension);
             index.Add(vectors);
             // index.MakeDirectMap();
-            var reconstructedVector = index.ReconstructVector(0, dimension);
+            var reconstructedVector = index.ReconstructVector(0);
             Assert.Equal(vectors[0], reconstructedVector);
 
-            var reconstructedVectors = index.ReconstructVectors(0, vectorsCount, dimension);
+            var reconstructedVectors = index.ReconstructVectors(0, vectorsCount);
             Assert.Equal(vectors, reconstructedVectors.ToList());
         }
 
@@ -51,17 +51,17 @@ namespace FaissMask.Test
             using (var index = IndexIVF.Read("data/index_ivfpq.index"))
             {
                 // before making the direct map, all reconstructed vectors are zeros
-                float[] reconstructedVector = index.ReconstructVector(0, dimension);
+                float[] reconstructedVector = index.ReconstructVector(0);
                 Assert.All(reconstructedVector, f => Assert.Equal(0, f));
                 index.MakeDirectMap();
                 // now they will not be zeros
-                reconstructedVector = index.ReconstructVector(0, dimension);
+                reconstructedVector = index.ReconstructVector(0);
 
                 Assert.NotNull(reconstructedVector);
                 Assert.Equal(dimension, reconstructedVector.Length);
                 Assert.All(reconstructedVector, f => Assert.NotEqual(0, f));
 
-                var reconstructedVectors = index.ReconstructVectors(0, vectorsCount, dimension);
+                var reconstructedVectors = index.ReconstructVectors(0, vectorsCount);
                 Assert.NotNull(reconstructedVectors);
                 Assert.Equal(vectorsCount, reconstructedVectors.Length);
                 Assert.All(reconstructedVectors, v =>
