@@ -72,6 +72,20 @@ namespace FaissMask
             }
         }
 
+        public int Dimensions => Handle.Dimensions;
+
+        public float[] ReconstructVector(long key)
+        {
+            var ret = Handle.ReconstructVector(key);
+            return ret;
+        }
+
+        public float[][] ReconstructVectors(long startKey, long amount)
+        {
+            var ret = Handle.ReconstructVectors(startKey, amount);
+            return ret;
+        }
+
         public void Dispose()
         {
             Handle?.Free();
