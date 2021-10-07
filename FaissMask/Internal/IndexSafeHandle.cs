@@ -83,8 +83,7 @@ namespace FaissMask.Internal
 
         public float[] ReconstructVector(long key)
         {
-            var dimensions = NativeMethods.faiss_Index_d(this);
-            var vector = new float[dimensions];
+            var vector = new float[Dimensions];
             NativeMethods.faiss_Index_reconstruct(this, key, vector);
             return vector;
         }
@@ -93,7 +92,7 @@ namespace FaissMask.Internal
         {
             // TODO: There's probably a better way to marshall this 2D-array
             // Create one big float[] of the necessary size
-            var dimensions = NativeMethods.faiss_Index_d(this);
+            var dimensions = Dimensions;
             var reconstructedVectors = new float[dimensions * amount];
             NativeMethods.faiss_Index_reconstruct_n(this, startKey, amount, reconstructedVectors);
             // Then chop into smaller arrays of size equal to the number of dimensions
