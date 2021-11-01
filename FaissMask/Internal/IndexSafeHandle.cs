@@ -106,5 +106,7 @@ namespace FaissMask.Internal
 
             return choppedVectors;
         }
+
+        public IndexIVFSafeHandle DonwncastIndexToIndexIvf() => NativeMethods.faiss_IndexIVF_cast(this);
     }
 }

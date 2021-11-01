@@ -39,8 +39,11 @@ namespace FaissMask.Internal
         public static extern void faiss_Index_reconstruct(IndexSafeHandle index, long key, float[] recons);
         [DllImport("faiss_c", SetLastError = true)]
         public static extern void faiss_Index_reconstruct_n(IndexSafeHandle index, long i0, long ni, float[] recons);
-
         [DllImport("faiss_c", SetLastError = true)]
         public static extern int faiss_Index_d(IndexSafeHandle index);
+        [DllImport("faiss_c", SetLastError = true)]
+        public static extern IndexSafeHandle faiss_IndexIDMap_sub_index(IndexSafeHandle index);
+        [DllImport("faiss_c", SetLastError = true)]
+        public static extern IndexIVFSafeHandle faiss_IndexIVF_cast(IndexSafeHandle index);
     }
 }

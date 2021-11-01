@@ -61,6 +61,28 @@ namespace FaissMask.Test
             _output.WriteLine($"Number of dimensions: {index.Dimensions}");
             Assert.Equal(2048, index.Dimensions);
         }
+
+        [Fact]
+        public void CanDowncastIndex()
+        {
+            using var index = IndexIDMap.Read("data/faiss.index");
+            var subIndex = index.SubIndex;
+            Assert.NotNull(subIndex);
+            subIndex.MakeDirectMap();
+
+
+
+            var results = index.Search(new float[]
+            {
+                20, 48
+            }, 5);
+            Assert.NotNull(results);
+            _output.WriteLine($"Number of results: {results.Count()}");
+            Assert.True(results.Any());
+            _output.WriteLine($"Number of dimensions: {index.Dimensions}");
+            Assert.Equal(2048, index.Dimensions);
+        }
+
         private static float DRand()
         {
             return (float)_rand.NextDouble();

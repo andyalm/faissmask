@@ -29,5 +29,7 @@ namespace FaissMask
             var handle = Handle as IndexIDMapSafeHandle;
             handle.Add(count, vectors, ids);
         }
+
+        public IndexIVF SubIndex => new IndexIVF(((IndexIDMapSafeHandle) Handle).SubIndex as IndexIVFSafeHandle);
     }
 }

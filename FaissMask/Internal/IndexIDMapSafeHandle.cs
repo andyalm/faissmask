@@ -17,6 +17,6 @@ namespace FaissMask.Internal
         {
             NativeMethods.faiss_Index_add_with_ids(this, count, vectors, ids);
         }
-
+        public IndexSafeHandle SubIndex => NativeMethods.faiss_IndexIDMap_sub_index(this);
     }
 }
