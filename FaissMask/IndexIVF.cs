@@ -15,10 +15,17 @@ namespace FaissMask
             return new IndexIVF(handle);
         }
 
+        IndexIVFSafeHandle IndexIvfSafeHandle => Handle as IndexIVFSafeHandle;
+
         public void MakeDirectMap()
         {
-            var handle = Handle as IndexIVFSafeHandle;
-            handle.MakeDirectMap();
+            IndexIvfSafeHandle.MakeDirectMap();
+        }
+
+        public long NumProbes
+        {
+            get => IndexIvfSafeHandle.NumProbes;
+            set => IndexIvfSafeHandle.NumProbes = value;
         }
     }
 }
