@@ -1,9 +1,9 @@
 FROM debian:buster as build
 
-ARG FAISS_VERSION=v1.6.1
+ARG FAISS_VERSION=v1.7.1
 
 RUN apt-get -y update && \
-    apt-get -y install wget gnupg2 libgomp1
+    apt-get -y install wget gnupg2 libgomp1 software-properties-common
 
 # install intel-mkl
 RUN cd /tmp && \
@@ -20,22 +20,24 @@ ENV LD_PRELOAD /usr/lib/x86_64-linux-gnu/libgomp.so.1:/opt/intel/mkl/lib/intel64
 /opt/intel/mkl/lib/intel64/libmkl_avx2.so:/opt/intel/mkl/lib/intel64/libmkl_core.so:\
 /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so:/opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so
 
-# install gcc-c++ make swig3
+# install latest cmake
+RUN wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | tee /etc/apt/trusted.gpg.d/kitware.gpg >/dev/null && \
+    apt-add-repository 'deb https://apt.kitware.com/ubuntu/ bionic main' && \
+    apt update && apt install -y cmake
+
+# install gcc-c++ make swig
 RUN apt-get -y install build-essential swig3.0
 
 # install python dev env
-RUN apt-get -y install python-dev python3-numpy
+RUN apt-get -y install python3 python3-dev python3-numpy
 
-# CXXFLAGS taken from makefile.inc, but removing the -g debug flag
-ENV CXXFLAGS "-fPIC -m64 -Wno-sign-compare -O3 -Wall -Wextra"
+# build faiss and the c api
 RUN apt-get -y install git && \
     git clone -b ${FAISS_VERSION} https://github.com/facebookresearch/faiss.git /faiss && \
     cd /faiss && \
-    ./configure --without-cuda && \
-    make -j $(nproc) && \
-    make install && \
-    cd c_api && \
-    make && \
+    cmake -DFAISS_ENABLE_GPU=OFF -DCMAKE_BUILD_TYPE=Release -DFAISS_ENABLE_C_API=ON -DBUILD_SHARED_LIBS=ON -B build . && \
+    make -C build -j $(nproc) faiss && \
+    make -j $(nproc) -C build install && \
     cd /
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1
@@ -51,7 +53,7 @@ COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_avx2.so /src/FaissMask/runti
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_core.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so /src/FaissMask/runtimes/linux-x64/native/
-COPY --from=build /faiss/c_api/libfaiss_c.so /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /faiss/build/c_api/libfaiss_c.so /src/FaissMask/runtimes/linux-x64/native/
 
 ENV LD_LIBRARY_PATH=/src/FaissMask/runtimes/linux-x64/native/
 
