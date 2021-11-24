@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BRANCH="v1.6.1"
+BRANCH="v1.7.1"
 
 brew install libomp
 git clone --recursive --branch $BRANCH https://github.com/facebookresearch/faiss.git libfaiss-src

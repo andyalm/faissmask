@@ -52,8 +52,10 @@ COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_def.so /src/FaissMask/runtim
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_avx2.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_core.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_sequential.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /faiss/build/c_api/libfaiss_c.so /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /faiss/build/faiss/libfaiss.so /src/FaissMask/runtimes/linux-x64/native/
 
 ENV LD_LIBRARY_PATH=/src/FaissMask/runtimes/linux-x64/native/
 
