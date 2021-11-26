@@ -1,6 +1,11 @@
 FROM debian:buster as build
 
+ENV DEBIAN_FRONTEND teletype
+
 ARG FAISS_VERSION=v1.7.1
+
+RUN apt-get -y update && \
+    apt-get -y install apt-utils
 
 RUN apt-get -y update && \
     apt-get -y install wget gnupg2 libgomp1 software-properties-common
@@ -13,7 +18,7 @@ RUN cd /tmp && \
     cd / && \
     echo deb  https://apt.repos.intel.com/mkl all main > /etc/apt/sources.list.d/intel-mkl.list && \
     apt-get -y update && \
-    apt-get -y install intel-mkl-2020.0-08
+    apt-get -y install intel-mkl-2020.1-102
 ENV LD_LIBRARY_PATH /opt/intel/mkl/lib/intel64:$LD_LIBRARY_PATH
 ENV LIBRARY_PATH /opt/intel/mkl/lib/intel64:$LIBRARY_PATH
 ENV LD_PRELOAD /usr/lib/x86_64-linux-gnu/libgomp.so.1:/opt/intel/mkl/lib/intel64/libmkl_def.so:\
@@ -28,11 +33,13 @@ RUN wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/nul
 # install gcc-c++ make
 RUN apt-get -y install build-essential
 
+ENV MKLROOT=/opt/intel/mkl/lib/intel64/
+
 # build faiss and the c api
 RUN apt-get -y install git && \
     git clone -b ${FAISS_VERSION} https://github.com/facebookresearch/faiss.git /faiss && \
     cd /faiss && \
-    cmake -DFAISS_ENABLE_GPU=OFF -DFAISS_ENABLE_PYTHON=OFF -DCMAKE_BUILD_TYPE=Release -DFAISS_ENABLE_C_API=ON -DBUILD_SHARED_LIBS=ON -DBLA_VENDOR=Intel10_64ilp -DFAISS_OPT_LEVEL=avx2 -B build . && \
+    cmake -DFAISS_ENABLE_GPU=OFF -DFAISS_ENABLE_PYTHON=OFF -DBUILD_TESTING=ON -DCMAKE_BUILD_TYPE=Release -DFAISS_ENABLE_C_API=ON -DBUILD_SHARED_LIBS=ON -DFAISS_OPT_LEVEL=avx2 -B build . && \
     make -C build -j $(nproc) faiss && \
     make -j $(nproc) -C build install && \
     cd /
