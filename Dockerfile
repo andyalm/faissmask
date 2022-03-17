@@ -1,8 +1,8 @@
-FROM debian:buster as build
+FROM debian:bullseye as build
 
 ENV DEBIAN_FRONTEND teletype
 
-ARG FAISS_VERSION=v1.7.1
+ARG FAISS_VERSION=main
 
 RUN apt-get -y update && \
     apt-get -y install apt-utils
@@ -39,12 +39,13 @@ ENV MKLROOT=/opt/intel/mkl/lib/intel64/
 RUN apt-get -y install git && \
     git clone -b ${FAISS_VERSION} https://github.com/facebookresearch/faiss.git /faiss && \
     cd /faiss && \
+    git checkout add3705c1147a51b1b20161cc6c08945bd485f14 && \
     cmake -DFAISS_ENABLE_GPU=OFF -DFAISS_ENABLE_PYTHON=OFF -DBUILD_TESTING=ON -DCMAKE_BUILD_TYPE=Release -DFAISS_ENABLE_C_API=ON -DBUILD_SHARED_LIBS=ON -DFAISS_OPT_LEVEL=avx2 -B build . && \
-    make -C build -j $(nproc) faiss && \
+    make -C build -j $(nproc) faiss faiss_avx2 && \
     make -j $(nproc) -C build install && \
     cd /
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1
+FROM mcr.microsoft.com/dotnet/sdk:6.0
 
 EXPOSE 80
 
@@ -61,6 +62,7 @@ COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so /src/FaissMask
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_rt.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /faiss/build/c_api/libfaiss_c.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /faiss/build/faiss/libfaiss.so /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /faiss/build/faiss/libfaiss_avx2.so /src/FaissMask/runtimes/linux-x64/native/
 
 ENV LD_LIBRARY_PATH=/src/FaissMask/runtimes/linux-x64/native/
 
