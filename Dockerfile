@@ -2,7 +2,7 @@ FROM debian:bullseye as build
 
 ENV DEBIAN_FRONTEND teletype
 
-ARG FAISS_VERSION=main
+ARG FAISS_VERSION=v1.7.2
 
 RUN apt-get -y update && \
     apt-get -y install apt-utils
@@ -39,7 +39,6 @@ ENV MKLROOT=/opt/intel/mkl
 RUN apt-get -y install git && \
     git clone -b ${FAISS_VERSION} https://github.com/facebookresearch/faiss.git /faiss && \
     cd /faiss && \
-    git checkout add3705c1147a51b1b20161cc6c08945bd485f14 && \
     cmake -DFAISS_ENABLE_GPU=OFF -DFAISS_ENABLE_PYTHON=OFF -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=Release -DFAISS_ENABLE_C_API=ON -DBUILD_SHARED_LIBS=ON -DFAISS_OPT_LEVEL=avx2 -B build . && \
     make -C build -j $(nproc) faiss_avx2 install
 
