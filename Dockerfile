@@ -40,7 +40,7 @@ RUN apt-get -y install git && \
     git clone -b ${FAISS_VERSION} https://github.com/facebookresearch/faiss.git /faiss && \
     cd /faiss && \
     cmake -DFAISS_ENABLE_GPU=OFF -DFAISS_ENABLE_PYTHON=OFF -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=Release -DFAISS_ENABLE_C_API=ON -DBUILD_SHARED_LIBS=ON -DFAISS_OPT_LEVEL=avx2 -B build . && \
-    make -C build -j $(nproc) faiss_avx2 install
+    make -C build -j $(nproc) faiss install
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0
 
@@ -57,8 +57,9 @@ COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_intel_lp64.so /src/FaissMask
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_sequential.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /faiss/build/c_api/libfaiss_c.so /src/FaissMask/runtimes/linux-x64/native/
-COPY --from=build /faiss/build/faiss/libfaiss_avx2.so /src/FaissMask/runtimes/linux-x64/native/libfaiss.so
+COPY --from=build /faiss/build/faiss/libfaiss.so /src/FaissMask/runtimes/linux-x64/native/
+COPY --from=build /faiss/build/faiss/libfaiss_avx2.so /src/FaissMask/runtimes/linux-x64/native/
 
-ENV LD_LIBRARY_PATH=/src/FaissMask/runtimes/linux-x64/native/
+RUN echo "/src/FaissMask/runtimes/linux-x64/native/" > /etc/ld.so.conf.d/faissmask.conf && ldconfig
 
 CMD ["dotnet", "test", "FaissMask.Test"]
