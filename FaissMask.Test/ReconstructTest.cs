@@ -43,6 +43,17 @@ namespace FaissMask.Test
         }
 
         [Fact]
+        public void NProbeWorks()
+        {
+            using (var index = IndexIVF.Read("data/index_ivfpq.index"))
+            {
+                Assert.True(index.NumProbes > 0);
+                index.NumProbes = 42;
+                Assert.Equal(42, index.NumProbes);
+            }
+        }
+
+        [Fact]
         public void ReconstructTestIndexIvf()
         {
             const int dimension = 768;

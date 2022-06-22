@@ -9,26 +9,33 @@ namespace FaissMask
     public abstract class Index : IDisposable
     {
         internal readonly IndexSafeHandle Handle;
+
         public long Count
         {
             get => Handle.NTotal();
         }
-        public bool IsTrained { get => Handle.IsTrained(); }
+
+        public bool IsTrained
+        {
+            get => Handle.IsTrained();
+        }
+
         protected Index(object handle)
         {
             Handle = handle as IndexSafeHandle;
         }
-        
+
         public void Add(float[] vector)
         {
             Add(1, vector);
         }
-        
+
         public void Add(IEnumerable<float[]> vectors)
         {
             var count = vectors.Count();
             Add(count, vectors.SelectMany(v => v).ToArray());
         }
+
         private void Add(long count, float[] vectors)
         {
             Handle.Add(count, vectors);
@@ -61,7 +68,7 @@ namespace FaissMask
             {
                 var vectorResult = labelDistanceZip.Skip((int)(i * kneighbors))
                     .Take((int)kneighbors);
-                foreach(var r in vectorResult)
+                foreach (var r in vectorResult)
                 {
                     yield return new SearchResult
                     {
@@ -84,6 +91,18 @@ namespace FaissMask
         {
             var ret = Handle.ReconstructVectors(startKey, amount);
             return ret;
+        }
+
+        public long SaCodeSize => Handle.SaCodeSize;
+
+        public byte[] EncodeVector(float[] vector)
+        {
+            return Handle.EncodeVector(vector);
+        }
+
+        public float[] DecodeVector(byte[] bytes)
+        {
+            return Handle.DecodeVector(bytes);
         }
 
         public void Dispose()
