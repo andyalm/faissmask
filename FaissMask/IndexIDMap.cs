@@ -9,12 +9,14 @@ namespace FaissMask
         public static IndexIDMap Read(string filename)
         {
             var handle = IndexSafeHandle.Read(filename, ptr => new IndexIDMapSafeHandle(ptr));
-            
+
             return new IndexIDMap(handle);
         }
-        
-        internal IndexIDMap(IndexIDMapSafeHandle handle) : base(handle) {}
-        
+
+        internal IndexIDMap(IndexIDMapSafeHandle handle) : base(handle)
+        {
+        }
+
         public IndexIDMap(IndexFlat index) : base(IndexIDMapSafeHandle.New(index.Handle as IndexFlatSafeHandle))
         {
         }
@@ -24,12 +26,11 @@ namespace FaissMask
             var count = vectors.Count();
             Add(count, vectors.SelectMany(v => v).ToArray(), ids.ToArray());
         }
+
         private void Add(long count, float[] vectors, long[] ids)
         {
             var handle = Handle as IndexIDMapSafeHandle;
             handle.Add(count, vectors, ids);
         }
-
-        public IndexIVF SubIndex => new IndexIVF(((IndexIDMapSafeHandle) Handle).SubIndex as IndexIVFSafeHandle);
     }
 }
