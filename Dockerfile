@@ -59,6 +59,6 @@ COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_sequential.so /src/FaissMask
 COPY --from=build /opt/intel/mkl/lib/intel64/libmkl_gnu_thread.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /faiss/build/c_api/libfaiss_c.so /src/FaissMask/runtimes/linux-x64/native/
 COPY --from=build /faiss/build/faiss/libfaiss_avx2.so /src/FaissMask/runtimes/linux-x64/native/
-#RUN echo "/src/FaissMask/runtimes/linux-x64/native/" > /etc/ld.so.conf.d/faissmask.conf && ldconfig
-ENV LD_LIBRARY_PATH=/src/FaissMask/runtimes/linux-x64/native/
+RUN echo "/src/FaissMask/runtimes/linux-x64/native/" > /etc/ld.so.conf.d/faissmask.conf && ldconfig
+
 CMD ["dotnet", "test", "FaissMask.Test"]
