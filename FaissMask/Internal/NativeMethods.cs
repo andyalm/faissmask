@@ -18,7 +18,7 @@ namespace FaissMask.Internal
         [DllImport("faiss_c", SetLastError = true)]
         public static extern int faiss_Index_search(IndexSafeHandle index, long n, float[] x, long k, float[] distances, long[] labels);
         [DllImport("faiss_c", SetLastError = true)]
-        public static extern int faiss_Index_sa_code_size(IndexSafeHandle index, long[] size);
+        public static extern int faiss_Index_sa_code_size(IndexSafeHandle index, UIntPtr size);
         [DllImport("faiss_c", SetLastError = true)]
         public static extern int faiss_Index_sa_encode(IndexSafeHandle index, long n, float[] x, byte[] bytes);
         [DllImport("faiss_c", SetLastError = true)]

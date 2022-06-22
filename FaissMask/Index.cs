@@ -41,6 +41,13 @@ namespace FaissMask
             Handle.Add(count, vectors);
         }
 
+        public long[] Assign(float[] vectors, int k)
+        {
+            var labels = new long[k];
+            Handle.Assign(vectors, labels, k);
+            return labels;
+        }
+
         public IEnumerable<SearchResult> Search(float[] vector, long kneigbors)
         {
             return Search(1, vector, kneigbors);
@@ -93,7 +100,7 @@ namespace FaissMask
             return ret;
         }
 
-        public long SaCodeSize => Handle.SaCodeSize;
+        public ulong SaCodeSize => Handle.SaCodeSize;
 
         public byte[] EncodeVector(float[] vector)
         {

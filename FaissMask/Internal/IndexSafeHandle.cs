@@ -138,13 +138,13 @@ namespace FaissMask.Internal
             NativeMethods.faiss_Index_assign(this, 1, vector, labels, k);
         }
 
-        public long SaCodeSize
+        public ulong SaCodeSize
         {
             get
             {
-                var sizeArray = new long[1];
-                NativeMethods.faiss_Index_sa_code_size(this, sizeArray);
-                return sizeArray[0];
+                var ptr = new UIntPtr(sizeof(ulong));
+                NativeMethods.faiss_Index_sa_code_size(this, ptr);
+                return ptr.ToUInt64();
             }
         }
     }

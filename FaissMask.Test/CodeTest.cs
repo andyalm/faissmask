@@ -4,6 +4,8 @@ using System.Linq;
 using Xunit;
 using Xunit.Abstractions;
 
+// ReSharper disable Xunit.XunitTestWithConsoleOutput
+
 namespace FaissMask.Test
 {
     public class CodeTest
@@ -19,19 +21,36 @@ namespace FaissMask.Test
         [Fact]
         public void EncodeAndDecodeIVFPQ()
         {
+            Console.WriteLine("aaaa");
+            _output.WriteLine("bbbb");
+
             const int dimension = 768;
             const int vectorsCount = 3;
 
             using (var index = IndexIVF.Read("data/index_ivfpq.index"))
             {
-                Assert.True(index.SaCodeSize > 0);
-                var vector = index.ReconstructVector(0);
-                var bytes = index.EncodeVector(vector);
-                Assert.True(bytes != null);
-                Console.WriteLine(bytes.Length);
+                index.MakeDirectMap();
+
+                var vector = index.ReconstructVector(1);
+                Console.WriteLine(string.Join(",", vector.Select(v => v.ToString())));
+                var labels = index.Assign(vector, 2);
+                Console.WriteLine(string.Join(",", labels.Select(v => v.ToString())));
+
+                vector = index.ReconstructVector(10);
+                Console.WriteLine(string.Join(",", vector.Select(v => v.ToString())));
+                labels = index.Assign(vector, 2);
+                Console.WriteLine(string.Join(",", labels.Select(v => v.ToString())));
+
+                Console.WriteLine("cccc");
                 Console.WriteLine(index.SaCodeSize);
+                var bytes = index.EncodeVector(vector);
+                Console.WriteLine(bytes);
+                Console.WriteLine(string.Join(",", bytes.Select(v => v.ToString())));
+                Console.WriteLine(bytes.Length.ToString());
+                Console.WriteLine(index.SaCodeSize.ToString());
                 var vector2 = index.DecodeVector(bytes);
-                Assert.True(vector2 != null);
+                Console.WriteLine(vector2);
+                Console.WriteLine(string.Join(",", vector2.Select(v => v.ToString())));
             }
         }
 
