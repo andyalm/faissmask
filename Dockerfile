@@ -39,6 +39,7 @@ ENV MKLROOT=/opt/intel/mkl
 RUN apt-get -y install git && \
     git clone -b ${FAISS_VERSION} https://github.com/gregsinclair42/faiss.git /faiss && \
     cd /faiss && \
+    sed -i 's/faiss_c PRIVATE faiss/faiss_c PRIVATE faiss_avx2/g' c_api/CMakeLists.txt && \
     cmake -DFAISS_ENABLE_GPU=OFF -DFAISS_ENABLE_PYTHON=OFF -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=Release -DFAISS_ENABLE_C_API=ON -DBUILD_SHARED_LIBS=ON -DFAISS_OPT_LEVEL=avx2 -B build . && \
     make -C build -j $(nproc) faiss_avx2 install
 
