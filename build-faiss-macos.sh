@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BRANCH="v1.7.2"
+BRANCH="main"
 
 brew install libomp
 brew install cmake
