@@ -4,7 +4,7 @@ BRANCH="main"
 
 brew install libomp
 brew install cmake
-git clone --recursive --branch $BRANCH https://github.com/gregsinclair42/faiss.git libfaiss-src
+git clone --recursive --branch $BRANCH https://github.com/facebookresearch/faiss.git libfaiss-src
 cd libfaiss-src
 cmake -DFAISS_ENABLE_GPU=OFF -DFAISS_ENABLE_PYTHON=OFF -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=Release -DFAISS_ENABLE_C_API=ON -DBUILD_SHARED_LIBS=ON -B build .
 make -C build -j faiss
