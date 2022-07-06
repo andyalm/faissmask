@@ -18,6 +18,14 @@ namespace FaissMask.Internal
         [DllImport("faiss_c", SetLastError = true)]
         public static extern int faiss_Index_search(IndexSafeHandle index, long n, float[] x, long k, float[] distances, long[] labels);
         [DllImport("faiss_c", SetLastError = true)]
+        public static extern int faiss_Index_sa_code_size(IndexSafeHandle index, UIntPtr size);
+        [DllImport("faiss_c", SetLastError = true)]
+        public static extern int faiss_Index_sa_encode(IndexSafeHandle index, long n, float[] x, byte[] bytes);
+        [DllImport("faiss_c", SetLastError = true)]
+        public static extern int faiss_Index_sa_decode(IndexSafeHandle index, long n, byte[] bytes, float[] x);
+        [DllImport("faiss_c", SetLastError = true)]
+        public static extern int faiss_Index_assign(IndexSafeHandle index, long n, float[] x, long[] labels, long k);
+        [DllImport("faiss_c", SetLastError = true)]
         public static extern int faiss_IndexFlat_new(ref IndexFlatSafeHandle index);
         [DllImport("faiss_c", SetLastError = true)]
         public static extern int faiss_IndexFlat_new_with(ref IndexFlatSafeHandle index, long d, MetricType metric);
@@ -39,7 +47,6 @@ namespace FaissMask.Internal
         public static extern void faiss_Index_reconstruct(IndexSafeHandle index, long key, float[] recons);
         [DllImport("faiss_c", SetLastError = true)]
         public static extern void faiss_Index_reconstruct_n(IndexSafeHandle index, long i0, long ni, float[] recons);
-
         [DllImport("faiss_c", SetLastError = true)]
         public static extern int faiss_Index_d(IndexSafeHandle index);
         [DllImport("faiss_c", SetLastError = true)]

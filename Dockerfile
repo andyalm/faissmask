@@ -2,7 +2,7 @@ FROM debian:bullseye as build
 
 ENV DEBIAN_FRONTEND teletype
 
-ARG FAISS_VERSION=v1.7.2
+ARG FAISS_VERSION=main
 
 RUN apt-get -y update && \
     apt-get -y install apt-utils

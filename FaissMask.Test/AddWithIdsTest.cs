@@ -33,6 +33,7 @@ namespace FaissMask.Test
                     vectors[i][j] = DRand();
                 }
             }
+
             using (var index = new IndexFlatL2(dimension))
             {
                 using (var idIndex = new IndexIDMap(index))
@@ -61,6 +62,7 @@ namespace FaissMask.Test
             _output.WriteLine($"Number of dimensions: {index.Dimensions}");
             Assert.Equal(2048, index.Dimensions);
         }
+
         private static float DRand()
         {
             return (float)_rand.NextDouble();
