@@ -102,9 +102,9 @@ namespace FaissMask
 
         public ulong SaCodeSize => Handle.SaCodeSize;
 
-        public byte[] EncodeVector(float[] vector)
+        public byte[] EncodeVector(float[] vector, int numberOfCodes)
         {
-            return Handle.EncodeVector(vector);
+            return Handle.EncodeVector(vector, numberOfCodes);
         }
 
         public float[] DecodeVector(byte[] bytes)

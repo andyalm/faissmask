@@ -117,9 +117,9 @@ namespace FaissMask.Internal
             return choppedVectors;
         }
 
-        public byte[] EncodeVector(float[] vector)
+        public byte[] EncodeVector(float[] vector, int numberOfCOdes)
         {
-            var bytes = new byte[SaCodeSize];
+            var bytes = new byte[numberOfCOdes];
             NativeMethods.faiss_Index_sa_encode(this, 1, vector, bytes);
             return bytes;
         }
