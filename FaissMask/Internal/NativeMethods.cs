@@ -53,5 +53,7 @@ namespace FaissMask.Internal
         public static extern long faiss_IndexIVF_nprobe(IndexSafeHandle index);
         [DllImport("faiss_c", SetLastError = true)]
         public static extern void faiss_IndexIVF_set_nprobe(IndexSafeHandle index, long nProbe);
+        [DllImport("faiss_c", SetLastError = true)]
+        public static extern void faiss_IndexPreTransform_new(ref IndexPreTransformSafeHandle index);
     }
 }

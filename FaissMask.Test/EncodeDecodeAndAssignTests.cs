@@ -36,11 +36,24 @@ namespace FaissMask.Test
                 labels = index.Assign(vector, 2);
                 Assert.Equal(new long[] { 10, 62 }, labels);
 
+                Console.WriteLine($"vector length={vector.Length}");
+
                 Assert.Equal(8, (int)index.SaCodeSize);
-                var bytes = index.EncodeVector(vector);
-                Assert.Equal(new byte[] { 204, 4, 82, 34, 147, 225, 227, 37 }, bytes);
+                var bytes = index.EncodeVector(vector, 64);
+                Assert.Equal(
+                    new byte[]
+                    {
+                        204, 4, 82, 34, 147, 225, 227, 37, 169, 10, 154, 104, 253, 166, 246, 126, 216, 200, 153, 140,
+                        110, 87, 161, 106, 84, 233, 106, 110, 7, 171, 90, 204, 106, 175, 18, 125, 189, 150, 83, 27, 17,
+                        116, 107, 65, 137, 218, 200, 228, 19, 193, 124, 99, 26, 67, 10, 52, 141, 187, 167, 33, 145, 154,
+                        41, 228
+                    }, bytes);
+                Console.WriteLine($"codes length={bytes.Length}");
+                Console.WriteLine(string.Join(",", bytes));
 
                 var vector2 = index.DecodeVector(bytes);
+                Console.WriteLine("decoded");
+                Console.WriteLine($"decoded length={vector2.Length}");
                 Assert.InRange(vector.CosineSimilarityWith(vector2), 0.9, 1.0);
             }
         }
