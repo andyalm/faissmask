@@ -38,7 +38,17 @@ namespace FaissMask.Internal
         [DllImport("faiss_c", SetLastError = true)]
         public static extern int faiss_IndexIDMap_new(ref IndexIDMapSafeHandle mapIndex, IndexFlatSafeHandle index);
         [DllImport("faiss_c", SetLastError = true)]
+        public static extern int faiss_VectorTransform_apply_noalloc(VectorTransformSafeHandle vt, long n, float[] x, float[] xt);
+        [DllImport("faiss_c", SetLastError = true)]
+        public static extern int faiss_VectorTransform_d_in(VectorTransformSafeHandle index);
+        [DllImport("faiss_c", SetLastError = true)]
+        public static extern int faiss_VectorTransform_d_out(VectorTransformSafeHandle index);        
+        [DllImport("faiss_c", SetLastError = true)]
+        public static extern int faiss_VectorTransform_free(VectorTransformSafeHandle vectorTransform);
+        [DllImport("faiss_c", SetLastError = true)]
         public static extern int faiss_read_index_fname(string fname, int io_flags, ref IntPtr p_out);
+        [DllImport("faiss_c", SetLastError = true)]
+        public static extern int faiss_read_VectorTransform_fname(string fname, ref IntPtr p_out);
         [DllImport("faiss_c", SetLastError = true)]
         public static extern string faiss_get_last_error();
         [DllImport("faiss_c", SetLastError = true)]
