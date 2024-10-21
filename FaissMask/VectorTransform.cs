@@ -17,6 +17,11 @@ namespace FaissMask
         
         public int DimensionIn => handle.DimensionIn;
         public int DimensionOut => handle.DimensionOut;
+        
+        public float[] Apply(float[] vector)
+        {
+            return Apply(1, vector);
+        }
 
         public float[][] Apply(float[][] vectors)
         {
@@ -44,10 +49,14 @@ namespace FaissMask
             return result;            
         }
 
-        private float[] Apply(int count, float[] vectors)
+        public float[] Apply(int count, float[] flattenedVectors)
         {
+            if (count * dimIn != flattenedVectors.Length)
+            {
+                throw new ArgumentException($"Invalid input vector, length for count {count} should be {count*dimIn}, got {flattenedVectors.Length}", nameof(flattenedVectors));
+            }
             var output = new float[count * dimOut];
-            handle.Apply(count, vectors, output);
+            handle.Apply(count, flattenedVectors, output);
             return output;
         }
         

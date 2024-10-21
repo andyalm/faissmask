@@ -39,6 +39,34 @@ public class VectorTransformTests
 
     }
     
+    [Fact]
+    public void AppliesASingletonVectorTransform()
+    {
+        using var vectorTransform = VectorTransform.Read(VectorTransformFileName);
+        
+        var vectors = CreateRandomVector(vectorTransform.DimensionIn);
+        
+        var transformed = vectorTransform.Apply(vectors);
+        
+        Assert.Equal(vectorTransform.DimensionOut, transformed.Length);
+
+    }    
+    
+    [Theory]
+    [InlineData(2)]
+    [InlineData(10)]
+    public void AppliesAFlattenedVectorTransform(int count)
+    {
+        using var vectorTransform = VectorTransform.Read(VectorTransformFileName);
+        
+        var vectorsFlattened = CreateRandomVector(vectorTransform.DimensionIn * count);
+        
+        var transformed = vectorTransform.Apply(count, vectorsFlattened);
+        
+        Assert.Equal(count * vectorTransform.DimensionOut, transformed.Length);
+
+    }    
+    
     [Theory]
     [InlineData(1)]
     [InlineData(10)]
@@ -53,6 +81,21 @@ public class VectorTransformTests
             $"Invalid input vectors, each should have a length of {vectorTransform.DimensionIn} (Parameter 'vectors')",
             ex.Message);
     }
+    
+    [Theory]
+    [InlineData(1)]
+    [InlineData(10)]
+    public void ThrowsExceptionWhenInputFlattenedVectorsHaveInvalidLength(int count)
+    {
+        using var vectorTransform = VectorTransform.Read("data/vector_transform_1024_512.bin");
+        
+        var vectors = CreateRandomVector(vectorTransform.DimensionIn - 1 * count);
+        
+        var ex = Assert.Throws<ArgumentException>(() => vectorTransform.Apply(count, vectors));
+        Assert.Equal(
+            $"Invalid input vector, length for count {count} should be {count * vectorTransform.DimensionIn}, got {vectors.Length} (Parameter 'flattenedVectors')",
+            ex.Message);
+    }    
     
     [Fact]
     public void ThrowsExceptionWhenVectorTransformFilenameParameterIsNull()
@@ -73,14 +116,19 @@ public class VectorTransformTests
         var vectors = new float[count][];
         for (var i = 0; i < count; i++)
         {
-            var vector = new float[dimension];
-            for (var j = 0; j < vector.Length; j++)
-            {
-                vector[j] = _random.NextSingle();
-            }
-            vectors[i] = vector;
+            vectors[i] = CreateRandomVector(dimension);
         }
         return vectors;
+    }
+    
+    private float[] CreateRandomVector(int dimension)
+    {
+        var vector = new float[dimension];
+        for (var i = 0; i< vector.Length; i++)
+        {
+            vector[i] = _random.NextSingle();
+        }
+        return vector;
     }
 
 }
