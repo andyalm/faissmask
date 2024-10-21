@@ -5,13 +5,11 @@ namespace FaissMask.Internal
 {
     public class VectorTransformSafeHandle : SafeHandleZeroIsInvalid
     {
-        
-        protected internal VectorTransformSafeHandle(IntPtr pointer) : base(pointer)
+        private VectorTransformSafeHandle(IntPtr pointer) : base(pointer)
         {
         }        
         
-        public static THandle Read<THandle>(string filename, Func<IntPtr, THandle> createHandle)
-            where THandle : VectorTransformSafeHandle
+        public static VectorTransformSafeHandle Read(string filename)
         {
             if (string.IsNullOrEmpty(filename))
             {
@@ -40,7 +38,7 @@ namespace FaissMask.Internal
                     $"An error occurred trying to read the vector transform '{fullPathFilename}': {lastError} (return code {returnCode})");
             }
 
-            var safeHandle = createHandle(pointer);
+            var safeHandle = new VectorTransformSafeHandle(pointer);
 
             return safeHandle;
         }

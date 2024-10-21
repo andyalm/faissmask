@@ -9,14 +9,14 @@ namespace FaissMask
     {
         public static VectorTransform Read(string filename)
         {
-            var handle = VectorTransformSafeHandle.Read(filename, ptr => new VectorTransformSafeHandle(ptr));
+            var handle = VectorTransformSafeHandle.Read(filename);
             var dimIn = handle.DimensionIn;
             var dimOut = handle.DimensionOut;
             return new VectorTransform(handle, dimIn, dimOut);
         }
         
-        public int DimensionIn => handle.DimensionIn;
-        public int DimensionOut => handle.DimensionOut;
+        public int DimensionIn => dimIn;
+        public int DimensionOut => dimOut;
         
         public float[] Apply(float[] vector)
         {
