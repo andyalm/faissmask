@@ -35,10 +35,10 @@ namespace FaissMask
             
             var output = Apply(count, vectorsFlattened);
             
-            // convert to jagged array
-            // a possible optimization would be to use the flattened array signature
-            // directly and then pass that result to subsequent transforms or the search method,
-            // but these methods would need to be public.
+            // convert to an array of arrays
+            // the other signatures are more efficient if this response is re-flattened
+            // e.g., Apply(float[] vector) or Apply(int count, float[] flattenedVectors)
+
             var result = new float[count][];
             for (var i = 0; i < count; i++)
             {
