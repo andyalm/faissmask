@@ -61,17 +61,17 @@ namespace FaissMask
             return Search(count, vectorsFlattened, kneighbors);
         }
 
-        private IEnumerable<SearchResult> Search(long count, float[] vectorsFlattened, long kneighbors)
+        public IEnumerable<SearchResult> Search(long count, float[] vectorsFlattened, long kneighbors)
         {
-            float[] distances = new float[kneighbors * count];
-            long[] labels = new long[kneighbors * count];
+            var distances = new float[kneighbors * count];
+            var labels = new long[kneighbors * count];
             Handle.Search(count, vectorsFlattened, kneighbors, distances, labels);
             var labelDistanceZip = labels.Zip(distances, (l, d) => new
             {
                 Label = l,
                 Distance = d
-            });
-            for (int i = 0; i < count; i++)
+            }).ToArray();
+            for (var i = 0; i < count; i++)
             {
                 var vectorResult = labelDistanceZip.Skip((int)(i * kneighbors))
                     .Take((int)kneighbors);

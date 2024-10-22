@@ -110,3 +110,8 @@ faiss_read_index
 faiss_read_index_fname
 faiss_write_index
 faiss_write_index_fname
+faiss_read_VectorTransform_fname
+faiss_VectorTransform_apply_noalloc
+faiss_VectorTransform_d_in
+faiss_VectorTransform_d_out
+faiss_VectorTransform_free
