@@ -35,7 +35,7 @@ jobs:
         run: dotnet build
         
       - name: Publish FaissMask to nuget.org
-        run: dotnet nuget push $(ls src/FaissMask/bin/${{ env.Configuration }}/*.nupkg) -k ${{ secrets.NUGET_FEED_KEY }} -s https://api.nuget.org/v3/index.json
+        run: dotnet nuget push $(ls FaissMask/bin/${{ env.Configuration }}/*.nupkg) -k ${{ secrets.NUGET_FEED_KEY }} -s https://api.nuget.org/v3/index.json
    
     environment:
       name: nuget.org
