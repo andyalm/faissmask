@@ -7,31 +7,34 @@
     <LangVersion>Latest</LangVersion>
   </PropertyGroup>
 
-    <PropertyGroup>
-      <PackageId>FaissMask</PackageId>
-      <Version>0.3.2-beta02</Version>
-      <Authors>Andy Alm; Jose Truyol</Authors>
-      <PackageDescription>.NET wrapper for Faiss</PackageDescription>
-      <PackageTags>faiss</PackageTags>
-      <RepositoryUrl>https://github.com/andyalm/faissmask.git</RepositoryUrl>
-      <PackageProjectUrl>https://github.com/andyalm/faissmask</PackageProjectUrl>
-      <RepositoryType>git</RepositoryType>
-      <RepositoryBranch>$(CI_COMMIT_REF_NAME)</RepositoryBranch>
-      <RepositoryCommit>$(CI_COMMIT_SHA)</RepositoryCommit>
-      <PackageLicenseExpression>MIT</PackageLicenseExpression>
-      <PackageIcon>icon.png</PackageIcon>
-      <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>FaissMask</PackageId>
+    <PackageVersion Condition="$(PackageReleaseTag) != ''">$(PackageReleaseTag.Substring(1))</PackageVersion>
+    <PackageVersion Condition="$(PackageVersion)==''">0.0.1-dev</PackageVersion>
+    <Authors>Andy Alm; Jose Truyol</Authors>
+    <PackageDescription>.NET wrapper for Faiss</PackageDescription>
+    <PackageTags>faiss</PackageTags>
+    <RepositoryUrl>https://github.com/andyalm/faissmask.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/andyalm/faissmask</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryBranch>$(CI_COMMIT_REF_NAME)</RepositoryBranch>
+    <RepositoryCommit>$(CI_COMMIT_SHA)</RepositoryCommit>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
 
-    <PropertyGroup>
-        <PackageIcon>icon.png</PackageIcon>
-    </PropertyGroup>
+  <PropertyGroup>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
 
-    <ItemGroup>
-        <None Include="..\assets\icon.png" Pack="true" PackagePath="" />
-    </ItemGroup>
+  <ItemGroup>
+    <None Include="..\assets\icon.png" Pack="true" PackagePath="" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
-    <ItemGroup>
-        <Content Include="runtimes\**" PackagePath="runtimes" Visible="false" />
-    </ItemGroup>
+  <ItemGroup>
+    <Content Include="runtimes\**" PackagePath="runtimes" Visible="false" />
+  </ItemGroup>
 </Project>
