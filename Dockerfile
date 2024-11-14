@@ -46,6 +46,11 @@ RUN apt-get -y install git && \
     cmake -DFAISS_ENABLE_GPU=OFF -DFAISS_ENABLE_PYTHON=OFF -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=Release -DFAISS_ENABLE_C_API=ON -DBUILD_SHARED_LIBS=ON -DFAISS_OPT_LEVEL=avx2 -B build . && \
     make -C build -j $(nproc) faiss_avx2 install
 
+# update the rpath for the faiss libraries
+RUN apt-get -y install patchelf && \
+    patchelf --set-rpath '$ORIGIN' /faiss/build/c_api/libfaiss_c.so && \
+    patchelf --set-rpath '$ORIGIN' /faiss/build/faiss/libfaiss_avx2.so
+
 FROM --platform=linux/${arch} mcr.microsoft.com/dotnet/sdk:6.0
 
 EXPOSE 80
