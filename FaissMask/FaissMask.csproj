@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <PlatformTarget Condition="$(PlatformTarget)=='' and '$([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)' == 'arm64'">arm64</PlatformTarget>
-    <PlatformTarget Condition="$(PlatformTarget)==''">x64</PlatformTarget>
+    <PlatformTarget Condition="$(PlatformTarget)==''">anycpu</PlatformTarget>
     <LangVersion>Latest</LangVersion>
   </PropertyGroup>
 
